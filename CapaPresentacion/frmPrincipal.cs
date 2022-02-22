@@ -1,8 +1,6 @@
 ﻿using CapaAccesoDatos;
 using CapaNegocio;
 using Entidades;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
 using System;
 using System.ComponentModel;
 using System.Data;
@@ -326,36 +324,9 @@ namespace CapaPresentacion
             sqlDataAdapter.Fill(dataSet);
             cn.Close();
 
-            PdfDocument pdf = new PdfDocument();
-            pdf.Info.Title = "Reporte Generar sobre las ventas";
-            PdfPage pdfpage = pdf.AddPage();
-            XGraphics graphics = XGraphics.FromPdfPage(pdfpage);
-            XFont font = new XFont("Arial", 14, XFontStyle.Bold);
-            
-            ypoint = ypoint + 100;
-
-            graphics.DrawString("Codigo de venta", font, XBrushes.Black, new XRect(20, 70, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-            graphics.DrawString("Fecha Venta", font, XBrushes.Black, new XRect(190, 70, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-            graphics.DrawString("Estado Venta", font, XBrushes.Black, new XRect(400, 70, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-            for (i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-            {
-                CodigoVenta = dataSet.Tables[0].Rows[i].ItemArray[0].ToString();
-                FechaVenta = dataSet.Tables[0].Rows[i].ItemArray[1].ToString();
-                EstadoVenta = dataSet.Tables[0].Rows[i].ItemArray[2].ToString();
-
-                graphics.DrawString(CodigoVenta, font, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-                graphics.DrawString("------------------------------------------------------------------------------------------------------------------------", font, XBrushes.Black, new XRect(40, ylintes, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-                graphics.DrawString(FechaVenta, font, XBrushes.Black, new XRect(190, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-                graphics.DrawString(EstadoVenta, font, XBrushes.Black, new XRect(400, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormats.TopLeft);
-
-                ypoint = ypoint + 20;
-                ylintes = ylintes +20 ;
-
-
-            }
 
             string pdfilename = "report.pdf";
-            pdf.Save(pdfilename);
+           
             MessageBox.Show("Reporte creado", "Mensaje", MessageBoxButtons.OK);
 
 

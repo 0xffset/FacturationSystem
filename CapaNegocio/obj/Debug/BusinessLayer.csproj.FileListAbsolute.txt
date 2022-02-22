@@ -37,40 +37,15 @@ C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaNegocio\
 C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaNegocio\obj\Debug\CapaNegocio.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.dll.config
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\CapaNegocio.dll.config
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\CapaNegocio.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\CapaNegocio.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Controls.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.IO.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.MachineLearning.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Math.Core.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Math.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Statistics.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\CapaAccesoDatos.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Entidades.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\ICSharpCode.SharpZipLib.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Syncfusion.Compression.Portable.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Syncfusion.Licensing.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Syncfusion.XlsIO.Portable.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\ZedGraph.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\ZedGraph.Web.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\CapaAccesoDatos.pdb
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\CapaAccesoDatos.dll.config
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Entidades.pdb
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Entidades.dll.config
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Controls.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.IO.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.MachineLearning.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Math.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Math.Core.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Accord.Statistics.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\ICSharpCode.SharpZipLib.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\ICSharpCode.SharpZipLib.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Syncfusion.Compression.Portable.xml
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Syncfusion.XlsIO.Portable.xml
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.CopyComplete
