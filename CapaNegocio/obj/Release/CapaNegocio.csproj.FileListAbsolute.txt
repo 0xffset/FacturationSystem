@@ -1,9 +1,0 @@
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\bin\Release\CapaNegocio.dll
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\bin\Release\CapaNegocio.pdb
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\bin\Release\CapaAccesoDatos.dll
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\bin\Release\Entidades.dll
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\bin\Release\CapaAccesoDatos.pdb
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\bin\Release\Entidades.pdb
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\obj\Release\CapaNegocio.csprojResolveAssemblyReference.cache
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\obj\Release\CapaNegocio.dll
-C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaNegocio\obj\Release\CapaNegocio.pdb

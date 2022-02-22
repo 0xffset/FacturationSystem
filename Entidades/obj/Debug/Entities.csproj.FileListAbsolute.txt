@@ -1,7 +1,0 @@
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\bin\Debug\Entidades.dll.config
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\bin\Debug\Entidades.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\bin\Debug\Entidades.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Debug\Entities.csproj.AssemblyReference.cache
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Debug\Entities.csproj.CoreCompileInputs.cache
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Debug\Entidades.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Debug\Entidades.pdb
