@@ -1,0 +1,70 @@
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Controls.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.IO.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.MachineLearning.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.Core.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Statistics.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.XlsIO.Portable.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\ZedGraph.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\ZedGraph.Web.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Controls.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.IO.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.MachineLearning.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.Core.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Statistics.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.XlsIO.Portable.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Controls.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.IO.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.MachineLearning.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.Core.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Statistics.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.XlsIO.Portable.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\ZedGraph.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\ZedGraph.Web.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Controls.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.IO.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.MachineLearning.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Math.Core.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Accord.Statistics.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Syncfusion.XlsIO.Portable.xml
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
