@@ -1,0 +1,371 @@
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+F:\Users\Roleyder\Desktop\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\RolEYder\Desktop\Sistema 1.0\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmBuscarProd.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmMantenimiento.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.REPORTES.frmReporteProductos.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.cache
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.compiled
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmIndicaProducto.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturacion.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsultarVentas.resources
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleV.resources
+C:\Users\RolEYder\Desktop\Examples(c#)\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\RolEYder\Desktop\Examples(c#)\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\RolEYder\Desktop\Examples(c#)\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmBuscarProd.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsultarVentas.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleV.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturacion.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmIndicaProducto.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmMantenimiento.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.REPORTES.frmReporteProductos.resources
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll.config
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.pdb
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.xml
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.xml
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\RRR\Desktop\Rogger\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLinearRegresion.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.dll.config
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Controls.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.IO.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.MachineLearning.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.Core.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Statistics.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.Web.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.pdb
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll.config
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Controls.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.IO.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.MachineLearning.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.Core.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Statistics.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\Interop.IASCoreLib.dll
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.ResolveComReference.cache
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmBuscarProd.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsultarVentas.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleV.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturacion.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmIndicaProducto.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLinearRegresion.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmMantenimiento.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmSelect.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Admin\Desktop\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.dll.config
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Controls.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.IO.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.MachineLearning.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.Core.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Statistics.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Core.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Gmail.v1.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.Web.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll.config
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Controls.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.IO.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.MachineLearning.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.Core.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Statistics.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Core.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Gmail.v1.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Gmail.v1.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.Charting.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\Interop.IASCoreLib.dll
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.ResolveComReference.cache
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmBuscarProd.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsultarVentas.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleV.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturacion.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmIndicaProducto.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLinearRegresion.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmMantenimiento.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentasClienteXId.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmSelect.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.reportVentasXClientes.resources
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Admin\Desktop\Projects c#\sistema\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Controls.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.IO.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.MachineLearning.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.Core.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Statistics.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Core.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Gmail.v1.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.Charting.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\ZedGraph.Web.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Entidades.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Machine_Learning.dll.config
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Controls.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.IO.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.MachineLearning.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Math.Core.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Accord.Statistics.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Auth.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Core.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Core.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Gmail.v1.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Google.Apis.Gmail.v1.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\PdfSharp.Charting.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Portable.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\Interop.IASCoreLib.dll
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.ResolveComReference.cache
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmBuscarProd.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente_modificar.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsultarVentas.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleV.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturacion.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmIndicaProducto.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLinearRegresion.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmMantenimiento.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentasClienteXId.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmSelect.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.reportVentasXClientes.resources
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

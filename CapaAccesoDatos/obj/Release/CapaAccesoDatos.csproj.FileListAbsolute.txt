@@ -1,0 +1,7 @@
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\bin\Release\CapaAccesoDatos.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\bin\Release\CapaAccesoDatos.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\bin\Release\Entidades.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\bin\Release\Entidades.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\obj\Release\CapaAccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\obj\Release\CapaAccesoDatos.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\CapaAccesoDatos\obj\Release\CapaAccesoDatos.pdb

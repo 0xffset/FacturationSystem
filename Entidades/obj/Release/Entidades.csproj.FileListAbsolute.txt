@@ -1,0 +1,4 @@
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\Entidades\bin\Release\Entidades.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\Entidades\bin\Release\Entidades.pdb
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\Entidades\obj\Release\Entidades.dll
+C:\Users\RolEYder\Desktop\sistemaROLEY\Roleyder(Sistema)\sistemaROLEY\Entidades\obj\Release\Entidades.pdb

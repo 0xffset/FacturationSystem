@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EBA88A4-23DC-4B05-8492-2D26BFA8902D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccEnControles.cs" />
+    <Compile Include="frmBuscarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarProd.Designer.cs">
+      <DependentUpon>frmBuscarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente_modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente_modificar.Designer.cs">
+      <DependentUpon>frmCliente_modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarVentas.Designer.cs">
+      <DependentUpon>frmConsultarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleV.Designer.cs">
+      <DependentUpon>frmDetalleV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturacion.Designer.cs">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndicaProducto.Designer.cs">
+      <DependentUpon>frmIndicaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimiento.Designer.cs">
+      <DependentUpon>frmMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentasClienteXId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasClienteXId.Designer.cs">
+      <DependentUpon>frmVentasClienteXId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fromSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromSelect.Designer.cs">
+      <DependentUpon>fromSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="localdatabase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportVentasXClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportVentasXClientes.Designer.cs">
+      <DependentUpon>reportVentasXClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendReports.cs" />
+    <EmbeddedResource Include="frmBuscarProd.resx">
+      <DependentUpon>frmBuscarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente_modificar.resx">
+      <DependentUpon>frmCliente_modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarVentas.resx">
+      <DependentUpon>frmConsultarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleV.resx">
+      <DependentUpon>frmDetalleV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndicaProducto.resx">
+      <DependentUpon>frmIndicaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimiento.resx">
+      <DependentUpon>frmMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasClienteXId.resx">
+      <DependentUpon>frmVentasClienteXId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromSelect.resx">
+      <DependentUpon>fromSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportVentasXClientes.resx">
+      <DependentUpon>reportVentasXClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaAccesoDatos\DataAccessLayer.csproj">
+      <Project>{72438088-dae4-4e8f-961e-d0624debbfe3}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\BusinessLayer.csproj">
+      <Project>{9557d91a-b041-4e41-8696-7fdc8f63354a}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entities.csproj">
+      <Project>{89a77be4-3b87-4e0f-8aed-761f66cbd7e9}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Home_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Accept_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\circulo_verde24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\CirculoNaranja24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\circulorojo_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Exit_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\User_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Security_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\C_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Maintenance_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ToDo_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Buying_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Statistics_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Sales_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\CardboardBox_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Report_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Help_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\New_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Modify_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Ok_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Delete_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Cancel_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Exit_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\icons8_Add_File_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Back_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Add List_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Save_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Unavailable_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImgAplicacion\User-64.png" />
+    <None Include="ImgAplicacion\rating.png" />
+    <None Include="ImgAplicacion\box.png" />
+    <None Include="ImgAplicacion\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REPORTES\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IASCoreLib">
+      <Guid>{6BC09690-0CE6-11D1-BAAE-00C04FC2E20D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
