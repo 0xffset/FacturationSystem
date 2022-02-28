@@ -27,7 +27,7 @@ namespace CapaNegocio
             {
                 List<entCustomer> Lista = null;
                 Lista = IDataAccessCustomer.Instancia.AdvSearchCustomer(nameCli);
-                if (Lista == null) throw new ApplicationException("Error en la busqueda");
+                if (Lista == null) throw new ApplicationException("Error in the search");
                 return Lista;
             }
             catch (Exception)
@@ -51,8 +51,8 @@ namespace CapaNegocio
             try
             {
                 List<entCustomer> Lista = IDataAccessCustomer.Instancia.ListCustomers();
-                if (Lista.Count <= 0) throw new ApplicationException("Lista de los cleintes vacia");
-                else if (Lista == null) throw new ApplicationException("Error en la carga de los clientes");
+                if (Lista.Count <= 0) throw new ApplicationException("Customer list is emplty");
+                else if (Lista == null) throw new ApplicationException("Error to load customer list");
                 return Lista;
             }
             catch (Exception) { throw; }

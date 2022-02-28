@@ -107,25 +107,25 @@ namespace CapaAccesoDatos
             try 
             {
                 SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
-                cmd = new SqlCommand("spListarCliente", cn);
+                cmd = new SqlCommand("spCustomerList", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 dr = cmd.ExecuteReader();
                 Lista = new List<entCustomer>();
                 while (dr.Read())
                 {
-                    entCustomer cliente = new entCustomer();
-                    cliente.Customer_Id = Convert.ToInt32(dr["ID_Cliente"]);
+                    entCustomer customer = new entCustomer();
+                    customer.Customer_Id = Convert.ToInt32(dr["Id_Cliente"]);
                     entTipoDocumento td = new entTipoDocumento();
                     td.Nombre_TipDoc = dr["Nombre_TipDoc"].ToString();
-                    cliente.tipodocumento = td;
-                    cliente.CustomeDate_Born = dr["NumeroDoc_Cliente"].ToString();
-                    cliente.Customer_Name = dr["Nombre_Cliente"].ToString();
-                    cliente.Customer_Phone = dr["Telefono_Cliente"].ToString();
-                    cliente.Customer_Cellphone = dr["Celular_Cliente"].ToString();
-                    cliente.Customer_Email = dr["Correo_Cliente"].ToString();
-                    cliente.Customer_Address = dr["Direccion_Cliente"].ToString();
-                    Lista.Add(cliente);
+                    customer.tipodocumento = td;
+                    customer.CustomerDoc_Number = dr["NumeroDoc_Cliente"].ToString();
+                    customer.Customer_Name = dr["Nombre_Cliente"].ToString();
+                    customer.Customer_Phone = dr["Telefono_Cliente"].ToString();
+                    customer.Customer_Cellphone = dr["Celular_Cliente"].ToString();
+                    customer.Customer_Email = dr["Correo_Cliente"].ToString();
+                    customer.Customer_Address = dr["Direccion_Cliente"].ToString();
+                    Lista.Add(customer);
                 }
                 
 
