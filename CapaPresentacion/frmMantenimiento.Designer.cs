@@ -30,6 +30,9 @@
         {
             this.tbcPrincipal = new System.Windows.Forms.TabControl();
             this.tcpProducto = new System.Windows.Forms.TabPage();
+            this.lblvenprod = new System.Windows.Forms.Label();
+            this.lbldisplayven = new System.Windows.Forms.Label();
+            this.dtpFechVen = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.BTNnuevoprod = new System.Windows.Forms.Button();
             this.BTNsalirprod = new System.Windows.Forms.Button();
@@ -118,9 +121,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dtpFechVen = new System.Windows.Forms.DateTimePicker();
-            this.lbldisplayven = new System.Windows.Forms.Label();
-            this.lblvenprod = new System.Windows.Forms.Label();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.tbcPrincipal.SuspendLayout();
             this.tcpProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproducto)).BeginInit();
@@ -148,6 +150,8 @@
             // tcpProducto
             // 
             this.tcpProducto.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tcpProducto.Controls.Add(this.txtDescuento);
+            this.tcpProducto.Controls.Add(this.label26);
             this.tcpProducto.Controls.Add(this.lblvenprod);
             this.tcpProducto.Controls.Add(this.lbldisplayven);
             this.tcpProducto.Controls.Add(this.dtpFechVen);
@@ -190,6 +194,37 @@
             this.tcpProducto.TabIndex = 0;
             this.tcpProducto.Text = "PRODUCTOS";
             this.tcpProducto.Click += new System.EventHandler(this.tcpProducto_Click);
+            // 
+            // lblvenprod
+            // 
+            this.lblvenprod.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvenprod.ForeColor = System.Drawing.Color.Red;
+            this.lblvenprod.Location = new System.Drawing.Point(502, 70);
+            this.lblvenprod.Name = "lblvenprod";
+            this.lblvenprod.Size = new System.Drawing.Size(364, 25);
+            this.lblvenprod.TabIndex = 77;
+            this.lblvenprod.Text = "EL PRODUCTO ESTA VENCIDO";
+            // 
+            // lbldisplayven
+            // 
+            this.lbldisplayven.AutoSize = true;
+            this.lbldisplayven.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbldisplayven.Location = new System.Drawing.Point(120, 432);
+            this.lbldisplayven.Name = "lbldisplayven";
+            this.lbldisplayven.Size = new System.Drawing.Size(137, 15);
+            this.lbldisplayven.TabIndex = 76;
+            this.lbldisplayven.Text = "Fecha de Vencimiento: ";
+            this.lbldisplayven.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // dtpFechVen
+            // 
+            this.dtpFechVen.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtpFechVen.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechVen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechVen.Location = new System.Drawing.Point(257, 427);
+            this.dtpFechVen.Name = "dtpFechVen";
+            this.dtpFechVen.Size = new System.Drawing.Size(104, 27);
+            this.dtpFechVen.TabIndex = 75;
             // 
             // button1
             // 
@@ -1135,36 +1170,22 @@
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // dtpFechVen
+            // txtDescuento
             // 
-            this.dtpFechVen.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.dtpFechVen.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechVen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechVen.Location = new System.Drawing.Point(257, 427);
-            this.dtpFechVen.Name = "dtpFechVen";
-            this.dtpFechVen.Size = new System.Drawing.Size(104, 27);
-            this.dtpFechVen.TabIndex = 75;
+            this.txtDescuento.Location = new System.Drawing.Point(377, 101);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(55, 21);
+            this.txtDescuento.TabIndex = 79;
+            this.txtDescuento.Text = "0,00";
             // 
-            // lbldisplayven
+            // label26
             // 
-            this.lbldisplayven.AutoSize = true;
-            this.lbldisplayven.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbldisplayven.Location = new System.Drawing.Point(120, 432);
-            this.lbldisplayven.Name = "lbldisplayven";
-            this.lbldisplayven.Size = new System.Drawing.Size(137, 15);
-            this.lbldisplayven.TabIndex = 76;
-            this.lbldisplayven.Text = "Fecha de Vencimiento: ";
-            this.lbldisplayven.Click += new System.EventHandler(this.label26_Click);
-            // 
-            // lblvenprod
-            // 
-            this.lblvenprod.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvenprod.ForeColor = System.Drawing.Color.Red;
-            this.lblvenprod.Location = new System.Drawing.Point(502, 70);
-            this.lblvenprod.Name = "lblvenprod";
-            this.lblvenprod.Size = new System.Drawing.Size(364, 25);
-            this.lblvenprod.TabIndex = 77;
-            this.lblvenprod.Text = "EL PRODUCTO ESTA VENCIDO";
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(297, 107);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(74, 15);
+            this.label26.TabIndex = 78;
+            this.label26.Text = "Decuento $:";
             // 
             // frmMantenimiento
             // 
@@ -1290,5 +1311,7 @@
         private System.Windows.Forms.Label lbldisplayven;
         private System.Windows.Forms.DateTimePicker dtpFechVen;
         private System.Windows.Forms.Label lblvenprod;
+        private System.Windows.Forms.TextBox txtDescuento;
+        private System.Windows.Forms.Label label26;
     }
 }

@@ -12,11 +12,11 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class frmCliente_modificar : Form
+    public partial class frmCustomer_update : Form
     {
         int IdUsuario = 0, IdCliente = 0;
 
-        public frmCliente_modificar(int?  id_Usuario, int? id_Cliente)
+        public frmCustomer_update(int?  id_Usuario, int? id_Cliente)
         {
             InitializeComponent();
             IdCliente = (int)id_Cliente;
@@ -32,13 +32,13 @@ namespace CapaPresentacion
              {
                  entCustomer cliente = new entCustomer();
                  cliente = IBusinessCustomer.Instancia.searchCustomer(IdCliente, 0.ToString());
-                 txtCedula.Text = cliente.CustomerDoc_Number;
-                 txtNombre.Text = cliente.Customer_Name;
-                 txtTelefono.Text = cliente.Customer_Phone;
-                 txtCelular.Text = cliente.Customer_Cellphone;
-                 txtCorreo.Text = cliente.Customer_Email;
-                 txtDireccion.Text = cliente.Customer_Address;
-                 dateTimePicker1.Value = Convert.ToDateTime(cliente.CustomeDate_Born);
+                 txtNoDoc.Text = cliente.CustomerDoc_Number;
+                 txtName.Text = cliente.Customer_Name;
+                 txtPhone.Text = cliente.Customer_Phone;
+                 txtCellphone.Text = cliente.Customer_Cellphone;
+                 txtEmail.Text = cliente.Customer_Email;
+                 txtAddress.Text = cliente.Customer_Address;
+                 dtpBorn.Value = Convert.ToDateTime(cliente.CustomeDate_Born);
                  if (cliente.Customer_Sex == "M") cBoxM.Checked = true; else cBoxF.Checked = true;
              }
             }
@@ -82,7 +82,7 @@ namespace CapaPresentacion
             
       
                 
-            txtIdCliente.Text = IdCliente.ToString();
+            txtidCustomer.Text = IdCliente.ToString();
             buscarcliente();
             }
              catch (ApplicationException ea) { MessageBox.Show(ea.Message, "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information); }
@@ -97,22 +97,22 @@ namespace CapaPresentacion
                 entCustomer cliente = new entCustomer();
                 entTipoDocumento td= new entTipoDocumento();
                 int tipoedicion=1;
-                if(txtIdCliente.Text != "0") {tipoedicion=2; cliente.Customer_Id = Convert.ToInt32(txtIdCliente.Text);}
+                if(txtidCustomer.Text != "0") {tipoedicion=2; cliente.Customer_Id = Convert.ToInt32(txtidCustomer.Text);}
                 td.Id_TipDoc = 1;
                 cliente.tipodocumento = td;
-                cliente.CustomerDoc_Number = txtCedula.Text;
-                cliente.Customer_Name = txtNombre.Text;
-                cliente.CustomeDate_Born=dateTimePicker1.Value.ToString("yyy/MM/dd");
+                cliente.CustomerDoc_Number = txtNoDoc.Text;
+                cliente.Customer_Name = txtName.Text;
+                cliente.CustomeDate_Born=dtpBorn.Value.ToString("yyy/MM/dd");
                 if(cBoxM.Checked == true) cliente.Customer_Sex = "M"; else cliente.Customer_Sex = "F";
-                cliente.Customer_Phone = txtTelefono.Text;
-                cliente.Customer_Cellphone=txtCedula.Text;
-                cliente.Customer_Email = txtCorreo.Text;
-                cliente.Customer_Address = txtDireccion.Text;
+                cliente.Customer_Phone = txtPhone.Text;
+                cliente.Customer_Cellphone=txtCellphone.Text;
+                cliente.Customer_Email = txtEmail.Text;
+                cliente.Customer_Address = txtAddress.Text;
                 cliente.CustomerCreated_User = IdUsuario;
                 cliente.CustomerUpdated_User = IdUsuario;
                 int r = IBusinessCustomer.Instancia.CustomersManagement(cliente, tipoedicion);
                 MessageBox.Show("Cliente registrado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Dispose();
+                this.Close();
 
 
             }
@@ -129,6 +129,21 @@ namespace CapaPresentacion
           
             
            
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Char.ToUpper(e.KeyChar);
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void cBoxF_CheckedChanged(object sender, EventArgs e)

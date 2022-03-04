@@ -198,6 +198,7 @@ namespace CapaPresentacion
                 txtnombrep.Text = prod.Nombre_Prod;
                 txtmarcap.Text = prod.Marca_Prod;
                 txtpreciocomprap.Text = prod.PrecioCompra_Prod.ToString();
+                txtDescuento.Text = prod.Descuento_Prod.ToString();
                 txtprecioventap.Text = prod.Precio_Prod.ToString();
                 txtstockp.Text = prod.Stock_Prod.ToString();
                 txtstockpromediop.Text = prod.StockProm_Prod.ToString();

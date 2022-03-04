@@ -65,7 +65,7 @@ namespace CapaNegocio
                 CadXml += "<cliente ";
                 CadXml +=  "idcliente='"+c.Customer_Id+"' ";
                 CadXml += "idtipdoc='" + c.tipodocumento.Id_TipDoc + "' ";
-                CadXml += "nrodoc='" + c.CustomeDate_Born + "' ";
+                CadXml += "nrodoc='" + c.CustomerDoc_Number + "' ";
                 CadXml += "nombre='" + c.Customer_Name + "' ";
                 CadXml += "fechanac='" + c.CustomeDate_Born + "' ";
                 CadXml += "sexo='" + c.Customer_Sex + "' ";

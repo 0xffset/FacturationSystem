@@ -179,6 +179,7 @@ namespace CapaAccesoDatos
                        prod.Nombre_Prod = dr["Nombre_Prod"].ToString();
                        prod.Marca_Prod = dr["Marca_Prod"].ToString();
                        prod.PrecioCompra_Prod = Convert.ToDouble(dr["PrecioCompra_Prod"].ToString());
+                       prod.Descuento_Prod = Convert.ToDouble(dr["Descuento_Prod"].ToString());
                        prod.Precio_Prod = Convert.ToDouble(dr["Precio_Prod"]);
                        prod.Stock_Prod = Convert.ToInt32(dr["Stock_Prod"]);
                        prod.StockProm_Prod = Convert.ToInt32(dr["StockProm_Prod"]);

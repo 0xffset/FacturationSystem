@@ -51,7 +51,8 @@ namespace CapaPresentacion
                 dgvFactura.Columns[1].Width = 315;
                 dgvFactura.Columns[2].Width = 70;
                 dgvFactura.Columns[3].Width = 70;
-                dgvFactura.Columns[4].Width = 70;
+                dgvFactura.Columns[4].Width = 100;
+             
 
                 dgvFactura.Columns[1].ReadOnly = true;
                  dgvFactura.Columns[2].ReadOnly = false;
@@ -98,7 +99,8 @@ namespace CapaPresentacion
                 for (int i = 0; i < Lista.Count; i++)
                 {
                     String[] fila = new string[] {
-                        Lista[i].Id_Prod.ToString(), Lista[i].Nombre_Prod, Lista[i].Cantidad_.ToString(), Lista[i].Precio_Prod.ToString(), 
+                        Lista[i].Id_Prod.ToString(), Lista[i].Nombre_Prod, Lista[i].Cantidad_.ToString(),
+                        Lista[i].Precio_Prod.ToString(),
                         (Lista[i].Precio_Prod * 5).ToString()
                     };
                     dgvFactura.Rows.Add(fila);
@@ -493,14 +495,14 @@ namespace CapaPresentacion
                     v.sucursal = s;
 
                     entTipComprobante tc = new entTipComprobante();
-                    tc.Id_TipCom = 2;
+                    tc.Id_TipCom = 3;
                     v.tipocomprobante = tc;
 
                     entMoneda m = new entMoneda();
                     m.Id_Moneda = 1;
                     v.moneda = m;
                     entTipoPago tp = new entTipoPago();
-                    tp.Id_TipPago = 1;
+                    tp.Id_TipPago = 2;
                     v.tipopago = tp;
                     v.Igv_Venta = 0;
                     v.Descuento_Venta = 0.0;

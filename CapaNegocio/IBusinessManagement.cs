@@ -95,7 +95,8 @@ namespace CapaNegocio
                    cadXml += "nombre='" + prop.Nombre_Prod + "' ";
                    cadXml += "marca='" + prop.Marca_Prod + "' ";
                    cadXml += "preciocompra='" + prop.PrecioCompra_Prod.ToString().Replace(",",".") + "' ";
-                   cadXml += "precio='" + prop.Precio_Prod.ToString().Replace(",",".") + "' ";
+                    cadXml += "descuento='" + prop.Descuento_Prod.ToString().Replace(",", ".") + "' ";
+                    cadXml += "precio='" + prop.Precio_Prod.ToString().Replace(",",".") + "' ";
                    cadXml += "stock='" + prop.Stock_Prod + "' ";
                    cadXml += "stockprom='" + prop.StockProm_Prod + "' ";
                    cadXml += "stockmin='" + prop.StockMin_Prod + "' ";

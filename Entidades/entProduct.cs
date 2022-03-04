@@ -13,6 +13,7 @@ namespace Entidades
        public String Nombre_Prod { get; set; }
        public String Marca_Prod { get; set; }
        public Double PrecioCompra_Prod { get; set; }
+        public Double Descuento_Prod { get; set; }
        public Double Precio_Prod { get; set; }
    
        public String ITBIS_Prod { get; set; }

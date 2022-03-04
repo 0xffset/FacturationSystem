@@ -42,6 +42,8 @@
             this.CBOnivelacceso = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TXTCelular = new System.Windows.Forms.MaskedTextBox();
+            this.TXTtelefono = new System.Windows.Forms.MaskedTextBox();
             this.DTPexpiracion = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.RBInactivo = new System.Windows.Forms.RadioButton();
@@ -65,8 +67,6 @@
             this.CBObuscar = new System.Windows.Forms.ComboBox();
             this.TXTSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TXTtelefono = new System.Windows.Forms.MaskedTextBox();
-            this.TXTCelular = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,9 +78,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.Highlight;
             this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 9);
+            this.label1.Location = new System.Drawing.Point(-7, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1261, 30);
+            this.label1.Size = new System.Drawing.Size(1330, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "USERS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -268,6 +268,22 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "User";
+            // 
+            // TXTCelular
+            // 
+            this.TXTCelular.Location = new System.Drawing.Point(145, 228);
+            this.TXTCelular.Mask = "(999) 000-0000";
+            this.TXTCelular.Name = "TXTCelular";
+            this.TXTCelular.Size = new System.Drawing.Size(317, 32);
+            this.TXTCelular.TabIndex = 21;
+            // 
+            // TXTtelefono
+            // 
+            this.TXTtelefono.Location = new System.Drawing.Point(145, 189);
+            this.TXTtelefono.Mask = "(999) 000-0000";
+            this.TXTtelefono.Name = "TXTtelefono";
+            this.TXTtelefono.Size = new System.Drawing.Size(317, 32);
+            this.TXTtelefono.TabIndex = 20;
             // 
             // DTPexpiracion
             // 
@@ -498,22 +514,6 @@
             this.label2.Size = new System.Drawing.Size(76, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Type: ";
-            // 
-            // TXTtelefono
-            // 
-            this.TXTtelefono.Location = new System.Drawing.Point(145, 189);
-            this.TXTtelefono.Mask = "(999) 000-0000";
-            this.TXTtelefono.Name = "TXTtelefono";
-            this.TXTtelefono.Size = new System.Drawing.Size(317, 32);
-            this.TXTtelefono.TabIndex = 20;
-            // 
-            // TXTCelular
-            // 
-            this.TXTCelular.Location = new System.Drawing.Point(145, 228);
-            this.TXTCelular.Mask = "(999) 000-0000";
-            this.TXTCelular.Name = "TXTCelular";
-            this.TXTCelular.Size = new System.Drawing.Size(317, 32);
-            this.TXTCelular.TabIndex = 21;
             // 
             // frmUser
             // 

@@ -31,6 +31,7 @@ namespace CapaPresentacion
             if (u.access_level.Numero_NivelAcc == 1)
             {
                 efecturarToolStripMenuItem.Enabled = false;
+                btnSales.Enabled = false;
                 
             }
 

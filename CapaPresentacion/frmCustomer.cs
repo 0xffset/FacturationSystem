@@ -111,7 +111,7 @@ namespace CapaPresentacion
         {
             try
             {
-                frmCliente_modificar frmx = new frmCliente_modificar(IdUsuario, 0);
+                frmCustomer_update frmx = new frmCustomer_update(IdUsuario, 0);
                 frmx.ShowDialog();
             }
             catch (Exception ex)
@@ -143,7 +143,7 @@ namespace CapaPresentacion
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                frmCliente_modificar frm = new frmCliente_modificar(IdUsuario, id_cliente);
+                frmCustomer_update frm = new frmCustomer_update(IdUsuario, id_cliente);
                 frm.ShowDialog();
             }
             catch (Exception ex)
