@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <Height>18cm</Height>
+    <Style />
+  </Body>
+  <Width>21cm</Width>
+  <Page>
+    <PageHeader>
+      <Height>4cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="logo">
+          <Source>Embedded</Source>
+          <Value>Shoppingcart_32x3232</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.14583in</Top>
+          <Left>1.5cm</Left>
+          <Height>0.51042in</Height>
+          <Width>0.65625in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Sales Report</Value>
+                  <Style>
+                    <FontFamily>Consolas</FontFamily>
+                    <FontSize>16pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>White</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.655in</Top>
+          <Left>3.29042in</Left>
+          <Height>0.28125in</Height>
+          <Width>1.77083in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value />
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>1.155in</Top>
+          <Left>1.5cm</Left>
+          <Height>0.25in</Height>
+          <Width>18cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+        <BackgroundColor>Silver</BackgroundColor>
+      </Style>
+    </PageHeader>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Shoppingcart_32x3232">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>R0lGODlhIAAgAHcAACH5BAEAAPwALAAAAAAgACAAhygoKDAvMDU2NjgzSTA3WT41ZkE7SUM2bERFREdFVUlRU1NUVFFIYlFcYlNodFlwemdnZ2pkenN1dAB4pDhIvAds3Rd03Q9s5g9o7gBk9gBg/gB4/g989hds9i5Vzi58xih8zTBwxTh4xTBw9kE7g1E7k1FIpFtHqVlIpFlMrFlUrFFYtFl0g0FsvGJYg2FRnWJNq2RRq2pUrGpUtG5ftnJatGp4g3Z4h2JgtHpkpHJgtHdmuHpkvHxruUl8xTa3Bzq8BzCxKDyzLheFeiiZciipWTixQTDCMDjCekG7BHq1OFmVaky5WVmlenqVYmq1WWK9cmq9cnqxcknCAEnKD1HKAFnOD1nOF0nGIFHGKGLOAGrSAGrWD2LSF3LOF3LWAHreAGvNPGraIHriKGLGUXrKQXrWejidgziFvDCdvCCtmzi5mweZ3ReN1Q+F7gCl5gmx7gC59jiRxVmBk1mRg0mZrFmFrFmNvFm1k3qBi3KFk3qRi3qRm3KRpHaZtGqhg3q9g2K9vEGRxUmR1VGN3VWXyUOA9lGF5kml/lGh/mq9zXqpxXqp3Xqt5nat/nLi3YNovIV2uYNsxYNwxYtwxYt5xZN6xZN6zYOZMIOxF5OBUZOZepuxSay5QbS7SbS1aoPiD4vmD4vmF4vuIJPqKJPqMLzSIIbUeqjOWaTaUbzGQaTacrzSasWJMMWpWd3qF+7OIO7uF/bmF/7iINXaWc3KYs3Seu7CQYmKiouTk5aZmYuVpJONrJuXqIupg4u1m5uhg4O1vJulqJupvJu9pKiprKittKqytra2uJOExZSJxpOJzZuBzZuNzZyRzIupyZOxxZO53aSN1aSVzaSaz6yV1ail1ay11bSh3bSr3byw3Lyx5pPig6TKm6zeg7Tig4PG7ova5qzCzbfByaTO/qTe/qzizcW9m82xtMWpxcS248W55su848297sXGrPba
+rO7ii8XOzc3O1czI2drb2s3C5s3C7tXK7tXu/ujq7ubu9uby9v//5/b29vb6/v7+/gj/APkJHEiwoMGDCBMqXMiwoUBq0xw2XKYtWzYYOiQqjGGPmccZJzTyO3VwWjVINXTA2HHw1I8pVUgODPNFSxKCMdox67FwC5hQXIQMHCeGlChQNwU6q8aD4ZhSXYAEqceP3btMV6wAYSIwBjtmNBbOI0MlSRIv37Shu3XOyZAJFTR4aFZtEkN13laVedKkzogOGgJjEHHIjYl1zGoY1NFjmgx+jgxZyBD4AhpCd9J8guVp1rUPy6pZUnZQx7pKFDZwEHQGiplAr+AFw6TqkSdagw4nRjhJmzQdbeAQU4Nl1BpUrHZpaqWok7sWyqpd4olQRkcVb54RMZIFCapY6X6Z/+smy5rupgmVWatGKUSjKEWOhJNiipevWpxs4UhWjdljhTLck5gPgODBTSpKAFPIHq5s0ssJ2zAjCTUMOYPNJSsUQscSf8gBRxxvwMEGCJX0F0NDL9zAwAAEkJACCjDGWMIBEbiQQyQNIYBAAAIAAEAClnjEjCUM9OgjAAswBMECuRQjwTELAGCAJZdUkoAETOKCS5QGKCTAAr3Qg4wA/RQT5QEwFLAABPT8EwAy9EgAAAQJBSCBLgDc4ICOYyYpgALHBLClBALoggAACOUCgDD+GMMIIjbkk48AAvADAAL+IKNHInbo4o+cCQGQyzEIDBPNAgrEIwACliqwDy55kGDjhwLygIoQAAo8w4cwC+SjC54S8EMpNIAucMyThyYU5QPgLPIAPsb0KJCiDYBTjgDi6CNBAHQm1CMCD7CgQACIDhQlAnP40UeUlS4k55GsFgTBkT4mKZJCuNyr7776BgQAOw==</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>8112e9a4-6cfa-4682-8f5c-7863f292b313</rd:ReportID>
+</Report>

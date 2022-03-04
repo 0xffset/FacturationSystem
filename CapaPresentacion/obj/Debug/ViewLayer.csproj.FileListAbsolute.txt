@@ -91,7 +91,6 @@ C:\Users\rogge\Downloads\Sistema Rogger Garcia Diaz #9\sistemaROLEY\CapaPresenta
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\ViewLayer.csproj.AssemblyReference.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\Interop.IASCoreLib.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\ViewLayer.csproj.ResolveComReference.cache
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturacion.resources
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmIndicaProducto.resources
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
@@ -122,3 +121,12 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresen
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmManagement.resources
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsultSales.resources
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmSearchProduct.resources
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.compiled
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturation.resources

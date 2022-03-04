@@ -445,6 +445,7 @@
             this.txtbrandp.Name = "txtbrandp";
             this.txtbrandp.Size = new System.Drawing.Size(260, 22);
             this.txtbrandp.TabIndex = 54;
+            this.txtbrandp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbrandp_KeyPress);
             // 
             // txtnamep
             // 
@@ -452,6 +453,7 @@
             this.txtnamep.Name = "txtnamep";
             this.txtnamep.Size = new System.Drawing.Size(564, 22);
             this.txtnamep.TabIndex = 53;
+            this.txtnamep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnamep_KeyPress);
             // 
             // txtidp
             // 
@@ -699,6 +701,7 @@
             this.txtnamebussinesnames.Name = "txtnamebussinesnames";
             this.txtnamebussinesnames.Size = new System.Drawing.Size(319, 22);
             this.txtnamebussinesnames.TabIndex = 84;
+            this.txtnamebussinesnames.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnamebussinesnames_KeyPress);
             // 
             // txtids
             // 
@@ -902,6 +905,7 @@
             this.txtabbrepresent.Size = new System.Drawing.Size(260, 22);
             this.txtabbrepresent.TabIndex = 92;
             this.txtabbrepresent.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.txtabbrepresent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtabbrepresent_KeyPress);
             // 
             // txtdescriptionpresent
             // 
@@ -910,6 +914,7 @@
             this.txtdescriptionpresent.Size = new System.Drawing.Size(319, 22);
             this.txtdescriptionpresent.TabIndex = 91;
             this.txtdescriptionpresent.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtdescriptionpresent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdescriptionpresent_KeyPress);
             // 
             // txtidpresent
             // 
@@ -1080,6 +1085,7 @@
             this.txtdescriptioncategories.Name = "txtdescriptioncategories";
             this.txtdescriptioncategories.Size = new System.Drawing.Size(260, 22);
             this.txtdescriptioncategories.TabIndex = 119;
+            this.txtdescriptioncategories.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdescriptioncategories_KeyPress);
             // 
             // txtnamecategories
             // 
@@ -1087,6 +1093,7 @@
             this.txtnamecategories.Name = "txtnamecategories";
             this.txtnamecategories.Size = new System.Drawing.Size(319, 22);
             this.txtnamecategories.TabIndex = 118;
+            this.txtnamecategories.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnamecategories_KeyPress);
             // 
             // txtidcategories
             // 
@@ -1143,7 +1150,7 @@
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // frmMantenimiento
+            // frmManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1153,7 +1160,7 @@
             this.Controls.Add(this.tbcPrincipal);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "frmMantenimiento";
+            this.Name = "frmManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Products | Suppliers | Prod. Presentation | Categories :.";
             this.Load += new System.EventHandler(this.frmMantenimiento_Load);

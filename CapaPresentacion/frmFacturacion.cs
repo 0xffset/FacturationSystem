@@ -12,7 +12,7 @@ using Entidades;
 
 namespace CapaPresentacion
 {
-    public partial class frmFacturacion : Form
+    public partial class frmFacturation : Form
     {
         entUser usu = null;
         int iduser = 0;
@@ -20,7 +20,7 @@ namespace CapaPresentacion
         AccEnControles ac = new AccEnControles();
         entSerie serie = new entSerie();
 
-        public frmFacturacion(int id_user)
+        public frmFacturation(int id_user)
         {
             InitializeComponent();
             this.iduser = id_user;
@@ -32,57 +32,57 @@ namespace CapaPresentacion
             {
                 btnNuevo.Enabled = nuevo;
                 btnGuardar.Enabled = guardar;
-                btnQuitar.Enabled = quitaritems;
+                btnRemove.Enabled = quitaritems;
             }
             catch (Exception) {throw;}
         }
 
-        private void creargrid()
+        private void BuildProductToSaleGrid()
         {
             try
             {
-                dgvFactura.Columns.Add("ColumnIdProd", "Idprod");
-                dgvFactura.Columns.Add("ColumnNombreProd", "Producto");
-                dgvFactura.Columns.Add("ColumnCantidad", "Cantidad");
-                dgvFactura.Columns.Add("ColumnPrecio", "Precio");
-                dgvFactura.Columns.Add("ColumnTotal", "Total");
+                dgvInvoice.Columns.Add("ColumnIdProd", "Idprod");
+                dgvInvoice.Columns.Add("ColumnNombreProd", "Product");
+                dgvInvoice.Columns.Add("ColumnCantidad", "Amount");
+                dgvInvoice.Columns.Add("ColumnPrecio", "Price $");
+                dgvInvoice.Columns.Add("ColumnTotal", "Total");
 
-                dgvFactura.Columns[0].Visible = false;
-                dgvFactura.Columns[1].Width = 315;
-                dgvFactura.Columns[2].Width = 70;
-                dgvFactura.Columns[3].Width = 70;
-                dgvFactura.Columns[4].Width = 100;
+                dgvInvoice.Columns[0].Visible = false;
+                dgvInvoice.Columns[1].Width = 315;
+                dgvInvoice.Columns[2].Width = 70;
+                dgvInvoice.Columns[3].Width = 70;
+                dgvInvoice.Columns[4].Width = 100;
              
 
-                dgvFactura.Columns[1].ReadOnly = true;
-                 dgvFactura.Columns[2].ReadOnly = false;
-                 dgvFactura.Columns[3].ReadOnly = true;
-                 dgvFactura.Columns[4].ReadOnly = true;
+                dgvInvoice.Columns[1].ReadOnly = true;
+                 dgvInvoice.Columns[2].ReadOnly = false;
+                 dgvInvoice.Columns[3].ReadOnly = true;
+                 dgvInvoice.Columns[4].ReadOnly = true;
 
-                dgvFactura.Columns[4].DefaultCellStyle.BackColor = Color.GreenYellow;
+                dgvInvoice.Columns[4].DefaultCellStyle.BackColor = Color.GreenYellow;
 
                 DataGridViewCellStyle css = new DataGridViewCellStyle();
                 css.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                dgvFactura.ColumnHeadersDefaultCellStyle = css;
+                dgvInvoice.ColumnHeadersDefaultCellStyle = css;
 
-                dgvFactura.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10);
-                dgvFactura.DefaultCellStyle.Font = new Font("Arial", 9);
+                dgvInvoice.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10);
+                dgvInvoice.DefaultCellStyle.Font = new Font("Arial", 9);
 
-                dgvFactura.AllowUserToAddRows = false;
-                dgvFactura.MultiSelect = false;
-                dgvFactura.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvInvoice.AllowUserToAddRows = false;
+                dgvInvoice.MultiSelect = false;
+                dgvInvoice.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
 
             }
             catch (Exception) {throw;}
         }
 
-        private void contaritems()
+        private void CountNumberOfItems()
         {
             try
             {
                 int num = 0;
-                foreach (DataGridViewRow row in dgvFactura.Rows)
+                foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
                     num++;
                 }
@@ -91,11 +91,11 @@ namespace CapaPresentacion
             catch (Exception) {throw;}
         }
 
-        private void cargargrid(List<entProduct> Lista)
+        private void FillProductToSaleGrid(List<entProduct> Lista)
         {
             try 
             {
-                dgvFactura.Rows.Clear();
+                dgvInvoice.Rows.Clear();
                 for (int i = 0; i < Lista.Count; i++)
                 {
                     String[] fila = new string[] {
@@ -103,18 +103,18 @@ namespace CapaPresentacion
                         Lista[i].Precio_Prod.ToString(),
                         (Lista[i].Precio_Prod * 5).ToString()
                     };
-                    dgvFactura.Rows.Add(fila);
+                    dgvInvoice.Rows.Add(fila);
                 }
             }
             catch (Exception) {throw;}
         }
 
-        private void actualizarmontodgv()
+        private void UpdatAmountGrid()
         {
             try
             {
                 double subtotal = 0.0;
-                foreach (DataGridViewRow row in dgvFactura.Rows)
+                foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
                      if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
                      row.Cells[4].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
@@ -127,19 +127,19 @@ namespace CapaPresentacion
 
                     
                 }
-                if(dgvFactura.Rows.Count == 0) {
+                if(dgvInvoice.Rows.Count == 0) {
                     txtTotal.Text = "0";
                 }
             }
             catch (Exception) {throw;}
         }
 
-        private void escribirnuevomonto()
+        private void WriteNewAmountGrid()
         {
             try
             {
                 int idprod = 0, cantidad_ = 0;
-                foreach (DataGridViewRow row in dgvFactura.Rows)
+                foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
                     if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
                     if (row.Cells[3].Value == null) row.Cells[3].Value = 0;
@@ -154,12 +154,12 @@ namespace CapaPresentacion
             catch (Exception) {throw;}
         }
 
-        private void solonumceldagrid()
+        private void OnlyNumberOnTheCell()
         {
             try
             {
                 int i = 0; decimal j=0; String valor, valor01; Boolean res = false;
-                foreach (DataGridViewRow row in dgvFactura.Rows)
+                foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
                     if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
                     valor = row.Cells[2].Value.ToString();
@@ -239,18 +239,18 @@ namespace CapaPresentacion
         {
             try
             {
-                
-                creargrid();
-                contaritems();
+
+                BuildProductToSaleGrid();
+                CountNumberOfItems();
                 ac.LlenarCboTipDoc(this.gbCliente);
-                controbo(true, false, false); btnBuscarCe.Enabled = false;
+                controbo(true, false, false); btnSearchDNI.Enabled = false;
                 usu = IBusinessUser.Instancia.BuscarUsuario("Id", this.iduser.ToString());
                 this.iduser = usu.User_Id;
-                txtCodigou.Text = usu.User_Code;
+                txtCodoU.Text = usu.User_Code;
                 cargarseriecore();
                 btnAnular.Enabled = false;
                 int idclien = localdatabase.Instancia.returnidcliente(0, 0);
-                if (idclien != 0) { btnBuscarCe.Enabled = false; btnBuscarxId.Enabled = true; }
+                if (idclien != 0) { btnSearchDNI.Enabled = false; btnSearchById.Enabled = true; }
                 lblserie.Visible = false;
             }
             catch (Exception)
@@ -275,12 +275,12 @@ namespace CapaPresentacion
                     int idcli = localdatabase.Instancia.returnidcliente(1, 0);
                     localdatabase.Instancia.limpiardetalleventa();
                     List<entProduct> Lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
-                    cargargrid(Lista);
+                    FillProductToSaleGrid(Lista);
                     ac.limtext(this.gbCliente);
-                    contaritems();
-                    actualizarmontodgv();
+                    CountNumberOfItems();
+                    UpdatAmountGrid();
                     cargarseriecore();
-                    dgvFactura.Enabled = true;
+                    dgvInvoice.Enabled = true;
                     controbo(true, true, false);
                     ac.bloqueartxt(this.gbCliente, true);
                     ac.bloqueartxt(this.panel1, true);
@@ -322,13 +322,12 @@ namespace CapaPresentacion
             try
             {
                 entCustomer c = null;
-                String numdoc = txtCedula.Text;
+                String numdoc = txtDNI.Text;
                 c = IBusinessCustomer.Instancia.searchCustomer(0, numdoc);
-                txtNo.Text = c.Customer_Name;
-                txtDireccion.Text = c.Customer_Address;
+                txtCustomerName.Text = c.Customer_Name;
                 int cedula = 6;
                 cedula = c.tipodocumento.Id_TipDoc;
-                txtCedula.Text = c.CustomerDoc_Number.Trim();
+                txtDNI.Text = c.CustomerDoc_Number.Trim();
                 int i = localdatabase.Instancia.returnidcliente(1, c.Customer_Id);
             }
             catch (ApplicationException)
@@ -340,7 +339,7 @@ namespace CapaPresentacion
                     localdatabase.Instancia.invocar(1, 1);
                     frmCustomer buscarcliente = new frmCustomer(iduser);
                     buscarcliente.ShowDialog();
-                    btnBuscarCe.Enabled = false; btnBuscarxId.Enabled = true;
+                    btnSearchDNI.Enabled = false; btnSearchById.Enabled = true;
                 }
             }
             catch (Exception ex)
@@ -356,14 +355,13 @@ namespace CapaPresentacion
                 entCustomer c = null;
                 int idcli = localdatabase.Instancia.returnidcliente(0, 0);
                 c = IBusinessCustomer.Instancia.searchCustomer(idcli, 0.ToString());
-                btnBuscarxId.Enabled = false; btnBuscarCe.Enabled = true;
-                txtNo.Text = c.Customer_Name;
-                txtDireccion.Text = c.Customer_Address;
+                btnSearchById.Enabled = false; btnSearchDNI.Enabled = true;
+                txtCustomerName.Text = c.Customer_Name;
                 int cedula = 6;
                 cedula = c.tipodocumento.Id_TipDoc;
-                txtCedula.Text = c.CustomerDoc_Number.Trim();
+                txtDNI.Text = c.CustomerDoc_Number.Trim();
             }
-            catch (ApplicationException) { btnBuscarxId.Enabled = false; btnBuscarCe.Enabled = true; }
+            catch (ApplicationException) { btnSearchById.Enabled = false; btnSearchDNI.Enabled = true; }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
@@ -376,9 +374,9 @@ namespace CapaPresentacion
                 {
                     List<entProduct> Lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
                     intento = localdatabase.Instancia.Returnintento(1, 0);
-                    cargargrid(Lista);
-                    contaritems();
-                    actualizarmontodgv();
+                    FillProductToSaleGrid(Lista);
+                    CountNumberOfItems();
+                    UpdatAmountGrid();
                 }
                 else
                 {
@@ -396,9 +394,9 @@ namespace CapaPresentacion
             try
             {
                 controbo(true, true, true);
-                solonumceldagrid();
-                escribirnuevomonto();
-                actualizarmontodgv();
+                OnlyNumberOnTheCell();
+                WriteNewAmountGrid();
+                UpdatAmountGrid();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
@@ -411,13 +409,13 @@ namespace CapaPresentacion
                     "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r== DialogResult.Yes)
                 {
-                    int idprod = Convert.ToInt32(dgvFactura.CurrentRow.Cells[0].Value);
+                    int idprod = Convert.ToInt32(dgvInvoice.CurrentRow.Cells[0].Value);
                     localdatabase.Instancia.Quitaritemproducto(idprod);
                     List<entProduct> lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
                     if (lista.Count == 0) controbo(true, false, false);
-                    cargargrid(lista);
-                    contaritems();
-                    actualizarmontodgv();
+                    FillProductToSaleGrid(lista);
+                    CountNumberOfItems();
+                    UpdatAmountGrid();
                 }
             }
             catch (Exception ex)
@@ -431,9 +429,9 @@ namespace CapaPresentacion
         {
             try
             {
-                solonumceldagrid();
-                escribirnuevomonto();
-                actualizarmontodgv();
+                OnlyNumberOnTheCell();
+                WriteNewAmountGrid();
+                UpdatAmountGrid();
             }
             catch (Exception ex)
             {
@@ -460,9 +458,9 @@ namespace CapaPresentacion
             
         }
 
-        private void ReducirProd()
+        private void ProductReduction()
         {
-           foreach (DataGridViewRow Row in dgvFactura.Rows)
+           foreach (DataGridViewRow Row in dgvInvoice.Rows)
            {
                entProduct prod = new entProduct();
                int i = prod.Stock_Prod;
@@ -476,13 +474,13 @@ namespace CapaPresentacion
         {
             try
             {
-                DialogResult r = MessageBox.Show("¿Desea guardar la venta?",
-                    "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult r = MessageBox.Show("¿Are you sure to save the sale?",
+                    "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r==DialogResult.Yes)
                 {
-                    solonumceldagrid();
-                    escribirnuevomonto();
-                    actualizarmontodgv();
+                    OnlyNumberOnTheCell();
+                    WriteNewAmountGrid();
+                    UpdatAmountGrid();
                     entSale v = new entSale();
                     entCustomer c = new entCustomer();
                     c.Customer_Id = localdatabase.Instancia.returnidcliente(0, 0);
@@ -507,7 +505,7 @@ namespace CapaPresentacion
                     v.Igv_Venta = 0;
                     v.Descuento_Venta = 0.0;
                     List<entDetalleVenta> detalle = new List<entDetalleVenta>();
-                    foreach (DataGridViewRow row in dgvFactura.Rows)
+                    foreach (DataGridViewRow row in dgvInvoice.Rows)
                     {
                         entDetalleVenta dt = new entDetalleVenta();
                         dt.Id_Prod_Det = Convert.ToInt32(row.Cells[0].Value);
@@ -515,14 +513,14 @@ namespace CapaPresentacion
                         dt.Cantidad_Det = Convert.ToInt32(row.Cells[2].Value);
                         detalle.Add(dt);
                     }
-                    ReducirProd();
+                    ProductReduction();
                     v.detalleventa = detalle;
                     v.Desc_Venta = "";
                     cargarseriecore();
                     int resuta = IBusinessSale.Instancia.guardarventa(v, 2, serie.Numero_Serie);
-                    MessageBox.Show("Se guardo correctamente!", "Mensaje",
+                    MessageBox.Show("The sale has been saved!", "Message",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgvFactura.Enabled = false; controbo(true, false, false);
+                    dgvInvoice.Enabled = false; controbo(true, false, false);
                     btnAdd.Enabled = false; btnAnular.Enabled = true;
                     ac.bloqueartxt(this.gbCliente, false);
                     ac.bloqueartxt(this.panel1, false);
@@ -532,7 +530,7 @@ namespace CapaPresentacion
             }
             catch (ApplicationException ea)
             {
-                MessageBox.Show(ea.Message, "Aviso",
+                MessageBox.Show(ea.Message, "Warning",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)

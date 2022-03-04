@@ -246,10 +246,10 @@ namespace CapaPresentacion
         {
             try
             {
-                frmFacturacion frmFac = new frmFacturacion(u.User_Id);
+                frmFacturation frmFac = new frmFacturation(u.User_Id);
                 foreach (Form frm in Application.OpenForms)
                 {
-                    if (frm is frmFacturacion)
+                    if (frm is frmFacturation)
                     {
                         frm.Show();
                         frm.Size = MinimumSize;
@@ -401,10 +401,10 @@ namespace CapaPresentacion
         {
             try
             {
-                frmFacturacion frmFac = new frmFacturacion(u.User_Id);
+                frmFacturation frmFac = new frmFacturation(u.User_Id);
                 foreach (Form frm in Application.OpenForms)
                 {
-                    if (frm is frmFacturacion)
+                    if (frm is frmFacturation)
                     {
                         frm.Show();
                         frm.Size = MinimumSize;
