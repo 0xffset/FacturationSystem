@@ -14,7 +14,7 @@ namespace CapaPresentacion
         [STAThread]
         static void Main()
         {
-            Application.Run(new frmSalesReport());
+            Application.Run(new frmLogin());
         }
     }
 }

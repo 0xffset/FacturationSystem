@@ -1,0 +1,7 @@
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\bin\Release\Entidades.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\bin\Release\Entidades.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\bin\Release\Entidades.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Release\Entities.csproj.AssemblyReference.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Release\Entities.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Release\Entidades.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\Entidades\obj\Release\Entidades.pdb

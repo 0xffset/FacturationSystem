@@ -1,0 +1,11 @@
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Release\CapaAccesoDatos.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Release\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Release\CapaAccesoDatos.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Release\Entidades.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Release\Entidades.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Release\Entidades.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Release\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Release\DataAccessLayer.csproj.CopyComplete
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Release\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Release\CapaAccesoDatos.pdb

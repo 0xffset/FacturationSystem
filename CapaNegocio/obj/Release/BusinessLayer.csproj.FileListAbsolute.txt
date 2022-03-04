@@ -1,0 +1,14 @@
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\CapaNegocio.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\CapaNegocio.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\CapaNegocio.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\Entidades.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\CapaAccesoDatos.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\CapaAccesoDatos.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\Entidades.pdb
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Release\Entidades.dll.config
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Release\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Release\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Release\BusinessLayer.csproj.CopyComplete
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Release\CapaNegocio.dll
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Release\CapaNegocio.pdb
