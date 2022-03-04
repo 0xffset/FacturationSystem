@@ -125,8 +125,8 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerT
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.compiled
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmFacturation.resources
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmSalesReport.resources

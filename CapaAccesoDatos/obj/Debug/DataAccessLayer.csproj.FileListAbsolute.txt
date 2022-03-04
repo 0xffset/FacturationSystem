@@ -43,4 +43,3 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessL
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CopyComplete
