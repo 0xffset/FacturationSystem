@@ -11,44 +11,44 @@ using Entidades;
 using CapaNegocio;
 namespace CapaPresentacion
 {
-    public partial class frmBuscarProd : Form
+    public partial class frmSearchProduct : Form
     {
         int idusu = 0;
-        public frmBuscarProd(int? idusua)
+        public frmSearchProduct(int? idusua)
         {
             InitializeComponent();
             this.idusu = (int)idusua;
         }
 
-        private void creargrid()
+        private void BuildProductGrid()
         {
-            dgvproducto.Columns.Add("ColumnId", "Id");
-            dgvproducto.Columns.Add("ColumnNumero", "#");
-            dgvproducto.Columns.Add("ColumnCodigo", "Codigo");
-            dgvproducto.Columns.Add("ColumnNombre", "Nombre");
-            dgvproducto.Columns.Add("ColumnMarca", "Marca");
-            dgvproducto.Columns.Add("ColumnCategoria", "Categoria");
-            dgvproducto.Columns.Add("ColumnUnidMed", "Pres. Prod");
-            dgvproducto.Columns.Add("ColumnPrecio", "Precio");
-            dgvproducto.Columns.Add("ColumnFechVencimiento", "Fech. Ven");
-            dgvproducto.Columns.Add("ColumnStock", "Stock");
+            dgvproduct.Columns.Add("ColumnId", "Id");
+            dgvproduct.Columns.Add("ColumnNumber", "#");
+            dgvproduct.Columns.Add("ColumnCode", "Code");
+            dgvproduct.Columns.Add("ColumnName", "Name");
+            dgvproduct.Columns.Add("ColumnBrand", "Brand");
+            dgvproduct.Columns.Add("ColumnCategory", "Category");
+            dgvproduct.Columns.Add("ColumnProdPresent", "Prod. Present.");
+            dgvproduct.Columns.Add("ColumnPrice", "Price $");
+            dgvproduct.Columns.Add("ColumnDueDate", "Due Date");
+            dgvproduct.Columns.Add("ColumnStock", "Stock");
 
-            dgvproducto.Columns[0].Visible = false;
-            dgvproducto.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[0].Visible = false;
+            dgvproduct.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             
-            dgvproducto.Columns[8].Width = 70;
+            dgvproduct.Columns[8].Width = 70;
 
             DataGridViewCellStyle css = new DataGridViewCellStyle();
             css.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvproducto.ColumnHeadersDefaultCellStyle = css;
+            dgvproduct.ColumnHeadersDefaultCellStyle = css;
                
-            dgvproducto.AllowUserToAddRows = false;
-            dgvproducto.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvproduct.AllowUserToAddRows = false;
+            dgvproduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -56,8 +56,8 @@ namespace CapaPresentacion
              try
             {
                 tipbusqueda = 1;
-                dgvproducto.Rows.Clear();
-                BTNvender.Enabled = false;
+                dgvproduct.Rows.Clear();
+                BTNSale.Enabled = false;
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
@@ -70,8 +70,8 @@ namespace CapaPresentacion
             try
             {
                 tipbusqueda = 2;
-                dgvproducto.Rows.Clear();
-                BTNvender.Enabled = false;
+                dgvproduct.Rows.Clear();
+                BTNSale.Enabled = false;
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
@@ -85,7 +85,7 @@ namespace CapaPresentacion
             
             if (invoca == 1)
             {
-                int idprod = Convert.ToInt32(dgvproducto.CurrentRow.Cells[0].Value);
+                int idprod = Convert.ToInt32(dgvproduct.CurrentRow.Cells[0].Value);
                 localdatabase.Instancia.returnDetventa(1, idprod, 1);
             }
           
@@ -103,10 +103,10 @@ namespace CapaPresentacion
             try
             {
                 
-                BTNvender.Enabled = false;
+                BTNSale.Enabled = false;
                 int n = 0;
                 List<entProduct> lista = IBusinessManagement.Instancia.BuscarproAvanzada(tipbusqueda, "");
-                dgvproducto.Rows.Clear();
+                dgvproduct.Rows.Clear();
                 for (int i = 0; i < lista.Count; i++)
                 {
                     n++;
@@ -115,7 +115,7 @@ namespace CapaPresentacion
                                 lista[i].categoria.Nombre_Cat, lista[i].unidmedida.Descripcion_Umed, lista[i].Precio_Prod.ToString(), lista[i].FechVen_Pord.ToString(), 
                                 lista[i].Stock_Prod.ToString()
                             };
-                    dgvproducto.Rows.Add(fila);
+                    dgvproduct.Rows.Add(fila);
 
                 }
             }
@@ -128,10 +128,10 @@ namespace CapaPresentacion
         {
             try 
             {
-                creargrid();
-                rbNombre.Checked = true; tipbusqueda = 1;
-                BTNvender.Enabled = false;
-                BTNmantenimiento.Enabled = false;
+                BuildProductGrid();
+                rbName.Checked = true; tipbusqueda = 1;
+                BTNSale.Enabled = false;
+                BTNEditProduct.Enabled = false;
             }
             catch (ApplicationException es)
             {
@@ -149,10 +149,10 @@ namespace CapaPresentacion
             {
                 if (e.KeyCode != Keys.Back)
                 {
-                    String valentrada = txtBuscarProd.Text;
+                    String valentrada = txtSearchProduct.Text;
                     int n = 0;
                     List<entProduct> lista = IBusinessManagement.Instancia.BuscarproAvanzada(tipbusqueda, valentrada);
-                    dgvproducto.Rows.Clear();
+                    dgvproduct.Rows.Clear();
                     for (int i = 0; i < lista.Count; i++)
                     {
                         n++;
@@ -161,7 +161,7 @@ namespace CapaPresentacion
                                 lista[i].categoria.Nombre_Cat, lista[i].unidmedida.Descripcion_Umed, lista[i].Precio_Prod.ToString(), lista[i].FechVen_Pord.ToString(),
                                 lista[i].Stock_Prod.ToString()
                             };
-                        dgvproducto.Rows.Add(fila);
+                        dgvproduct.Rows.Add(fila);
                     }
                       
 
@@ -178,8 +178,8 @@ namespace CapaPresentacion
             try
             {
                 tipbusqueda = 3;
-                dgvproducto.Rows.Clear();
-                BTNvender.Enabled = false;
+                dgvproduct.Rows.Clear();
+                BTNSale.Enabled = false;
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
@@ -189,15 +189,15 @@ namespace CapaPresentacion
 
         private void dgvproducto_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            BTNvender.Enabled = true;
-            BTNmantenimiento.Enabled = true;
+            BTNSale.Enabled = true;
+            BTNEditProduct.Enabled = true;
         }
 
         private void BTNmantenimiento_Click(object sender, EventArgs e)
         {
             try
             {
-                int idprod = Convert.ToInt32(dgvproducto.CurrentRow.Cells[0].Value);
+                int idprod = Convert.ToInt32(dgvproduct.CurrentRow.Cells[0].Value);
                 localdatabase.Instancia.returnidprod(1, idprod);
                 this.Dispose();
                 

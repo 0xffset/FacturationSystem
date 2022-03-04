@@ -82,7 +82,7 @@
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -176,8 +176,8 @@
             this.MSIventa.Image = global::CapaPresentacion.Properties.Resources.Buying_24px;
             this.MSIventa.Name = "MSIventa";
             this.MSIventa.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.MSIventa.Size = new System.Drawing.Size(200, 26);
-            this.MSIventa.Text = "&Venta";
+            this.MSIventa.Size = new System.Drawing.Size(240, 26);
+            this.MSIventa.Text = "&Make Sale";
             this.MSIventa.Click += new System.EventHandler(this.MSIventa_Click);
             // 
             // MSIQueries

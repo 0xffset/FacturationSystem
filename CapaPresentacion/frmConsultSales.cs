@@ -12,9 +12,9 @@ using Entidades;
 
 namespace CapaPresentacion
 {
-    public partial class frmConsultarVentas : Form
+    public partial class frmConsultSales : Form
     {
-        public frmConsultarVentas()
+        public frmConsultSales()
         {
             InitializeComponent();
         }
@@ -22,37 +22,37 @@ namespace CapaPresentacion
         {
             try 
             {
-                dgvHisVentas.Columns.Add("ColumnId", "Id");
-                dgvHisVentas.Columns.Add("ColumnCodigo", "Codigo");
-                dgvHisVentas.Columns.Add("ColumnEsrado", "Estado Vent.");
-                dgvHisVentas.Columns.Add("ColumnComprobante", "Comprobante");
-                dgvHisVentas.Columns.Add("ColumnCorrelativo", "Numero");
-                dgvHisVentas.Columns.Add("ColumnFecha", "Fecha");
-                dgvHisVentas.Columns.Add("ColumnHora", "Hora");
-                dgvHisVentas.Columns.Add("ColumnIgv", "Igv");
-                dgvHisVentas.Columns.Add("ColumnTotal", "Total");
-                dgvHisVentas.Columns.Add("ColumnUtilidades", "Utilidades");
+                dgvSaleHistory.Columns.Add("ColumnId", "Id");
+                dgvSaleHistory.Columns.Add("ColumnCodigo", "Code");
+                dgvSaleHistory.Columns.Add("ColumnEsrado", "Sale State");
+                dgvSaleHistory.Columns.Add("ColumnComprobante", "Comprobante");
+                dgvSaleHistory.Columns.Add("ColumnCorrelativo", "Number");
+                dgvSaleHistory.Columns.Add("ColumnFecha", "Date");
+                dgvSaleHistory.Columns.Add("ColumnHora", "Hour");
+                dgvSaleHistory.Columns.Add("ColumnIgv", "IGV");
+                dgvSaleHistory.Columns.Add("ColumnTotal", "Total");
+                dgvSaleHistory.Columns.Add("ColumnUtilidades", "Utitlities");
 
-                dgvHisVentas.Columns[0].Visible = false;
-                dgvHisVentas.Columns[2].Width = 60;
-                dgvHisVentas.Columns[3].Visible = false;
+                dgvSaleHistory.Columns[0].Visible = false;
+                dgvSaleHistory.Columns[2].Width = 60;
+                dgvSaleHistory.Columns[3].Visible = false;
 
-                dgvHisVentas.Columns[5].Width = 60;
-                dgvHisVentas.Columns[6].Width = 58;
-                dgvHisVentas.Columns[7].Visible = false;
-                dgvHisVentas.Columns[8].Width = 70;
-                dgvHisVentas.Columns[9].Width = 70;
-                dgvHisVentas.Columns[9].DefaultCellStyle.BackColor = Color.Lavender;
-                dgvHisVentas.Columns[9].Visible = false;
+                dgvSaleHistory.Columns[5].Width = 100;
+                dgvSaleHistory.Columns[6].Width = 150;
+                dgvSaleHistory.Columns[7].Visible = false;
+                dgvSaleHistory.Columns[8].Width = 150;
+                dgvSaleHistory.Columns[9].Width = 150;
+                dgvSaleHistory.Columns[9].DefaultCellStyle.BackColor = Color.Lavender;
+                dgvSaleHistory.Columns[9].Visible = false;
 
                 DataGridViewCellStyle css = new DataGridViewCellStyle();
                 css.Alignment = DataGridViewContentAlignment.TopCenter;
-                dgvHisVentas.ColumnHeadersDefaultCellStyle = css;
-                dgvHisVentas.AllowUserToAddRows = false;
-                dgvHisVentas.AllowUserToResizeColumns = false;
-                dgvHisVentas.AllowUserToResizeRows = false;
-                dgvHisVentas.ReadOnly = false;
-                dgvHisVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvSaleHistory.ColumnHeadersDefaultCellStyle = css;
+                dgvSaleHistory.AllowUserToAddRows = false;
+                dgvSaleHistory.AllowUserToResizeColumns = false;
+                dgvSaleHistory.AllowUserToResizeRows = false;
+                dgvSaleHistory.ReadOnly = false;
+                dgvSaleHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             }
             catch (Exception) { throw; }
@@ -62,18 +62,18 @@ namespace CapaPresentacion
         {
             try
             {
-                dgvHisVentas.Rows.Clear();
+                dgvSaleHistory.Rows.Clear();
                 int idsucursal = 1;
-                List<entSale> Lista = IBusinessSale.Instancia.listarventa(dtpInicio.Value.ToString("yyyy/MM/dd"), dtpFinal.Value.ToString("yyyy/MM/dd"), idsucursal);
+                List<entSale> Lista = IBusinessSale.Instancia.listarventa(dtpStart.Value.ToString("yyyy/MM/dd"), dtpEnd.Value.ToString("yyyy/MM/dd"), idsucursal);
                 for (int i = 0; i<Lista.Count; i++)
                 {
                     String[] fila = new String[] {
                         Lista[i].Id_Venta.ToString(), Lista[i].Codigo_Venta, Lista[i].Estado_Venta, Lista[i].tipocomprobante.Nombre_TipCom,
                         Lista[i].Correlativo_Venta, Lista[i].FechaVenta.ToString("dd-MM-yy"), Lista[i].FechaVenta.ToString("HH:mm:ss"), Lista[i].Igv_Venta.ToString(), (Lista[i].Total - Lista[i].Descuento_Venta).ToString("0.00"), (Lista[i].Utilidad).ToString("0.00")
                     };
-                    dgvHisVentas.Rows.Add(fila);
-                    dgvHisVentas.Rows[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopCenter;
-                    if (Lista[i].Estado_Venta == 'A'.ToString()) dgvHisVentas.Rows[i].DefaultCellStyle.BackColor = Color.LightCoral;
+                    dgvSaleHistory.Rows.Add(fila);
+                    dgvSaleHistory.Rows[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopCenter;
+                    if (Lista[i].Estado_Venta == 'A'.ToString()) dgvSaleHistory.Rows[i].DefaultCellStyle.BackColor = Color.LightCoral;
                     Lista[i].tipocomprobante.Id_TipCom = 2;
                     Lista[i].tipopago.Id_TipPago = 1;
                     Lista[i].Utilidad = Lista[i].Total;
@@ -89,9 +89,9 @@ namespace CapaPresentacion
             try
             {
                 creargrid();
-                btnDetVenta.Enabled = false;
-                btnAnularVenta.Enabled = false;
-                dtpFinal.MaxDate = DateTime.Now;
+                btnSaleDetails.Enabled = false;
+                btnCancelSale.Enabled = false;
+                dtpEnd.MaxDate = DateTime.Now;
             }
             catch (ApplicationException ea)
             {
@@ -109,8 +109,8 @@ namespace CapaPresentacion
         {
             try
             {
-                int idven = Convert.ToInt32(dgvHisVentas.CurrentRow.Cells[0].Value);
-                frmDetalleV db =  new frmDetalleV(idven);
+                int idven = Convert.ToInt32(dgvSaleHistory.CurrentRow.Cells[0].Value);
+                frmSaleDetails db =  new frmSaleDetails(idven);
                 db.ShowDialog();
             }
             catch (Exception)
@@ -142,7 +142,7 @@ namespace CapaPresentacion
         {
             try
             {
-                int idventa = Convert.ToInt32(dgvHisVentas.CurrentRow.Cells[0].Value);
+                int idventa = Convert.ToInt32(dgvSaleHistory.CurrentRow.Cells[0].Value);
                 DialogResult resu = MessageBox.Show("¿Desean anular esta venta?", "Mensaje",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (resu==DialogResult.Yes)
@@ -166,8 +166,8 @@ namespace CapaPresentacion
 
         private void dgvHisVentas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnDetVenta.Enabled = true;
-            btnAnularVenta.Enabled = true;
+            btnSaleDetails.Enabled = true;
+            btnCancelSale.Enabled = true;
         }
 
         private void dgvHisVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -53,14 +53,14 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(-4, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(406, 30);
             this.label1.TabIndex = 2;
-            this.label1.Text = "UPDATE CUSTOMER";
+            this.label1.Text = ".: UPDATE CUSTOMER :.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Cédula
@@ -69,9 +69,9 @@
             this.Cédula.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
             this.Cédula.Location = new System.Drawing.Point(14, 61);
             this.Cédula.Name = "Cédula";
-            this.Cédula.Size = new System.Drawing.Size(100, 22);
+            this.Cédula.Size = new System.Drawing.Size(50, 22);
             this.Cédula.TabIndex = 3;
-            this.Cédula.Text = "No. Doc.:";
+            this.Cédula.Text = "DNI:";
             this.Cédula.Click += new System.EventHandler(this.Cédula_Click);
             // 
             // label2
@@ -271,7 +271,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(404, 455);
+            this.ClientSize = new System.Drawing.Size(404, 440);
             this.Controls.Add(this.txtidCustomer);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtCellphone);

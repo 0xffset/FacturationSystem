@@ -63,7 +63,7 @@
             this.TXTcodusuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.CBObuscar = new System.Windows.Forms.ComboBox();
             this.TXTSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,14 +75,14 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-7, 9);
+            this.label1.Location = new System.Drawing.Point(-7, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1330, 30);
+            this.label1.Size = new System.Drawing.Size(1330, 38);
             this.label1.TabIndex = 1;
-            this.label1.Text = "USERS";
+            this.label1.Text = ".: USERS :.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -103,85 +103,67 @@
             // 
             // BTNnuevo
             // 
-            this.BTNnuevo.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNnuevo.Image = global::CapaPresentacion.Properties.Resources.New_24px;
-            this.BTNnuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNnuevo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNnuevo.Location = new System.Drawing.Point(1144, 207);
             this.BTNnuevo.Name = "BTNnuevo";
             this.BTNnuevo.Size = new System.Drawing.Size(123, 45);
             this.BTNnuevo.TabIndex = 11;
             this.BTNnuevo.Text = "New";
-            this.BTNnuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNnuevo.UseVisualStyleBackColor = true;
             this.BTNnuevo.Click += new System.EventHandler(this.BTNnuevo_Click);
             // 
             // BTNsalir
             // 
-            this.BTNsalir.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNsalir.Image = global::CapaPresentacion.Properties.Resources.Exit_24px;
-            this.BTNsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNsalir.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNsalir.Location = new System.Drawing.Point(1144, 468);
             this.BTNsalir.Name = "BTNsalir";
             this.BTNsalir.Size = new System.Drawing.Size(123, 45);
             this.BTNsalir.TabIndex = 10;
             this.BTNsalir.Text = "Exit";
-            this.BTNsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNsalir.UseVisualStyleBackColor = true;
             this.BTNsalir.Click += new System.EventHandler(this.BTNsalir_Click);
             // 
             // BTNcancelar
             // 
-            this.BTNcancelar.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNcancelar.Image = global::CapaPresentacion.Properties.Resources.Cancel_24px;
-            this.BTNcancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNcancelar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNcancelar.Location = new System.Drawing.Point(1144, 414);
             this.BTNcancelar.Name = "BTNcancelar";
             this.BTNcancelar.Size = new System.Drawing.Size(123, 45);
             this.BTNcancelar.TabIndex = 9;
             this.BTNcancelar.Text = "Cancel";
-            this.BTNcancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNcancelar.UseVisualStyleBackColor = true;
             this.BTNcancelar.Click += new System.EventHandler(this.BTNcancelar_Click);
             // 
             // BTneliminar
             // 
-            this.BTneliminar.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTneliminar.Image = global::CapaPresentacion.Properties.Resources.Delete_24px;
-            this.BTneliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTneliminar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTneliminar.Location = new System.Drawing.Point(1144, 363);
             this.BTneliminar.Name = "BTneliminar";
             this.BTneliminar.Size = new System.Drawing.Size(123, 45);
             this.BTneliminar.TabIndex = 8;
             this.BTneliminar.Text = "Delete";
-            this.BTneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTneliminar.UseVisualStyleBackColor = true;
             this.BTneliminar.Click += new System.EventHandler(this.BTneliminar_Click);
             // 
             // BTNgrabar
             // 
-            this.BTNgrabar.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNgrabar.Image = global::CapaPresentacion.Properties.Resources.Ok_24px;
-            this.BTNgrabar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNgrabar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNgrabar.Location = new System.Drawing.Point(1144, 312);
             this.BTNgrabar.Name = "BTNgrabar";
             this.BTNgrabar.Size = new System.Drawing.Size(123, 45);
             this.BTNgrabar.TabIndex = 7;
             this.BTNgrabar.Text = "Save";
-            this.BTNgrabar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNgrabar.UseVisualStyleBackColor = true;
             this.BTNgrabar.Click += new System.EventHandler(this.BTNgrabar_Click);
             // 
             // BTNeditar
             // 
-            this.BTNeditar.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNeditar.Image = global::CapaPresentacion.Properties.Resources.Modify_24px;
-            this.BTNeditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNeditar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNeditar.Location = new System.Drawing.Point(1144, 258);
             this.BTNeditar.Name = "BTNeditar";
             this.BTNeditar.Size = new System.Drawing.Size(123, 45);
             this.BTNeditar.TabIndex = 6;
             this.BTNeditar.Text = "Edit";
-            this.BTNeditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNeditar.UseVisualStyleBackColor = true;
             this.BTNeditar.Click += new System.EventHandler(this.BTNeditar_Click);
             // 
@@ -342,7 +324,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 22);
             this.label10.TabIndex = 15;
-            this.label10.Text = "State: ";
+            this.label10.Text = "Status:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // TXTcorreo
@@ -467,7 +449,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.CBObuscar);
             this.groupBox1.Controls.Add(this.TXTSearch);
             this.groupBox1.Controls.Add(this.label2);
@@ -479,15 +461,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search";
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Image = global::CapaPresentacion.Properties.Resources.Search_24px;
-            this.button1.Location = new System.Drawing.Point(647, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 35);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSearch.Location = new System.Drawing.Point(647, 27);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(104, 35);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.button1_Click);
             // 
             // CBObuscar
             // 
@@ -524,6 +506,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1338, 659);
             this.Name = "frmUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: User :. ";
@@ -544,7 +529,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ComboBox CBObuscar;
         private System.Windows.Forms.TextBox TXTSearch;
         private System.Windows.Forms.Label label2;

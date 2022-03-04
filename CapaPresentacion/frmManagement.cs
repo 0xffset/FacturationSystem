@@ -13,10 +13,10 @@ using Entidades;
 
 namespace CapaPresentacion
 {
-    public partial class frmMantenimiento : Form
+    public partial class frmManagement : Form
     {
         Int32 idUsuario;
-        public frmMantenimiento(Int32? id_usu)
+        public frmManagement(Int32? id_usu)
         {
             InitializeComponent();
             idUsuario = (Int32)id_usu;
@@ -30,41 +30,41 @@ namespace CapaPresentacion
             { 
                 if (pantalla == "PRODUCTO")
                 {
-                    BTNnuevoprod.Enabled = nuevo;
-                    BTNeditarprod.Enabled = editar;
-                    BTNgrabarprod.Enabled = grabar;
-                    BTneliminarprod.Enabled = eliminar;
-                    BTNcancelarprod.Enabled = cancelar;
-                    BTNsalirprod.Enabled = salir;
+                    BTNnewp.Enabled = nuevo;
+                    BTNeditp.Enabled = editar;
+                    BTNsavep.Enabled = grabar;
+                    BTNdeletep.Enabled = eliminar;
+                    BTNcancelp.Enabled = cancelar;
+                    BTNexitp.Enabled = salir;
                 }
               
 
                 else if (pantalla == "PRESENTACION_PROD")
                 {
-                    BTNnuevopresent.Enabled = nuevo;
-                    BTNeditarpresent.Enabled = editar;
-                    BTNgrabarpresent.Enabled = grabar;
-                    BTNeliminarpresent.Enabled = eliminar;
-                    BTNcancelarpresent.Enabled = cancelar;
-                    BTNsalirpresent.Enabled = salir;
+                    BTNnewpresent.Enabled = nuevo;
+                    BTNeditpresent.Enabled = editar;
+                    BTNsavepresent.Enabled = grabar;
+                    BTNdeletepresent.Enabled = eliminar;
+                    BTNcencelpresent.Enabled = cancelar;
+                    BTNexitpresent.Enabled = salir;
                 }
                 else if (pantalla == "PROVEEDOR")
                 {
-                    BTNnuevoprove.Enabled = nuevo;
-                    BTNeditarprove.Enabled = editar;
-                    BTNgrabarprove.Enabled = grabar;
-                    BTNeliminarprove.Enabled = eliminar;
-                    BTNcancelarprove.Enabled = cancelar;
-                    BTNsalirprove.Enabled = salir;
+                    BTNnews.Enabled = nuevo;
+                    BTNedits.Enabled = editar;
+                    BTNsaves.Enabled = grabar;
+                    BTNdeletes.Enabled = eliminar;
+                    BTNcancels.Enabled = cancelar;
+                    BTNexits.Enabled = salir;
                 }
                 else
                 {
-                    BTNnuevocat.Enabled = nuevo;
-                    BTNeditarcat.Enabled = editar;
-                    BTNgrabarcat.Enabled = grabar;
-                    BTNeliminarcat.Enabled = eliminar;
-                    BTNcancelarcat.Enabled = cancelar;
-                    BTNsalircat.Enabled = salir;
+                    BTNnewcategories.Enabled = nuevo;
+                    BTNeditcategories.Enabled = editar;
+                    BTNsavecategories.Enabled = grabar;
+                    BTNdeletecategories.Enabled = eliminar;
+                    BTNcancelcategories.Enabled = cancelar;
+                    BTNexitcategories.Enabled = salir;
                 }
                 
             }
@@ -73,30 +73,30 @@ namespace CapaPresentacion
 
         private void creagrid()
         {
-            dgvproducto.Columns.Add("ColumnId", "Id");
-            dgvproducto.Columns.Add("ColumnNumero", "#");
-            dgvproducto.Columns.Add("ColumnCodigo", "Codigo");
-            dgvproducto.Columns.Add("ColumnNombre", "Nombre");
-            dgvproducto.Columns.Add("ColumnMarca", "Marca");
-            dgvproducto.Columns.Add("ColumnCategoria", "Categoria");
-            dgvproducto.Columns.Add("ColumnUnidMed", "Pres. Prod");
-            dgvproducto.Columns.Add("ColumnProveedor", "Proveedor");
+            dgvproduct.Columns.Add("ColumnId", "Id");
+            dgvproduct.Columns.Add("ColumnNumero", "#");
+            dgvproduct.Columns.Add("ColumnCodigo", "Codigo");
+            dgvproduct.Columns.Add("ColumnNombre", "Nombre");
+            dgvproduct.Columns.Add("ColumnMarca", "Marca");
+            dgvproduct.Columns.Add("ColumnCategoria", "Categoria");
+            dgvproduct.Columns.Add("ColumnUnidMed", "Pres. Prod");
+            dgvproduct.Columns.Add("ColumnProveedor", "Proveedor");
 
-            dgvproducto.Columns[0].Visible = false;
-            dgvproducto.Columns[1].Width = 30;
-            dgvproducto.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproducto.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[0].Visible = false;
+            dgvproduct.Columns[1].Width = 30;
+            dgvproduct.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvproduct.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
 
             DataGridViewCellStyle css = new DataGridViewCellStyle();
             css.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvproducto.ColumnHeadersDefaultCellStyle = css;
+            dgvproduct.ColumnHeadersDefaultCellStyle = css;
 
-            dgvproducto.AllowUserToAddRows = false;
-            dgvproducto.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvproducto.MultiSelect = false;
+            dgvproduct.AllowUserToAddRows = false;
+            dgvproduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvproduct.MultiSelect = false;
         }
 
         private void creargridcat()
@@ -124,47 +124,47 @@ namespace CapaPresentacion
 
         private void creargridpresentacion()
         {
-            dgvpresentacionprod.Columns.Add("ColumnId", "Id");
-            dgvpresentacionprod.Columns.Add("ColumnNumero", "#");
-            dgvpresentacionprod.Columns.Add("ColumnCodigo", "Codigo");
-            dgvpresentacionprod.Columns.Add("ColumnDescripcion", "Descripcion");
-            dgvpresentacionprod.Columns.Add("ColumnAbreviatura", "Abreviatura");
+            dgvpresent.Columns.Add("ColumnId", "Id");
+            dgvpresent.Columns.Add("ColumnNumero", "#");
+            dgvpresent.Columns.Add("ColumnCodigo", "Codigo");
+            dgvpresent.Columns.Add("ColumnDescripcion", "Descripcion");
+            dgvpresent.Columns.Add("ColumnAbreviatura", "Abreviatura");
 
-            dgvpresentacionprod.Columns[0].Visible = false;
-            dgvpresentacionprod.Columns[1].Width = 30;
-            dgvpresentacionprod.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvpresentacionprod.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvpresentacionprod.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvpresent.Columns[0].Visible = false;
+            dgvpresent.Columns[1].Width = 30;
+            dgvpresent.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvpresent.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvpresent.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
 
             DataGridViewCellStyle css = new DataGridViewCellStyle();
             css.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvpresentacionprod.ColumnHeadersDefaultCellStyle = css;
+            dgvpresent.ColumnHeadersDefaultCellStyle = css;
             
-            dgvpresentacionprod.AllowUserToAddRows = false;
-            dgvpresentacionprod.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvpresent.AllowUserToAddRows = false;
+            dgvpresent.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
           
         }
 
         private void creargridprovee()
         {
-            dgvproveedor.Columns.Add("ColumnId", "Id");
-            dgvproveedor.Columns.Add("ColumnNumero", "#");
-            dgvproveedor.Columns.Add("ColumnCodigo", "Codigo");
-            dgvproveedor.Columns.Add("ColumnRazSocial", "Nombre/Raz.Social");
-            dgvproveedor.Columns.Add("ColumnRuc", "RNC");
+            dgvsupplier.Columns.Add("ColumnId", "Id");
+            dgvsupplier.Columns.Add("ColumnNumero", "#");
+            dgvsupplier.Columns.Add("ColumnCodigo", "Codigo");
+            dgvsupplier.Columns.Add("ColumnRazSocial", "Nombre/Raz.Social");
+            dgvsupplier.Columns.Add("ColumnRuc", "RNC");
               
-            dgvproveedor.Columns[0].Visible = false;
-            dgvproveedor.Columns[1].Width = 30;
-            dgvproveedor.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproveedor.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgvproveedor.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvsupplier.Columns[0].Visible = false;
+            dgvsupplier.Columns[1].Width = 30;
+            dgvsupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvsupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvsupplier.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
 
             DataGridViewCellStyle css = new DataGridViewCellStyle();
             css.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvproveedor.ColumnHeadersDefaultCellStyle = css;
+            dgvsupplier.ColumnHeadersDefaultCellStyle = css;
               
-            dgvproveedor.AllowUserToAddRows = false;
-            dgvproveedor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvsupplier.AllowUserToAddRows = false;
+            dgvsupplier.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
         }
 
@@ -172,17 +172,17 @@ namespace CapaPresentacion
         {
             try
             {
-                cbocategoriap.ValueMember = "Id_Cat";
-                cbocategoriap.DisplayMember = "Nombre_Cat";
-                cbocategoriap.DataSource = IBusinessManagement.Instancia.listarcategoria();
+                cbocategories.ValueMember = "Id_Cat";
+                cbocategories.DisplayMember = "Nombre_Cat";
+                cbocategories.DataSource = IBusinessManagement.Instancia.listarcategoria();
 
-                cbopresentacionprodp.ValueMember = "Id_Umed";
-                cbopresentacionprodp.DisplayMember = "Descripcion_Umed";
-                cbopresentacionprodp.DataSource = IBusinessManagement.Instancia.listarpresentacion();
+                cboprodpresent.ValueMember = "Id_Umed";
+                cboprodpresent.DisplayMember = "Descripcion_Umed";
+                cboprodpresent.DataSource = IBusinessManagement.Instancia.listarpresentacion();
 
-                cboproveedorp.ValueMember = "Id_Proveedor";
-                cboproveedorp.DisplayMember = "RazSocial_Proveedor";
-                cboproveedorp.DataSource = IBusinessManagement.Instancia.ListarProve();
+                cbosupplier.ValueMember = "Id_Proveedor";
+                cbosupplier.DisplayMember = "RazSocial_Proveedor";
+                cbosupplier.DataSource = IBusinessManagement.Instancia.ListarProve();
             }
             catch (Exception) { throw; }
         }
@@ -194,20 +194,20 @@ namespace CapaPresentacion
                 entProduct prod = null;
                 prod = IBusinessManagement.Instancia.BuscarProd(idprod);
                 txtidp.Text = prod.Id_Prod.ToString();
-                TXTcodigop.Text = prod.Codigo_Prod;
-                txtnombrep.Text = prod.Nombre_Prod;
-                txtmarcap.Text = prod.Marca_Prod;
-                txtpreciocomprap.Text = prod.PrecioCompra_Prod.ToString();
+                TXTcodep.Text = prod.Codigo_Prod;
+                txtnamep.Text = prod.Nombre_Prod;
+                txtbrandp.Text = prod.Marca_Prod;
+                txtpurchasep.Text = prod.PrecioCompra_Prod.ToString();
                 txtDescuento.Text = prod.Descuento_Prod.ToString();
-                txtprecioventap.Text = prod.Precio_Prod.ToString();
+                txtsaleprocip.Text = prod.Precio_Prod.ToString();
                 txtstockp.Text = prod.Stock_Prod.ToString();
-                txtstockpromediop.Text = prod.StockProm_Prod.ToString();
-                txtstockminimop.Text = prod.StockMin_Prod.ToString();
-                cbocategoriap.SelectedValue = prod.categoria.Id_Cat;
-                cbopresentacionprodp.SelectedValue = prod.unidmedida.Id_Umed;
-                cboproveedorp.SelectedValue = prod.proveedor.Id_Proveedor;
-                dtpFechVen.Text = Convert.ToString(prod.FechVen_Pord.ToString());
-                acc.bloqueartxt(this.tcpProducto, false);
+                txtavaragep.Text = prod.StockProm_Prod.ToString();
+                txtminstockp.Text = prod.StockMin_Prod.ToString();
+                cbocategories.SelectedValue = prod.categoria.Id_Cat;
+                cboprodpresent.SelectedValue = prod.unidmedida.Id_Umed;
+                cbosupplier.SelectedValue = prod.proveedor.Id_Proveedor;
+                dtpduedate.Text = Convert.ToString(prod.FechVen_Pord.ToString());
+                acc.bloqueartxt(this.tcpProducts, false);
                 controlb("PRODUCTO", true, true, false, true, false, true);
 
             }
@@ -237,8 +237,8 @@ namespace CapaPresentacion
         {
             try
             {
-                acc.limtext(this.tcpProducto);
-                acc.bloqueartxt(this.tcpProducto, true);
+                acc.limtext(this.tcpProducts);
+                acc.bloqueartxt(this.tcpProducts, true);
                 controlb("PRODUCTO", false, false, true, false, true, false);
 
             }
@@ -262,8 +262,8 @@ namespace CapaPresentacion
             try
             {
                 controlb("PRODUCTO", true, false, false, false, false, true);
-                acc.bloqueartxt(this.tcpProducto, false);
-                dtpFechVen.Enabled = false;
+                acc.bloqueartxt(this.tcpProducts, false);
+                dtpduedate.Enabled = false;
                
             }
 
@@ -297,7 +297,7 @@ namespace CapaPresentacion
                 }
 
                 controlb("PRODUCTO", true, false, false, false, false, true);
-                acc.bloqueartxt(this.tcpProducto, false);
+                acc.bloqueartxt(this.tcpProducts, false);
                 cargarproducto();
 
             }
@@ -317,9 +317,9 @@ namespace CapaPresentacion
         {
             try 
             {
-                if (String.IsNullOrEmpty(Convert.ToString(cbocategoriap.SelectedValue))) throw new ApplicationException("Debe seleccionar una categoria");
-                else if  (String.IsNullOrEmpty(Convert.ToString(cboproveedorp.SelectedValue))) throw new ApplicationException("Debe seleccionar un proveedor");
-                else if (String.IsNullOrEmpty(Convert.ToString(cbopresentacionprodp.SelectedValue))) throw new ApplicationException("Debe seleccionar una Presentacion Prod.");
+                if (String.IsNullOrEmpty(Convert.ToString(cbocategories.SelectedValue))) throw new ApplicationException("Debe seleccionar una categoria");
+                else if  (String.IsNullOrEmpty(Convert.ToString(cbosupplier.SelectedValue))) throw new ApplicationException("Debe seleccionar un proveedor");
+                else if (String.IsNullOrEmpty(Convert.ToString(cboprodpresent.SelectedValue))) throw new ApplicationException("Debe seleccionar una Presentacion Prod.");
 
                 entProduct prod = new entProduct();
                 int tipoedicion = 1;
@@ -328,23 +328,23 @@ namespace CapaPresentacion
                     tipoedicion = 2;
                     prod.Id_Prod = Convert.ToInt32(txtidp.Text);
                 }
-                prod.Nombre_Prod = txtnombrep.Text;
-                prod.Marca_Prod = txtmarcap.Text;
-                if (txtpreciocomprap.Text == "") prod.PrecioCompra_Prod = 0; else prod.PrecioCompra_Prod = Convert.ToDouble(txtpreciocomprap.Text);
-                if (txtprecioventap.Text == "") prod.Precio_Prod = 0; else prod.Precio_Prod = Convert.ToDouble(txtprecioventap.Text);
+                prod.Nombre_Prod = txtnamep.Text;
+                prod.Marca_Prod = txtbrandp.Text;
+                if (txtpurchasep.Text == "") prod.PrecioCompra_Prod = 0; else prod.PrecioCompra_Prod = Convert.ToDouble(txtpurchasep.Text);
+                if (txtsaleprocip.Text == "") prod.Precio_Prod = 0; else prod.Precio_Prod = Convert.ToDouble(txtsaleprocip.Text);
                 if (txtstockp.Text == "") prod.Stock_Prod = 0; else prod.Stock_Prod = Convert.ToInt32(txtstockp.Text);
-                if (txtstockpromediop.Text == "") prod.StockProm_Prod = 0; else prod.StockProm_Prod = Convert.ToInt32(txtstockpromediop.Text);
-                if (txtstockminimop.Text == "") prod.StockMin_Prod = 0; else prod.StockMin_Prod = Convert.ToInt32(txtstockminimop.Text);
-                prod.FechVen_Pord = dtpFechVen.Value.ToString("yyyy/MM/dd");
+                if (txtavaragep.Text == "") prod.StockProm_Prod = 0; else prod.StockProm_Prod = Convert.ToInt32(txtavaragep.Text);
+                if (txtminstockp.Text == "") prod.StockMin_Prod = 0; else prod.StockMin_Prod = Convert.ToInt32(txtminstockp.Text);
+                prod.FechVen_Pord = dtpduedate.Value.ToString("yyyy/MM/dd");
 
                 entCategory cat = new entCategory();
-                cat.Id_Cat = Convert.ToInt32(cbocategoriap.SelectedValue);
+                cat.Id_Cat = Convert.ToInt32(cbocategories.SelectedValue);
                 prod.categoria = cat;
                 entUnidadMedida pres = new entUnidadMedida();
-                pres.Id_Umed = Convert.ToInt32(cbopresentacionprodp.SelectedValue);
+                pres.Id_Umed = Convert.ToInt32(cboprodpresent.SelectedValue);
                 prod.unidmedida = pres;
                 entSupplier prove = new entSupplier();
-                prove.Id_Proveedor = Convert.ToInt32(cboproveedorp.SelectedValue);
+                prove.Id_Proveedor = Convert.ToInt32(cbosupplier.SelectedValue);
                 prod.proveedor = prove;
 
                 prod.UsuarioCreacion_Prod = idUsuario;
@@ -354,9 +354,9 @@ namespace CapaPresentacion
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 controlb("PRODUCTO", true, false, false, false, false, true);
-                acc.bloqueartxt(this.tcpProducto, false);
+                acc.bloqueartxt(this.tcpProducts, false);
              cargarproducto();
-             dtpFechVen.Enabled = false;
+             dtpduedate.Enabled = false;
 
             }
            catch (Exception ex ) 
@@ -370,9 +370,9 @@ namespace CapaPresentacion
             try
             {
              
-                acc.bloqueartxt(this.tcpProducto, true);
+                acc.bloqueartxt(this.tcpProducts, true);
                 controlb("PRODUCTO", false, false, true, false, true, false);
-                dtpFechVen.Enabled = true;
+                dtpduedate.Enabled = true;
 
             }
             catch (Exception ex ) 
@@ -431,7 +431,7 @@ namespace CapaPresentacion
             try
             {
                 cargargridcat();
-                BTNcargarcategoria.Visible = false;
+                BTNloadcategories.Visible = false;
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             
@@ -458,7 +458,7 @@ namespace CapaPresentacion
             try
             {
                 int n = 0;
-                dgvproducto.Rows.Clear();
+                dgvproduct.Rows.Clear();
                 List<entProduct>  Lista = IBusinessManagement.Instancia.ListarProd();
            
                 for (int i = 0; i < Lista.Count(); i++)
@@ -466,7 +466,7 @@ namespace CapaPresentacion
                     n++;
                     String[] fila = new String[] { Lista[i].Id_Prod.ToString(), n.ToString(), Lista[i].Codigo_Prod, Lista[i].Nombre_Prod, Lista[i].Marca_Prod,
                     Lista[i].categoria.Nombre_Cat, Lista[i].unidmedida.Descripcion_Umed, Lista[i].proveedor.RazSocial_Proveedor, Lista[i].FechVen_Pord.ToString()};
-                    dgvproducto.Rows.Add(fila);
+                    dgvproduct.Rows.Add(fila);
                 }
               
 
@@ -483,10 +483,10 @@ namespace CapaPresentacion
                 controlb("PRESENTACION_PROD", true, false, false, false, false, true);
                 controlb("PROVEEDOR", true, false, false, false, false, true);
 
-                acc.bloqueartxt(this.tcpProducto, false);
-                acc.bloqueartxt(this.tbcCategoria, false);
-                acc.bloqueartxt(this.tbcPresentaProducto, false);
-                acc.bloqueartxt(this.tbcproveedor, false);
+                acc.bloqueartxt(this.tcpProducts, false);
+                acc.bloqueartxt(this.tbcCategories, false);
+                acc.bloqueartxt(this.tbcProdPresentation, false);
+                acc.bloqueartxt(this.tbcSuppliers, false);
 
                 creagrid();
               creargridprovee();
@@ -494,7 +494,7 @@ namespace CapaPresentacion
                creargridcat();
               llenarcombox();
               cargarproducto();
-              dtpFechVen.Enabled = false;
+              dtpduedate.Enabled = false;
               lblvenprod.Visible = false;
                
               
@@ -510,7 +510,7 @@ namespace CapaPresentacion
             try 
             {
                 int n = 0;
-                dgvproveedor.Rows.Clear();
+                dgvsupplier.Rows.Clear();
                 List<entSupplier> p = null;
                 p = IBusinessManagement.Instancia.ListarProve();
                 for (int i = 0; i < p.Count; i++)
@@ -521,7 +521,7 @@ namespace CapaPresentacion
                          p[i].Rnc_Proveedor
                         
                     };
-                dgvproveedor.Rows.Add(fila);
+                dgvsupplier.Rows.Add(fila);
 
                 }
 
@@ -534,7 +534,7 @@ namespace CapaPresentacion
             try 
             {
                 cargargridprove();
-                BTNcargarprove.Visible = false;
+                BTNloads.Visible = false;
             }
             catch (Exception ex)
             {
@@ -547,8 +547,8 @@ namespace CapaPresentacion
         {
             try
             {
-                acc.limtext(this.tbcproveedor);
-                acc.bloqueartxt(this.tbcproveedor, true);
+                acc.limtext(this.tbcSuppliers);
+                acc.bloqueartxt(this.tbcSuppliers, true);
                 controlb("PROVEEDOR", false, false, true, false, true, false);
 
             }
@@ -563,7 +563,7 @@ namespace CapaPresentacion
             try
             {
               
-                acc.bloqueartxt(this.tbcproveedor, true);
+                acc.bloqueartxt(this.tbcSuppliers, true);
                 controlb("PROVEEDOR", false, false, true, false, true, false);
 
             }
@@ -584,21 +584,21 @@ namespace CapaPresentacion
             {
                 entSupplier prove = new entSupplier();
                 int tipoedicion = 1;
-                if (txtidprove.Text != "") { tipoedicion = 2; prove.Id_Proveedor = Convert.ToInt32(txtidprove.Text); }
-                prove.RazSocial_Proveedor = txtrazsocialprove.Text;
-                prove.Rnc_Proveedor = txtrncprove.Text;
-                prove.Direccion_Proveedor = txtdireccionprove.Text;
-                prove.Telefono_Proveedor = txttelefonoprove.Text;
-                prove.Celular_Proveedor = txtcelularprove.Text;
-                prove.Correo_Proveedor = txtcorreoprove.Text;
+                if (txtids.Text != "") { tipoedicion = 2; prove.Id_Proveedor = Convert.ToInt32(txtids.Text); }
+                prove.RazSocial_Proveedor = txtnamebussinesnames.Text;
+                prove.Rnc_Proveedor = txtrncs.Text;
+                prove.Direccion_Proveedor = txtaddresss.Text;
+                prove.Telefono_Proveedor = txtphones.Text;
+                prove.Celular_Proveedor = txtcellphones.Text;
+                prove.Correo_Proveedor = txtemails.Text;
                 int i = IBusinessManagement.Instancia.MantenimientoProvee(prove, tipoedicion);
                 MessageBox.Show("Registro Guardado Correctamente!", "Mensaje",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 controlb("PROVEEDOR", true, false, false, false, false, true);
-                     acc.bloqueartxt(this.tbcproveedor, false);
+                     acc.bloqueartxt(this.tbcSuppliers, false);
                      cargargridprove();
                      llenarcombox();
-                     BTNcargarprove.Visible = true;
+                     BTNloads.Visible = true;
 
             }
             catch (Exception ex)
@@ -612,7 +612,7 @@ namespace CapaPresentacion
             try
             {
                 entSupplier prove = new entSupplier();
-                prove.Id_Proveedor = Convert.ToInt32(txtidprove.Text);
+                prove.Id_Proveedor = Convert.ToInt32(txtids.Text);
                 DialogResult r = MessageBox.Show("¿Esta seguro de que quiere elimimar el registro?", "Mesanje",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
@@ -622,7 +622,7 @@ namespace CapaPresentacion
                         MessageBoxIcon.Information);
                 }
                 controlb("PRESENTACION_PROD", true, false, false, false, false, true);
-                acc.bloqueartxt(this.tbcPresentaProducto, false);
+                acc.bloqueartxt(this.tbcProdPresentation, false);
                 cargargridprove();
                 llenarcombox();
 
@@ -638,7 +638,7 @@ namespace CapaPresentacion
             try
             {
                 controlb("PROVEEDOR", true, true, false, true, false, true);
-                acc.bloqueartxt(this.tbcproveedor, false);
+                acc.bloqueartxt(this.tbcSuppliers, false);
             }
             catch (Exception ex)
             {
@@ -664,19 +664,19 @@ namespace CapaPresentacion
         {
             try
             {
-                int idprove = Convert.ToInt32(dgvproveedor.CurrentRow.Cells[0].Value);
+                int idprove = Convert.ToInt32(dgvsupplier.CurrentRow.Cells[0].Value);
                 entSupplier prove = null;
                 prove = IBusinessManagement.Instancia.buscarproveedor(idprove);
-                txtidprove.Text = prove.Id_Proveedor.ToString();
-                TXTcodigopr.Text = prove.Cod_Proveedor;
-                txtrazsocialprove.Text = prove.RazSocial_Proveedor;
-                txtrncprove.Text = prove.Rnc_Proveedor;
-                txtdireccionprove.Text = prove.Direccion_Proveedor;
-                txttelefonoprove.Text = prove.Telefono_Proveedor;
-                txtcelularprove.Text = prove.Celular_Proveedor;
-                txtcorreoprove.Text = prove.Correo_Proveedor;
+                txtids.Text = prove.Id_Proveedor.ToString();
+                TXTcodes.Text = prove.Cod_Proveedor;
+                txtnamebussinesnames.Text = prove.RazSocial_Proveedor;
+                txtrncs.Text = prove.Rnc_Proveedor;
+                txtaddresss.Text = prove.Direccion_Proveedor;
+                txtphones.Text = prove.Telefono_Proveedor;
+                txtcellphones.Text = prove.Celular_Proveedor;
+                txtemails.Text = prove.Correo_Proveedor;
                 controlb("PROVEEDOR", true, true, false, true, false, true);
-                acc.bloqueartxt(this.tbcproveedor, false);
+                acc.bloqueartxt(this.tbcSuppliers, false);
             }
             catch (ApplicationException es)
             {
@@ -695,7 +695,7 @@ namespace CapaPresentacion
             try 
             {
                 int n = 0;
-                dgvpresentacionprod.Rows.Clear();
+                dgvpresent.Rows.Clear();
                 List<entUnidadMedida> pres = null;
                 pres = IBusinessManagement.Instancia.listarpresentacion();
                 for (int i = 0; i< pres.Count; i++)
@@ -703,7 +703,7 @@ namespace CapaPresentacion
                     n++;
                     String[] fila = new string[] {
                         pres[i].Id_Umed.ToString(), n.ToString(), pres[i].Codigo_Umed, pres[i].Descripcion_Umed, pres[i].Abreviatura_Umed };
-                        dgvpresentacionprod.Rows.Add(fila);
+                        dgvpresent.Rows.Add(fila);
                     
                 }
         }
@@ -718,7 +718,7 @@ namespace CapaPresentacion
             try
             {
                 cargarpresentaciones();
-                BTNcargarpresent.Visible = false;
+                BTNloadpresent.Visible = false;
             }
             catch (Exception ex)
             {
@@ -732,8 +732,8 @@ namespace CapaPresentacion
         {
             try
             {
-                acc.limtext(this.tbcPresentaProducto);
-                acc.bloqueartxt(this.tbcPresentaProducto, true);
+                acc.limtext(this.tbcProdPresentation);
+                acc.bloqueartxt(this.tbcProdPresentation, true);
                 controlb("PRESENTACION_PROD", false, false, true, false, true, false);
 
             }
@@ -749,7 +749,7 @@ namespace CapaPresentacion
             try
             {
               
-                acc.bloqueartxt(this.tbcPresentaProducto, true);
+                acc.bloqueartxt(this.tbcProdPresentation, true);
                 controlb("PRESENTACION_PROD", false, false, true, false, true, false);
 
             }
@@ -770,14 +770,14 @@ namespace CapaPresentacion
                 {
                     tipoedicion = 2;  pres.Id_Umed = Convert.ToInt32(txtidpresent.Text);
                 }
-                pres.Descripcion_Umed = txtdescripcionpresent.Text;
-                pres.Abreviatura_Umed = txtabreviaturapresent.Text;
+                pres.Descripcion_Umed = txtdescriptionpresent.Text;
+                pres.Abreviatura_Umed = txtabbrepresent.Text;
                 int i = IBusinessManagement.Instancia.MantenimientoPresentacion(pres, tipoedicion);
                 MessageBox.Show("Registro guardado correctamente","Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                acc.bloqueartxt(this.tbcPresentaProducto, false);
+                acc.bloqueartxt(this.tbcProdPresentation, false);
                 controlb("PRESENTACION_PROD", true, false, true, false, false, false);
                 llenarcombox();
-                BTNcargarpresent.Visible = true;
+                BTNloadpresent.Visible = true;
                 
             }
             catch (Exception ex)
@@ -806,7 +806,7 @@ namespace CapaPresentacion
 
                  controlb("PRESENTACION_PROD", true, false, false, false, false, true);
                 llenarcombox();
-                acc.bloqueartxt(this.tbcPresentaProducto, false);
+                acc.bloqueartxt(this.tbcProdPresentation, false);
                  cargarpresentaciones();
                    
                  
@@ -826,7 +826,7 @@ namespace CapaPresentacion
             try
             {
                 controlb("PRESENTACION_PROD", true, true, false, true, false, true);
-                acc.bloqueartxt(this.tbcPresentaProducto, false);
+                acc.bloqueartxt(this.tbcProdPresentation, false);
             }
           catch (Exception ex)
             {
@@ -848,15 +848,15 @@ namespace CapaPresentacion
         {
             try
             {
-                int idpres = Convert.ToInt32(dgvpresentacionprod.CurrentRow.Cells[0].Value);
+                int idpres = Convert.ToInt32(dgvpresent.CurrentRow.Cells[0].Value);
                 entUnidadMedida pres = null;
                 pres = IBusinessManagement.Instancia.buscarpresentacion(idpres);
                 txtidpresent.Text = pres.Id_Umed.ToString();
-                txtcodigopresent.Text = pres.Codigo_Umed;
-                txtdescripcionpresent.Text = pres.Descripcion_Umed;
-                txtabreviaturapresent.Text = pres.Abreviatura_Umed;
+                txtcodepresent.Text = pres.Codigo_Umed;
+                txtdescriptionpresent.Text = pres.Descripcion_Umed;
+                txtabbrepresent.Text = pres.Abreviatura_Umed;
                 controlb("PRESENTACION_PROD", true, true, false, true, false, true);
-                acc.bloqueartxt(this.tbcPresentaProducto, false);
+                acc.bloqueartxt(this.tbcProdPresentation, false);
             }
             catch (ApplicationException es)
             {
@@ -874,8 +874,8 @@ namespace CapaPresentacion
         {
             try
             {
-                acc.limtext(this.tbcCategoria);
-                acc.bloqueartxt(this.tbcCategoria, true);
+                acc.limtext(this.tbcCategories);
+                acc.bloqueartxt(this.tbcCategories, true);
                 controlb("CATEGORIA", false, false, true, false, true, false);
 
             }
@@ -891,7 +891,7 @@ namespace CapaPresentacion
             try
             {
 
-                acc.bloqueartxt(this.tbcCategoria, true);
+                acc.bloqueartxt(this.tbcCategories, true);
                 controlb("CATEGORIA", false, false, true, false, true, false);
 
             }
@@ -908,23 +908,23 @@ namespace CapaPresentacion
             {
                 entCategory c = new entCategory();
                 int tipoedicion = 1;
-                if (txtidcat.Text != "")
+                if (txtidcategories.Text != "")
                 {
-                    tipoedicion = 2; c.Id_Cat = Convert.ToInt32(txtidcat.Text);
+                    tipoedicion = 2; c.Id_Cat = Convert.ToInt32(txtidcategories.Text);
                 }
-                c.Nombre_Cat = txtnombrecat.Text;
-                c.Descripcion_Cat = txtdescripcion.Text;
+                c.Nombre_Cat = txtnamecategories.Text;
+                c.Descripcion_Cat = txtdescriptioncategories.Text;
                 c.UsuarioCreacion_Cat = idUsuario;
                 c.UsuarioUpdate_Cat = idUsuario;
               
                 int i = IBusinessManagement.Instancia.mantenimientocategoria(c, tipoedicion);
                 MessageBox.Show("Registro guardado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                BTNcargarpresent.Visible = true;
-                acc.bloqueartxt(this.tbcCategoria, false);
+                BTNloadpresent.Visible = true;
+                acc.bloqueartxt(this.tbcCategories, false);
                 controlb("CATEGORIA", true, false, false, false, false, true);
                 llenarcombox();
                 cargargridcat();
-                BTNcargarpresent.Visible = true;
+                BTNloadpresent.Visible = true;
 
             }
             catch (Exception ex)
@@ -939,7 +939,7 @@ namespace CapaPresentacion
             try
             {
                 entCategory c = new entCategory();
-                c.Id_Cat = Convert.ToInt32(txtidcat.Text);
+                c.Id_Cat = Convert.ToInt32(txtidcategories.Text);
                 DialogResult r = MessageBox.Show("¿Esta seguro de que quiere eliminar el registro", "Mensaje", MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
@@ -952,7 +952,7 @@ namespace CapaPresentacion
 
                 controlb("CATEGORIA", true, false, false, false, false, true);
                 llenarcombox();
-                acc.bloqueartxt(this.tbcCategoria, false);
+                acc.bloqueartxt(this.tbcCategories, false);
                 cargargridcat();
 
 
@@ -972,7 +972,7 @@ namespace CapaPresentacion
             try
             {
                 controlb("CATEGORIA", true, true, false, true, false, true);
-                acc.bloqueartxt(this.tbcCategoria, false);
+                acc.bloqueartxt(this.tbcCategories, false);
             }
             catch (Exception ex)
             {
@@ -998,12 +998,12 @@ namespace CapaPresentacion
                 int idcat = Convert.ToInt32(dgvcategoria.CurrentRow.Cells[0].Value);
                 entCategory c   = null;
                 c = IBusinessManagement.Instancia.buscarcategoria(idcat);
-                txtidcat.Text = c.Id_Cat.ToString();
-                txtcodigocat.Text = c.Codigo_Cat;
-                txtnombrecat.Text = c.Nombre_Cat;
-                txtdescripcion.Text = c.Descripcion_Cat;
+                txtidcategories.Text = c.Id_Cat.ToString();
+                txtcodecategories.Text = c.Codigo_Cat;
+                txtnamecategories.Text = c.Nombre_Cat;
+                txtdescriptioncategories.Text = c.Descripcion_Cat;
                 controlb("CATEGORIA", true, true, false, true, false, true);
-                acc.bloqueartxt(this.tbcCategoria, false);
+                acc.bloqueartxt(this.tbcCategories, false);
             }
             catch (ApplicationException es)
             {
@@ -1026,10 +1026,10 @@ namespace CapaPresentacion
         {
             try
             {
-                int idprod = Convert.ToInt32(dgvproducto.CurrentRow.Cells[0].Value);
+                int idprod = Convert.ToInt32(dgvproduct.CurrentRow.Cells[0].Value);
                 mostrarfilaselect(idprod);
                 
-                if (dtpFechVen.Value < DateTime.Today )
+                if (dtpduedate.Value < DateTime.Today )
                 {
                     lblvenprod.Visible = true;
                     lbldisplayven.BackColor = Color.Red;
@@ -1053,14 +1053,14 @@ namespace CapaPresentacion
         {
             try 
             {
-                frmBuscarProd frmB = new frmBuscarProd(this.idUsuario);
+                frmSearchProduct frmB = new frmSearchProduct(this.idUsuario);
                 frmB.ShowDialog();
                 int dop = localdatabase.Instancia.returnidprod(0, 0);
-                for (int i = 0; i < dgvproducto.RowCount; i++)
+                for (int i = 0; i < dgvproduct.RowCount; i++)
                 {
-                    if (Convert.ToInt32(dgvproducto.Rows[1].Cells[0].Value) == dop)
+                    if (Convert.ToInt32(dgvproduct.Rows[1].Cells[0].Value) == dop)
                     {
-                        dgvproducto.Rows[i].Selected = true;
+                        dgvproduct.Rows[i].Selected = true;
                         mostrarfilaselect(dop);
                         localdatabase.Instancia.returnidprod(1, 0);
                         return;
@@ -1076,6 +1076,11 @@ namespace CapaPresentacion
         }
 
         private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

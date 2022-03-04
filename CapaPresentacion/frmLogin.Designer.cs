@@ -43,12 +43,12 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-7, 9);
+            this.label1.Location = new System.Drawing.Point(-7, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(500, 30);
+            this.label1.Size = new System.Drawing.Size(500, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "WELCOME TO THE FACTURATION SYSTEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +108,6 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExit.Image = global::CapaPresentacion.Properties.Resources.Exit_16px;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.Location = new System.Drawing.Point(335, 176);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -116,14 +115,12 @@
             this.btnExit.Size = new System.Drawing.Size(131, 47);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEnter
             // 
             this.btnEnter.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnEnter.Image = global::CapaPresentacion.Properties.Resources.Accept_16px;
             this.btnEnter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnter.Location = new System.Drawing.Point(204, 176);
             this.btnEnter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -131,7 +128,6 @@
             this.btnEnter.Size = new System.Drawing.Size(125, 47);
             this.btnEnter.TabIndex = 4;
             this.btnEnter.Text = "Enter";
-            this.btnEnter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -150,7 +146,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(484, 262);
+            this.ClientSize = new System.Drawing.Size(484, 243);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.txtPassword);
@@ -163,6 +159,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Location = new System.Drawing.Point(0, 10);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 282);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Facturation System :.";

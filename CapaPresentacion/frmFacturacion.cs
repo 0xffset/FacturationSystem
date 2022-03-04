@@ -383,7 +383,7 @@ namespace CapaPresentacion
                 else
                 {
                     localdatabase.Instancia.invocar(1, 1);
-                    frmBuscarProd buscarprod = new frmBuscarProd(iduser);
+                    frmSearchProduct buscarprod = new frmSearchProduct(iduser);
                     buscarprod.ShowDialog();
                 }
                

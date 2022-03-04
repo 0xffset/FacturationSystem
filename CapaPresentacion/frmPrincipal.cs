@@ -142,11 +142,11 @@ namespace CapaPresentacion
         {
             try
             {
-                frmMantenimiento frmmante = new frmMantenimiento(u.User_Id);
+                frmManagement frmmante = new frmManagement(u.User_Id);
                 //frmmante.MdiParent = this;
                 foreach (Form frm in Application.OpenForms)
                 {
-                    if (frm is frmMantenimiento)
+                    if (frm is frmManagement)
                     {
                         frm.Show();
                         frm.Size = MinimumSize;
@@ -266,10 +266,10 @@ namespace CapaPresentacion
         {
             try 
             {
-                frmConsultarVentas frmVenta = new frmConsultarVentas();
+                frmConsultSales frmVenta = new frmConsultSales();
                 foreach (Form frm in Application.OpenForms)
                 {
-                    if (frm is frmConsultarVentas)
+                    if (frm is frmConsultSales)
                     {
                         frm.Show();
                         frm.Size = MinimumSize;
@@ -308,7 +308,7 @@ namespace CapaPresentacion
         private void reporteGenerarDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = null;
-            SqlConnection cn = new SqlConnection("Data Source=A19A74354\\rolEYder;Initial Catalog=BDsistemaROLEY;Integrated Security=True");
+            SqlConnection cn = new SqlConnection("Data Source=DESKTOP-3QR4NTR\\SQLEXPRESS;Initial Catalog=BDsistemaROLEY;Integrated Security=True");
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
             DataSet dataSet = new DataSet();
             string sqlQuery = "select Codigo_Venta, FechaVenta, Estado_Venta from Venta";
@@ -326,14 +326,12 @@ namespace CapaPresentacion
             cn.Close();
 
 
-            string pdfilename = "report.pdf";
-           
+    
             MessageBox.Show("Reporte creado", "Mensaje", MessageBoxButtons.OK);
 
 
 
 
-            SendReports.sendReports_Attachment("roleyder02@gmail.com", "zoekendallwalsh@gmail.com");
 
 
 

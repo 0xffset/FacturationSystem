@@ -19,69 +19,69 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void creargrid()
+        private void BuildProductGrid()
         {
             try
             {
-                dgvproducto.Columns.Add("ColumnId", "Id");
-                dgvproducto.Columns.Add("ColumnCodigo", "Codigo");
-                dgvproducto.Columns.Add("ColumnNombre", "Nombre");
-                dgvproducto.Columns.Add("ColumnPrecioCompra", "Precio Compra");
-                dgvproducto.Columns.Add("ColumnPrecio", "Precio Venta");
-                dgvproducto.Columns.Add("ColumnStock", "Stock");
-                dgvproducto.Columns.Add("ColumnFechVen", "Fech. Ven");
-                dgvproducto.Columns.Add("ColumnUnidMedida", "Categoria");
-                dgvproducto.Columns.Add("ColumnMateridida", "Pre. Producto");
+                dgvProduct.Columns.Add("ColumnId", "Id");
+                dgvProduct.Columns.Add("ColumnCodigo", "Code");
+                dgvProduct.Columns.Add("ColumnNombre", "Name");
+                dgvProduct.Columns.Add("ColumnPrecioCompra", "Purchase Price$");
+                dgvProduct.Columns.Add("ColumnPrecio", "Sale Price $");
+                dgvProduct.Columns.Add("ColumnStock", "Stock");
+                dgvProduct.Columns.Add("ColumnFechVen", "Due Date");
+                dgvProduct.Columns.Add("ColumnUnidMedida", "Category");
+                dgvProduct.Columns.Add("ColumnMateridida", "Prod. Present.");
       
                 DataGridViewImageColumn dgvImagen = new DataGridViewImageColumn();
-                dgvImagen.HeaderText = "Estado";
+                dgvImagen.HeaderText = "Status";
                 dgvImagen.Name = "ColumnEstado";
-                dgvproducto.Columns.Add(dgvImagen);
+                dgvProduct.Columns.Add(dgvImagen);
 
-                dgvproducto.Columns[0].Visible = false;
-                dgvproducto.Columns[2].Width = 300;
-                dgvproducto.Columns[3].Width = 88;
-                dgvproducto.Columns[4].Width = 88;
-                dgvproducto.Columns[5].Width = 88;
-                dgvproducto.Columns[6].Width = 70;
-                dgvproducto.Columns[7].Width = 100;
-                dgvproducto.Columns[8].Width = 110;
-                dgvproducto.Columns[9].Width = 120;
+                dgvProduct.Columns[0].Visible = false;
+                dgvProduct.Columns[2].Width = 300;
+                dgvProduct.Columns[3].Width = 200;
+                dgvProduct.Columns[4].Width = 200;
+                dgvProduct.Columns[5].Width = 70;
+                dgvProduct.Columns[6].Width = 200;
+                dgvProduct.Columns[7].Width = 100;
+                dgvProduct.Columns[8].Width = 50;
+                dgvProduct.Columns[9].Width = 120;
               
                 DataGridViewCellStyle css = new DataGridViewCellStyle();
                 css.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                dgvproducto.ColumnHeadersDefaultCellStyle = css;
+                dgvProduct.ColumnHeadersDefaultCellStyle = css;
 
-                dgvproducto.AllowUserToAddRows = false;
-                dgvproducto.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-                dgvproducto.AllowUserToResizeColumns = false;
+                dgvProduct.AllowUserToAddRows = false;
+                dgvProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvProduct.AllowUserToResizeColumns = false;
 
             }
             catch (Exception) { throw; }
         }
 
-        private void llenarcomox()
+        private void FillComboBox()
         {
             try
             {
-                cboCategoriap.ValueMember = "Id_Cat";
-                cboCategoriap.DisplayMember = "Nombre_Cat";
-                cboCategoriap.DataSource = IBusinessManagement.Instancia.listarcategoria();
+                cboCategory.ValueMember = "Id_Cat";
+                cboCategory.DisplayMember = "Nombre_Cat";
+                cboCategory.DataSource = IBusinessManagement.Instancia.listarcategoria();
                 rbStock.Checked = true;
             }
             catch (Exception) { throw; }
         }
-        private void llenargrid(String name)
+        private void FillProductGrid(String name)
         {
             try
             {
                 int cat = 0;
                 if (name == null)
                 {
-                    if (cboCategoriap.SelectedValue == null) throw new ApplicationException("Debe seleccionar una categoria");
+                    if (cboCategory.SelectedValue == null) throw new ApplicationException("You must to select a category");
                 }
-                if (!String.IsNullOrEmpty(Convert.ToString(cboCategoriap.SelectedValue))) cat = (int)cboCategoriap.SelectedValue;
-                dgvproducto.Rows.Clear();
+                if (!String.IsNullOrEmpty(Convert.ToString(cboCategory.SelectedValue))) cat = (int)cboCategory.SelectedValue;
+                dgvProduct.Rows.Clear();
                 int rango = 0; Image img = null;
                 if (rbStock.Checked == true) rango = 3;
                 else if (rbStockPro.Checked == true) rango = 2;
@@ -90,7 +90,7 @@ namespace CapaPresentacion
                 List<entProduct> Lista = null;
                 if (name ==null) 
                 {
-                    Lista = IBusinessManagement.Instancia.ListarProdIndicador(txtCodigop.Text,(int)cat, rango); }
+                    Lista = IBusinessManagement.Instancia.ListarProdIndicador(txtCodeProduct.Text,(int)cat, rango); }
                     else { Lista = IBusinessManagement.Instancia.BuscarprodAvanzadaIndicador(name);}
                     for (int i =0; i <Lista.Count; i++)
                     {
@@ -121,8 +121,8 @@ namespace CapaPresentacion
                         String[] fila = new String[] {
                             Lista[i].Id_Prod.ToString(), Lista[i].Codigo_Prod, Lista[i].Nombre_Prod, Lista[i].PrecioCompra_Prod.ToString(), Lista[i].Precio_Prod.ToString(),
                             Lista[i].Stock_Prod.ToString(),Lista[i].FechVen_Pord.ToString(), Lista[i].categoria.Nombre_Cat, Lista[i].unidmedida.Abreviatura_Umed };
-                            dgvproducto.Rows.Add(fila);
-                            dgvproducto.Rows[i].Cells[9].Value = img;
+                            dgvProduct.Rows.Add(fila);
+                            dgvProduct.Rows[i].Cells[9].Value = img;
                         
                         //    DateTime date = Convert.ToDateTime(Lista[i].FechVen_Pord.ToString(), System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat);
 
@@ -150,13 +150,13 @@ namespace CapaPresentacion
         private void frmIndicaProducto_Load(object sender, EventArgs e)
         {
             try
-            { 
-                creargrid();
-                llenarcomox();
+            {
+                BuildProductGrid();
+                FillComboBox();
             }
             catch (ApplicationException es)
             {
-                MessageBox.Show(es.Message, "Mensaje",
+                MessageBox.Show(es.Message, "Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
@@ -170,11 +170,11 @@ namespace CapaPresentacion
         {
             try
             {
-                llenargrid(null);
+                FillProductGrid(null);
             }
             catch (ApplicationException es)
             {
-                MessageBox.Show(es.Message, "Mensaje",
+                MessageBox.Show(es.Message, "Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception)
@@ -187,12 +187,12 @@ namespace CapaPresentacion
         {
 
               try
-            { 
-               llenargrid(txtCodigop.Text);
+            {
+                FillProductGrid(txtCodeProduct.Text);
             }
             catch (ApplicationException es)
             {
-                MessageBox.Show(es.Message, "Mensaje",
+                MessageBox.Show(es.Message, "Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex) { MessageBox.Show(ex.Message,
@@ -205,7 +205,7 @@ namespace CapaPresentacion
         {
             try
             {
-                llenargrid(txtNombrePro.Text);
+                FillProductGrid(txtNameProduct.Text);
             }
             catch (Exception ex)
             {
