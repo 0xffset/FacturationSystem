@@ -1496,7 +1496,6 @@
         <PageHeader>
           <Height>4cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Textbox Name="Textbox1">
               <CanGrow>true</CanGrow>
