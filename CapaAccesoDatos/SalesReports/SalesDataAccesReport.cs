@@ -30,7 +30,7 @@ namespace CapaAccesoDatos.SalesReports
                         group by v.Id_Venta,v.Codigo_Venta,  c.Nombre_Cliente, v.FechaVenta
                         order by v.Id_Venta asc";
                     command.Parameters.Add("@fromDate", SqlDbType.Date).Value = fromDate;
-                    command.Parameters.Add("@toDate", SqlDbType.Date).Value = toDate;
+                    command.Parameters.Add("@toDate", SqlDbType.DateTime).Value = toDate;
 
                     command.CommandType = CommandType.Text;
                     var reader = command.ExecuteReader();

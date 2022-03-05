@@ -398,15 +398,15 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!netSale.Value</GroupExpression>
+                      <GroupExpression>=Fields!period.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!netSale.Value</Value>
+                      <Value>=Fields!period.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!netSale.Value</Label>
+                  <Label>=Fields!period.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -721,7 +721,7 @@
                 <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
-            <Palette>Pacific</Palette>
+            <Palette>SeaGreen</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
@@ -1488,7 +1488,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>20cm</Height>
+        <Height>20.05292cm</Height>
         <Style />
       </Body>
       <Width>21cm</Width>
@@ -1508,6 +1508,7 @@
                       <Value>Facturation System</Value>
                       <Style>
                         <FontSize>14pt</FontSize>
+                        <Color>White</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1540,6 +1541,7 @@
                       <Style>
                         <FontSize>11pt</FontSize>
                         <Format>dddd, MMMM d, yyyy h:mm:ss tt</Format>
+                        <Color>White</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1610,6 +1612,7 @@
                       <Value>="From "+First(Fields!startDate.Value, "SalesReports")  + " to " + First(Fields!endDate.Value, "SalesReports")</Value>
                       <Style>
                         <FontSize>14pt</FontSize>
+                        <Color>White</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1639,7 +1642,7 @@
             <Border>
               <Style>None</Style>
             </Border>
-            <BackgroundColor>Gray</BackgroundColor>
+            <BackgroundColor>SeaGreen</BackgroundColor>
           </Style>
         </PageHeader>
         <PageFooter>
@@ -1689,6 +1692,7 @@
                       <Style>
                         <FontSize>11pt</FontSize>
                         <Format>dddd, MMMM d, yyyy h:mm:ss tt</Format>
+                        <Color>White</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1718,7 +1722,7 @@
             <Border>
               <Style>None</Style>
             </Border>
-            <BackgroundColor>Gray</BackgroundColor>
+            <BackgroundColor>SeaGreen</BackgroundColor>
           </Style>
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
