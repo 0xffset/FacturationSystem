@@ -215,6 +215,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\invoiceReport.rdlc" />
     <EmbeddedResource Include="Reports\salesAvancedReport.rdlc" />
     <EmbeddedResource Include="reportVentasXClientes.resx">
       <DependentUpon>reportVentasXClientes.cs</DependentUpon>
