@@ -39,6 +39,7 @@
             this.btnCancelSale = new System.Windows.Forms.Button();
             this.btnSaleDetails = new System.Windows.Forms.Button();
             this.dgvSaleHistory = new System.Windows.Forms.DataGridView();
+            this.btnSalesReports = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSaleHistory)).BeginInit();
@@ -117,6 +118,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnSalesReports);
             this.groupBox2.Controls.Add(this.btnCancelSale);
             this.groupBox2.Controls.Add(this.btnSaleDetails);
             this.groupBox2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,7 +163,19 @@
             this.dgvSaleHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHisVentas_CellClick);
             this.dgvSaleHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHisVentas_CellContentClick);
             // 
-            // frmConsultarVentas
+            // btnSalesReports
+            // 
+            this.btnSalesReports.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalesReports.Location = new System.Drawing.Point(204, 35);
+            this.btnSalesReports.Name = "btnSalesReports";
+            this.btnSalesReports.Size = new System.Drawing.Size(85, 46);
+            this.btnSalesReports.TabIndex = 21;
+            this.btnSalesReports.Text = "Sale Reports";
+            this.btnSalesReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalesReports.UseVisualStyleBackColor = true;
+            this.btnSalesReports.Click += new System.EventHandler(this.btnSalesReports_Click);
+            // 
+            // frmConsultSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +186,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmConsultarVentas";
+            this.Name = "frmConsultSales";
             this.Text = ".: Sales History :.";
             this.Load += new System.EventHandler(this.frmConsultarVentas_Load);
             this.groupBox1.ResumeLayout(false);
@@ -196,5 +210,6 @@
         private System.Windows.Forms.Button btnSaleDetails;
         private System.Windows.Forms.Button btnCancelSale;
         private System.Windows.Forms.DataGridView dgvSaleHistory;
+        private System.Windows.Forms.Button btnSalesReports;
     }
 }

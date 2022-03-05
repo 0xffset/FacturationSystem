@@ -179,5 +179,11 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnSalesReports_Click(object sender, EventArgs e)
+        {
+            frmAdvancedSalesReport frmAdvancedSalesReport = new frmAdvancedSalesReport();
+            frmAdvancedSalesReport.ShowDialog();
+        }
     }
 }

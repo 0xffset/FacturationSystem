@@ -41,6 +41,6 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.p
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll.config
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CopyComplete

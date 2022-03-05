@@ -48,6 +48,6 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Entidades.pdb
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\bin\Debug\Entidades.dll.config
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\CapaNegocio.pdb
-C:\Users\rogge\Desktop\System\sistemaROLEY\CapaNegocio\obj\Debug\BusinessLayer.csproj.CopyComplete
