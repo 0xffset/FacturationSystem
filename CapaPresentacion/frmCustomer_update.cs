@@ -23,7 +23,7 @@ namespace CapaPresentacion
             IdUsuario = (int)id_Usuario;
 
         }
-        AccEnControles acc = new AccEnControles();
+        controlsStates acc = new controlsStates();
         private void buscarcliente()
         {
             try 

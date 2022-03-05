@@ -15,7 +15,7 @@ namespace CapaPresentacion
     public partial class frmUser : Form
     {
         //Accinones que controlaran todos acciones en algunos controles
-       AccEnControles acc = new AccEnControles();
+       controlsStates acc = new controlsStates();
         int Id_Usuario;
         public frmUser(int? idusuario)
         {

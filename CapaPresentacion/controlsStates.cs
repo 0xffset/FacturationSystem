@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    class AccEnControles
+    class controlsStates
     {
         #region convertirletras
         public string letras(string num)

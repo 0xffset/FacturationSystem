@@ -68,7 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccEnControles.cs" />
+    <Compile Include="controlsStates.cs" />
     <Compile Include="BDsistemaROLEYDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

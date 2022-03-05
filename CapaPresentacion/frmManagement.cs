@@ -22,7 +22,7 @@ namespace CapaPresentacion
             idUsuario = (Int32)id_usu;
         }
 
-        AccEnControles acc = new AccEnControles();
+        controlsStates acc = new controlsStates();
 
         public void controlb(String pantalla, Boolean nuevo, Boolean editar, Boolean grabar,Boolean eliminar, Boolean cancelar, Boolean salir)
         {

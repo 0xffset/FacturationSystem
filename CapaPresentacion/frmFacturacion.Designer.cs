@@ -44,9 +44,9 @@
             this.txtCodoU = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAnular = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCancelInvoice = new System.Windows.Forms.Button();
+            this.btnPrintInvoice = new System.Windows.Forms.Button();
+            this.btnNewInvoice = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -55,6 +55,10 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblserie = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gbCliente.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -63,12 +67,12 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Consolas", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 57);
+            this.label1.Size = new System.Drawing.Size(339, 95);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Almacen G.L.";
+            this.label1.Text = "Facturation System";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
@@ -140,7 +144,7 @@
             // 
             this.btnSearchById.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btnSearchById.Image = global::CapaPresentacion.Properties.Resources.Accept_16px;
-            this.btnSearchById.Location = new System.Drawing.Point(491, 49);
+            this.btnSearchById.Location = new System.Drawing.Point(527, 48);
             this.btnSearchById.Name = "btnSearchById";
             this.btnSearchById.Size = new System.Drawing.Size(37, 32);
             this.btnSearchById.TabIndex = 7;
@@ -149,11 +153,11 @@
             // 
             // btnSearchDNI
             // 
-            this.btnSearchDNI.Image = global::CapaPresentacion.Properties.Resources.Search_24px;
             this.btnSearchDNI.Location = new System.Drawing.Point(448, 49);
             this.btnSearchDNI.Name = "btnSearchDNI";
-            this.btnSearchDNI.Size = new System.Drawing.Size(37, 32);
+            this.btnSearchDNI.Size = new System.Drawing.Size(73, 32);
             this.btnSearchDNI.TabIndex = 6;
+            this.btnSearchDNI.Text = "Search";
             this.btnSearchDNI.UseVisualStyleBackColor = true;
             this.btnSearchDNI.Click += new System.EventHandler(this.btnBuscarCe_Click);
             // 
@@ -212,9 +216,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnAnular);
-            this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.btnNuevo);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.btnCancelInvoice);
+            this.panel1.Controls.Add(this.btnPrintInvoice);
+            this.panel1.Controls.Add(this.btnNewInvoice);
             this.panel1.Controls.Add(this.btnAtras);
             this.panel1.Controls.Add(this.txtTotal);
             this.panel1.Controls.Add(this.label10);
@@ -224,53 +232,53 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Location = new System.Drawing.Point(21, 307);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 332);
+            this.panel1.Size = new System.Drawing.Size(603, 395);
             this.panel1.TabIndex = 5;
             // 
-            // btnAnular
+            // btnCancelInvoice
             // 
-            this.btnAnular.Image = global::CapaPresentacion.Properties.Resources.Unavailable_32px;
-            this.btnAnular.Location = new System.Drawing.Point(337, 282);
-            this.btnAnular.Name = "btnAnular";
-            this.btnAnular.Size = new System.Drawing.Size(50, 37);
-            this.btnAnular.TabIndex = 16;
-            this.btnAnular.UseVisualStyleBackColor = true;
-            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
+            this.btnCancelInvoice.Location = new System.Drawing.Point(347, 355);
+            this.btnCancelInvoice.Name = "btnCancelInvoice";
+            this.btnCancelInvoice.Size = new System.Drawing.Size(68, 37);
+            this.btnCancelInvoice.TabIndex = 16;
+            this.btnCancelInvoice.Text = "Cancel invoice";
+            this.btnCancelInvoice.UseVisualStyleBackColor = true;
+            this.btnCancelInvoice.Click += new System.EventHandler(this.btnAnular_Click);
             // 
-            // btnGuardar
+            // btnPrintInvoice
             // 
-            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.Save_32px;
-            this.btnGuardar.Location = new System.Drawing.Point(281, 282);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(50, 37);
-            this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnPrintInvoice.Location = new System.Drawing.Point(272, 355);
+            this.btnPrintInvoice.Name = "btnPrintInvoice";
+            this.btnPrintInvoice.Size = new System.Drawing.Size(69, 37);
+            this.btnPrintInvoice.TabIndex = 15;
+            this.btnPrintInvoice.Text = "Print invoice";
+            this.btnPrintInvoice.UseVisualStyleBackColor = true;
+            this.btnPrintInvoice.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnNuevo
+            // btnNewInvoice
             // 
-            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.Add_List_32px;
-            this.btnNuevo.Location = new System.Drawing.Point(225, 282);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(50, 37);
-            this.btnNuevo.TabIndex = 14;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.button4_Click);
+            this.btnNewInvoice.Location = new System.Drawing.Point(202, 355);
+            this.btnNewInvoice.Name = "btnNewInvoice";
+            this.btnNewInvoice.Size = new System.Drawing.Size(64, 37);
+            this.btnNewInvoice.TabIndex = 14;
+            this.btnNewInvoice.Text = "New invoice";
+            this.btnNewInvoice.UseVisualStyleBackColor = true;
+            this.btnNewInvoice.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnAtras
             // 
-            this.btnAtras.Image = global::CapaPresentacion.Properties.Resources.Back_24px;
-            this.btnAtras.Location = new System.Drawing.Point(17, 282);
+            this.btnAtras.Location = new System.Drawing.Point(8, 355);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(56, 37);
             this.btnAtras.TabIndex = 13;
+            this.btnAtras.Text = "Exit";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.Color.White;
-            this.txtTotal.Location = new System.Drawing.Point(492, 257);
+            this.txtTotal.Location = new System.Drawing.Point(496, 325);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(97, 21);
             this.txtTotal.TabIndex = 12;
@@ -280,7 +288,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(442, 261);
+            this.label10.Location = new System.Drawing.Point(434, 328);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 14);
             this.label10.TabIndex = 10;
@@ -288,7 +296,7 @@
             // 
             // lblItems
             // 
-            this.lblItems.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lblItems.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblItems.Location = new System.Drawing.Point(18, 254);
             this.lblItems.Name = "lblItems";
             this.lblItems.Size = new System.Drawing.Size(101, 21);
@@ -308,23 +316,23 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.Azure;
-            this.btnRemove.Image = global::CapaPresentacion.Properties.Resources.Delete_24px1;
-            this.btnRemove.Location = new System.Drawing.Point(548, 3);
+            this.btnRemove.BackColor = System.Drawing.Color.Red;
+            this.btnRemove.Location = new System.Drawing.Point(496, 3);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(45, 23);
+            this.btnRemove.Size = new System.Drawing.Size(97, 23);
             this.btnRemove.TabIndex = 1;
+            this.btnRemove.Text = "Remove item";
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.Azure;
-            this.btnAdd.Image = global::CapaPresentacion.Properties.Resources.icons8_Add_File_16;
+            this.btnAdd.BackColor = System.Drawing.Color.Lime;
             this.btnAdd.Location = new System.Drawing.Point(17, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(45, 23);
+            this.btnAdd.Size = new System.Drawing.Size(63, 23);
             this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add...";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -336,12 +344,48 @@
             this.lblserie.Size = new System.Drawing.Size(82, 24);
             this.lblserie.TabIndex = 4;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(493, 294);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 21);
+            this.label2.TabIndex = 18;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(422, 297);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 14);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "ITBIS 18%";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(494, 259);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 21);
+            this.label9.TabIndex = 20;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(412, 262);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 14);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Net Total $";
+            // 
             // frmFacturation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(634, 637);
+            this.ClientSize = new System.Drawing.Size(634, 753);
             this.Controls.Add(this.lblserie);
             this.Controls.Add(this.lblcorre);
             this.Controls.Add(this.panel1);
@@ -384,13 +428,17 @@
         private System.Windows.Forms.DataGridView dgvInvoice;
         private System.Windows.Forms.Label txtTotal;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnNewInvoice;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnCancelInvoice;
+        private System.Windows.Forms.Button btnPrintInvoice;
         private System.Windows.Forms.Label lblcorre;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtFechaFac;
         private System.Windows.Forms.Label lblserie;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
     }
 }

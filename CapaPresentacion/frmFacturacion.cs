@@ -17,7 +17,7 @@ namespace CapaPresentacion
         entUser usu = null;
         int iduser = 0;
         String ser, corr;
-        AccEnControles ac = new AccEnControles();
+        controlsStates ac = new controlsStates();
         entSerie serie = new entSerie();
 
         public frmFacturation(int id_user)
@@ -30,8 +30,8 @@ namespace CapaPresentacion
         {
             try
             {
-                btnNuevo.Enabled = nuevo;
-                btnGuardar.Enabled = guardar;
+                btnNewInvoice.Enabled = nuevo;
+                btnPrintInvoice.Enabled = guardar;
                 btnRemove.Enabled = quitaritems;
             }
             catch (Exception) {throw;}
@@ -44,7 +44,7 @@ namespace CapaPresentacion
                 dgvInvoice.Columns.Add("ColumnIdProd", "Idprod");
                 dgvInvoice.Columns.Add("ColumnNombreProd", "Product");
                 dgvInvoice.Columns.Add("ColumnCantidad", "Amount");
-                dgvInvoice.Columns.Add("ColumnPrecio", "Price $");
+                dgvInvoice.Columns.Add("ColumnPrecio", "Unit Price $");
                 dgvInvoice.Columns.Add("ColumnTotal", "Total");
 
                 dgvInvoice.Columns[0].Visible = false;
@@ -248,7 +248,7 @@ namespace CapaPresentacion
                 this.iduser = usu.User_Id;
                 txtCodoU.Text = usu.User_Code;
                 cargarseriecore();
-                btnAnular.Enabled = false;
+                btnCancelInvoice.Enabled = false;
                 int idclien = localdatabase.Instancia.returnidcliente(0, 0);
                 if (idclien != 0) { btnSearchDNI.Enabled = false; btnSearchById.Enabled = true; }
                 lblserie.Visible = false;
@@ -268,7 +268,7 @@ namespace CapaPresentacion
         {
             try
             {
-                DialogResult r = MessageBox.Show("¿Desea hacer una nueva venta?", "Mensaje",
+                DialogResult r = MessageBox.Show("Do you what to make a new sale?", "Message",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
@@ -285,7 +285,7 @@ namespace CapaPresentacion
                     ac.bloqueartxt(this.gbCliente, true);
                     ac.bloqueartxt(this.panel1, true);
                     
-                    btnAnular.Enabled = false;
+                    btnCancelInvoice.Enabled = false;
                     btnAdd.Enabled = true;
                 }
                 else { }
@@ -297,13 +297,13 @@ namespace CapaPresentacion
         {
             try
             {
-                DialogResult dr = MessageBox.Show("¿Desea anular la factura?", "Mensaje",
+                DialogResult dr = MessageBox.Show("Do you want to cancel the current sale?", "Message",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr==DialogResult.Yes)
                 {
                     int result = IBusinessSale.Instancia.anularcomprobante(ser, corr, 2);
-                    MessageBox.Show("Fatura Anulada", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnAnular.Enabled = false;
+                    MessageBox.Show("Sale was revoke succesfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnCancelInvoice.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -332,8 +332,8 @@ namespace CapaPresentacion
             }
             catch (ApplicationException)
             {
-                DialogResult r = MessageBox.Show("No hay registros, ¿desea realizar una busqueda mas avanzada?",
-                    "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult r = MessageBox.Show("There are no records, do you want to perform a more advanced search?",
+                    "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
                     localdatabase.Instancia.invocar(1, 1);
@@ -405,8 +405,8 @@ namespace CapaPresentacion
         {
             try
             {
-                DialogResult r = MessageBox.Show("¿Esta seguro de que quiere quitar lo seleccionado?",
-                    "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult r = MessageBox.Show("Are you sure you want to remove the selection?",
+                    "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r== DialogResult.Yes)
                 {
                     int idprod = Convert.ToInt32(dgvInvoice.CurrentRow.Cells[0].Value);
@@ -442,7 +442,7 @@ namespace CapaPresentacion
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Desea salir", "mensaje",
+            DialogResult r = MessageBox.Show("Do you want to exit?", "Message",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r== DialogResult.Yes)
             {
@@ -518,10 +518,10 @@ namespace CapaPresentacion
                     v.Desc_Venta = "";
                     cargarseriecore();
                     int resuta = IBusinessSale.Instancia.guardarventa(v, 2, serie.Numero_Serie);
-                    MessageBox.Show("The sale has been saved!", "Message",
+                    MessageBox.Show("The sale has been saved successfully", "Message",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dgvInvoice.Enabled = false; controbo(true, false, false);
-                    btnAdd.Enabled = false; btnAnular.Enabled = true;
+                    btnAdd.Enabled = false; btnCancelInvoice.Enabled = true;
                     ac.bloqueartxt(this.gbCliente, false);
                     ac.bloqueartxt(this.panel1, false);
                     
