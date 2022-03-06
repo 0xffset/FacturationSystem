@@ -18,11 +18,12 @@ namespace CapaAccesoDatos.SalesReports
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = @"SELECT dt.PrecProd_Det, dt.Itbis_Det, dt.Cantidad_Det, p.Codigo_Prod, p.Descuento_Prod, p.Nombre_Prod,  dt.Total_Det
-                        FROM DetalleVenta dt INNER JOIN Producto p ON
-                        dt.Id_Prod_Det = p.Id_Prod
+                    command.CommandText = @"SELECT dt.PrecProd_Det, dt.Itbis_Det, dt.Cantidad_Det, p.Codigo_Prod, p.Descuento_Prod, p.Nombre_Prod,  dt.Total_Det, u.Abreviatura_Umed
+                        FROM DetalleVenta dt INNER JOIN Producto p ON 
+                        dt.Id_Prod_Det = p.Id_Prod INNER JOIN UnidadMedida u ON
+                        u.Id_Umed = p.Id_Umed_prod
                         WHERE dt.Id_Venta_Det = @idSale
-                        GROUP BY dt.Id_Det, dt.PrecProd_Det, dt.Itbis_Det, dt.Cantidad_Det, p.Codigo_Prod, p.Descuento_Prod, p.Nombre_Prod, dt.Total_Det
+                        GROUP BY dt.Id_Det, dt.PrecProd_Det, dt.Itbis_Det, dt.Cantidad_Det, p.Codigo_Prod, p.Descuento_Prod, p.Nombre_Prod, dt.Total_Det, u.Abreviatura_Umed
                         ORDER BY dt.Id_Det
                         ";
                     command.Parameters.Add("@idSale", SqlDbType.Int).Value = _IdSale;

@@ -13,7 +13,7 @@ namespace CapaPresentacion
         [STAThread]
         static void Main()
         {
-            Application.Run(new frmInvoicePrint(24));
+            Application.Run(new frmLogin());
         }
     }
 }

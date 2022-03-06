@@ -16,6 +16,7 @@ namespace CapaNegocio.Reports
         public String Name_Product { get;  set; }
         public Double Total_Det { get;  set; }
 
+        public String Unit_Product { get; set; }
 
     }
 }

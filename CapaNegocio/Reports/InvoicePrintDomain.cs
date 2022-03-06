@@ -52,7 +52,8 @@ namespace CapaNegocio.Reports
                     Code_Product = rows[3].ToString(),
                     Discount_Det = Convert.ToDouble(rows[4]),
                     Name_Product = rows[5].ToString(),
-                    Total_Det = Convert.ToDouble(rows[6])
+                    Total_Det = Convert.ToDouble(rows[6]),
+                    Unit_Product = rows[7].ToString()
 
                 };
                 ListingInvoiceSaleDetails.Add(saleModel);

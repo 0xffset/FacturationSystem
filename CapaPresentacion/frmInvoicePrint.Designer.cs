@@ -34,18 +34,31 @@ namespace CapaPresentacion
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.InvoicePrintDomainBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CustomerInvoiceDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.invoicePrintDomainBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.invoicePrintDomainBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.listingInvoiceSaleDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.invoicePrintDomainBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InvoicePrintDomainBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomerInvoiceDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoicePrintDomainBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.invoicePrintDomainBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listingInvoiceSaleDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoicePrintDomainBindingSource2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // InvoicePrintDomainBindingSource
+            // 
+            this.InvoicePrintDomainBindingSource.DataMember = "ListingInvoiceSaleDetails";
+            this.InvoicePrintDomainBindingSource.DataSource = typeof(CapaNegocio.Reports.InvoicePrintDomain);
+            // 
+            // CustomerInvoiceDataBindingSource
+            // 
+            this.CustomerInvoiceDataBindingSource.DataSource = typeof(CapaNegocio.Reports.CustomerInvoiceData);
+            // 
+            // invoicePrintDomainBindingSource2
+            // 
+            this.invoicePrintDomainBindingSource2.DataSource = typeof(CapaNegocio.Reports.InvoicePrintDomain);
             // 
             // reportViewer1
             // 
@@ -68,15 +81,6 @@ namespace CapaPresentacion
             this.reportViewer1.Size = new System.Drawing.Size(1249, 586);
             this.reportViewer1.TabIndex = 0;
             // 
-            // InvoicePrintDomainBindingSource
-            // 
-            this.InvoicePrintDomainBindingSource.DataMember = "ListingInvoiceSaleDetails";
-            this.InvoicePrintDomainBindingSource.DataSource = typeof(CapaNegocio.Reports.InvoicePrintDomain);
-            // 
-            // CustomerInvoiceDataBindingSource
-            // 
-            this.CustomerInvoiceDataBindingSource.DataSource = typeof(CapaNegocio.Reports.CustomerInvoiceData);
-            // 
             // invoicePrintDomainBindingSource1
             // 
             this.invoicePrintDomainBindingSource1.DataSource = typeof(CapaNegocio.Reports.InvoicePrintDomain);
@@ -85,24 +89,23 @@ namespace CapaPresentacion
             // 
             this.listingInvoiceSaleDetailsBindingSource.DataSource = typeof(CapaNegocio.Reports.ListingInvoiceSaleDetails);
             // 
-            // invoicePrintDomainBindingSource2
-            // 
-            this.invoicePrintDomainBindingSource2.DataSource = typeof(CapaNegocio.Reports.InvoicePrintDomain);
-            // 
             // frmInvoicePrint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1273, 610);
             this.Controls.Add(this.reportViewer1);
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1289, 649);
             this.Name = "frmInvoicePrint";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Invoice Print :.";
             this.Load += new System.EventHandler(this.frmInvoicePrint_Load);
             ((System.ComponentModel.ISupportInitialize)(this.InvoicePrintDomainBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomerInvoiceDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoicePrintDomainBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.invoicePrintDomainBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listingInvoiceSaleDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoicePrintDomainBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
