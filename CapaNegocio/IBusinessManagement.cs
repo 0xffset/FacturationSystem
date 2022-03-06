@@ -100,11 +100,12 @@ namespace CapaNegocio
                    cadXml += "stock='" + prop.Stock_Prod + "' ";
                    cadXml += "stockprom='" + prop.StockProm_Prod + "' ";
                    cadXml += "stockmin='" + prop.StockMin_Prod + "' ";
-                   cadXml += "usuariocreacion='" + prop.UsuarioCreacion_Prod + "' ";
+                cadXml += "itbis='" + prop.ITBIS_Prod + "' ";
+                cadXml += "usuariocreacion='" + prop.UsuarioCreacion_Prod + "' ";
                    cadXml += "usuarioupdate='" + prop.UsuarioUpdate_Prod + "' ";
                    cadXml += "tipoedicion='" + tied + "' ";
                    cadXml += "idmaterial='" + prop.material.Id + "' ";
-                   cadXml += "fechvenpro='" + prop.FechVen_Pord + "'/>";
+                cadXml += "fechvenpro='" + prop.FechVen_Pord + "'/>";
 
                    cadXml = "<root>" + cadXml + "</root>";
                    int i = IDataAccessManagement.Instancia.mantenimeintoprod(cadXml);

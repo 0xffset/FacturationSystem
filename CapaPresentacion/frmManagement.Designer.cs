@@ -123,6 +123,9 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.rb18ITBIS = new System.Windows.Forms.RadioButton();
+            this.rb116ITBIS = new System.Windows.Forms.RadioButton();
+            this.rb0 = new System.Windows.Forms.RadioButton();
             this.tbcPrincipal.SuspendLayout();
             this.tcpProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproduct)).BeginInit();
@@ -150,6 +153,9 @@
             // tcpProducts
             // 
             this.tcpProducts.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tcpProducts.Controls.Add(this.rb0);
+            this.tcpProducts.Controls.Add(this.rb116ITBIS);
+            this.tcpProducts.Controls.Add(this.rb18ITBIS);
             this.tcpProducts.Controls.Add(this.txtDescuento);
             this.tcpProducts.Controls.Add(this.label26);
             this.tcpProducts.Controls.Add(this.lblvenprod);
@@ -653,7 +659,7 @@
             // dgvsupplier
             // 
             this.dgvsupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvsupplier.Location = new System.Drawing.Point(115, 240);
+            this.dgvsupplier.Location = new System.Drawing.Point(115, 251);
             this.dgvsupplier.Name = "dgvsupplier";
             this.dgvsupplier.Size = new System.Drawing.Size(657, 177);
             this.dgvsupplier.TabIndex = 90;
@@ -662,30 +668,31 @@
             // 
             // txtemails
             // 
-            this.txtemails.Location = new System.Drawing.Point(230, 208);
+            this.txtemails.Location = new System.Drawing.Point(230, 218);
             this.txtemails.Name = "txtemails";
             this.txtemails.Size = new System.Drawing.Size(232, 22);
             this.txtemails.TabIndex = 89;
             // 
             // txtcellphones
             // 
-            this.txtcellphones.Location = new System.Drawing.Point(230, 177);
+            this.txtcellphones.Location = new System.Drawing.Point(230, 187);
             this.txtcellphones.Name = "txtcellphones";
             this.txtcellphones.Size = new System.Drawing.Size(137, 22);
             this.txtcellphones.TabIndex = 88;
             // 
             // txtphones
             // 
-            this.txtphones.Location = new System.Drawing.Point(230, 146);
+            this.txtphones.Location = new System.Drawing.Point(230, 156);
             this.txtphones.Name = "txtphones";
             this.txtphones.Size = new System.Drawing.Size(137, 22);
             this.txtphones.TabIndex = 87;
             // 
             // txtaddresss
             // 
-            this.txtaddresss.Location = new System.Drawing.Point(230, 118);
+            this.txtaddresss.Location = new System.Drawing.Point(230, 112);
+            this.txtaddresss.Multiline = true;
             this.txtaddresss.Name = "txtaddresss";
-            this.txtaddresss.Size = new System.Drawing.Size(386, 22);
+            this.txtaddresss.Size = new System.Drawing.Size(386, 38);
             this.txtaddresss.TabIndex = 86;
             // 
             // txtrncs
@@ -721,7 +728,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(112, 214);
+            this.label17.Location = new System.Drawing.Point(112, 224);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(49, 14);
             this.label17.TabIndex = 81;
@@ -730,7 +737,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(112, 183);
+            this.label18.Location = new System.Drawing.Point(112, 193);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 14);
             this.label18.TabIndex = 80;
@@ -739,7 +746,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(112, 152);
+            this.label19.Location = new System.Drawing.Point(112, 162);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(49, 14);
             this.label19.TabIndex = 79;
@@ -1150,6 +1157,39 @@
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
+            // rb18ITBIS
+            // 
+            this.rb18ITBIS.AutoSize = true;
+            this.rb18ITBIS.Location = new System.Drawing.Point(316, 131);
+            this.rb18ITBIS.Name = "rb18ITBIS";
+            this.rb18ITBIS.Size = new System.Drawing.Size(88, 18);
+            this.rb18ITBIS.TabIndex = 80;
+            this.rb18ITBIS.TabStop = true;
+            this.rb18ITBIS.Text = "18% ITBIS";
+            this.rb18ITBIS.UseVisualStyleBackColor = true;
+            // 
+            // rb116ITBIS
+            // 
+            this.rb116ITBIS.AutoSize = true;
+            this.rb116ITBIS.Location = new System.Drawing.Point(316, 150);
+            this.rb116ITBIS.Name = "rb116ITBIS";
+            this.rb116ITBIS.Size = new System.Drawing.Size(95, 18);
+            this.rb116ITBIS.TabIndex = 81;
+            this.rb116ITBIS.TabStop = true;
+            this.rb116ITBIS.Text = "16 % ITBIS";
+            this.rb116ITBIS.UseVisualStyleBackColor = true;
+            // 
+            // rb0
+            // 
+            this.rb0.AutoSize = true;
+            this.rb0.Location = new System.Drawing.Point(316, 170);
+            this.rb0.Name = "rb0";
+            this.rb0.Size = new System.Drawing.Size(32, 18);
+            this.rb0.TabIndex = 82;
+            this.rb0.TabStop = true;
+            this.rb0.Text = "E";
+            this.rb0.UseVisualStyleBackColor = true;
+            // 
             // frmManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1278,5 +1318,8 @@
         private System.Windows.Forms.Label lblvenprod;
         private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.RadioButton rb116ITBIS;
+        private System.Windows.Forms.RadioButton rb18ITBIS;
+        private System.Windows.Forms.RadioButton rb0;
     }
 }

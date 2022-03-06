@@ -75,12 +75,12 @@ namespace CapaPresentacion
         {
             dgvproduct.Columns.Add("ColumnId", "Id");
             dgvproduct.Columns.Add("ColumnNumero", "#");
-            dgvproduct.Columns.Add("ColumnCodigo", "Codigo");
-            dgvproduct.Columns.Add("ColumnNombre", "Nombre");
-            dgvproduct.Columns.Add("ColumnMarca", "Marca");
-            dgvproduct.Columns.Add("ColumnCategoria", "Categoria");
-            dgvproduct.Columns.Add("ColumnUnidMed", "Pres. Prod");
-            dgvproduct.Columns.Add("ColumnProveedor", "Proveedor");
+            dgvproduct.Columns.Add("ColumnCodigo", "Code");
+            dgvproduct.Columns.Add("ColumnNombre", "Name");
+            dgvproduct.Columns.Add("ColumnMarca", "Brand");
+            dgvproduct.Columns.Add("ColumnCategoria", "Category");
+            dgvproduct.Columns.Add("ColumnUnidMed", "UM");
+            dgvproduct.Columns.Add("ColumnProveedor", "Supplier");
 
             dgvproduct.Columns[0].Visible = false;
             dgvproduct.Columns[1].Width = 30;
@@ -103,9 +103,9 @@ namespace CapaPresentacion
         {
             dgvcategoria.Columns.Add("ColumnId", "Id");
             dgvcategoria.Columns.Add("ColumnNumero", "#");
-            dgvcategoria.Columns.Add("ColumnCodigo", "Codigo");
-            dgvcategoria.Columns.Add("ColumnNombre", "Nombre");
-            dgvcategoria.Columns.Add("ColumnDescripcion", "Descripcion");
+            dgvcategoria.Columns.Add("ColumnCodigo", "Code");
+            dgvcategoria.Columns.Add("ColumnNombre", "Name");
+            dgvcategoria.Columns.Add("ColumnDescripcion", "Description");
             dgvcategoria.Columns[0].Visible = false;
               
             dgvcategoria.Columns[1].Width = 30;
@@ -126,9 +126,9 @@ namespace CapaPresentacion
         {
             dgvpresent.Columns.Add("ColumnId", "Id");
             dgvpresent.Columns.Add("ColumnNumero", "#");
-            dgvpresent.Columns.Add("ColumnCodigo", "Codigo");
-            dgvpresent.Columns.Add("ColumnDescripcion", "Descripcion");
-            dgvpresent.Columns.Add("ColumnAbreviatura", "Abreviatura");
+            dgvpresent.Columns.Add("ColumnCodigo", "Code");
+            dgvpresent.Columns.Add("ColumnDescripcion", "Description");
+            dgvpresent.Columns.Add("ColumnAbreviatura", "Abbreviation");
 
             dgvpresent.Columns[0].Visible = false;
             dgvpresent.Columns[1].Width = 30;
@@ -149,8 +149,8 @@ namespace CapaPresentacion
         {
             dgvsupplier.Columns.Add("ColumnId", "Id");
             dgvsupplier.Columns.Add("ColumnNumero", "#");
-            dgvsupplier.Columns.Add("ColumnCodigo", "Codigo");
-            dgvsupplier.Columns.Add("ColumnRazSocial", "Nombre/Raz.Social");
+            dgvsupplier.Columns.Add("ColumnCodigo", "Code");
+            dgvsupplier.Columns.Add("ColumnRazSocial", "Name/Bussines Name");
             dgvsupplier.Columns.Add("ColumnRuc", "RNC");
               
             dgvsupplier.Columns[0].Visible = false;
@@ -206,6 +206,19 @@ namespace CapaPresentacion
                 cbocategories.SelectedValue = prod.categoria.Id_Cat;
                 cboprodpresent.SelectedValue = prod.unidmedida.Id_Umed;
                 cbosupplier.SelectedValue = prod.proveedor.Id_Proveedor;
+                if (prod.ITBIS_Prod == 18)
+                {
+                    rb18ITBIS.Checked = true;
+                }
+                else if (prod.ITBIS_Prod == 16)
+                {
+                    rb116ITBIS.Checked = true;
+                }
+                else if (prod.ITBIS_Prod == 0)
+                {
+                    rb0.Checked = true;
+                }
+               
                 dtpduedate.Text = Convert.ToString(prod.FechVen_Pord.ToString());
                 acc.bloqueartxt(this.tcpProducts, false);
                 controlb("PRODUCTO", true, true, false, true, false, true);
@@ -317,9 +330,9 @@ namespace CapaPresentacion
         {
             try 
             {
-                if (String.IsNullOrEmpty(Convert.ToString(cbocategories.SelectedValue))) throw new ApplicationException("Debe seleccionar una categoria");
-                else if  (String.IsNullOrEmpty(Convert.ToString(cbosupplier.SelectedValue))) throw new ApplicationException("Debe seleccionar un proveedor");
-                else if (String.IsNullOrEmpty(Convert.ToString(cboprodpresent.SelectedValue))) throw new ApplicationException("Debe seleccionar una Presentacion Prod.");
+                if (String.IsNullOrEmpty(Convert.ToString(cbocategories.SelectedValue))) throw new ApplicationException("You must select a category");
+                else if  (String.IsNullOrEmpty(Convert.ToString(cbosupplier.SelectedValue))) throw new ApplicationException("You must select a provider");
+                else if (String.IsNullOrEmpty(Convert.ToString(cboprodpresent.SelectedValue))) throw new ApplicationException("You must select unit of measure.");
 
                 entProduct prod = new entProduct();
                 int tipoedicion = 1;
@@ -327,6 +340,21 @@ namespace CapaPresentacion
                 {
                     tipoedicion = 2;
                     prod.Id_Prod = Convert.ToInt32(txtidp.Text);
+                }
+                if (rb18ITBIS.Checked)
+                {
+                    prod.ITBIS_Prod = 18;
+                }
+                 else if (rb116ITBIS.Checked)
+                {
+                    prod.ITBIS_Prod = 16;
+                } else if (rb0.Checked)
+                {
+                    prod.ITBIS_Prod = 0;
+                }
+                else
+                {
+                    prod.ITBIS_Prod = 0;
                 }
                 prod.Nombre_Prod = txtnamep.Text;
                 prod.Marca_Prod = txtbrandp.Text;
@@ -350,7 +378,7 @@ namespace CapaPresentacion
                 prod.UsuarioCreacion_Prod = idUsuario;
                 prod.UsuarioUpdate_Prod = idUsuario;
                 int i = IBusinessManagement.Instancia.mantenimeintoProd(prod, tipoedicion);
-                MessageBox.Show("Registro guardado correctamente!", "Mensaje",
+                MessageBox.Show("Record saved successfully!", "Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 controlb("PRODUCTO", true, false, false, false, false, true);

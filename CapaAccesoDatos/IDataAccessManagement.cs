@@ -185,6 +185,7 @@ namespace CapaAccesoDatos
                        prod.StockProm_Prod = Convert.ToInt32(dr["StockProm_Prod"]);
                        prod.StockMin_Prod = Convert.ToInt32(dr["StockMin_Prod"]);
                        prod.FechVen_Pord = dr["FechVen_Prod"].ToString();
+                       prod.ITBIS_Prod = Convert.ToInt32(dr["Itbis_Prod"]);
                        
 
                        entCategory cat = new entCategory();

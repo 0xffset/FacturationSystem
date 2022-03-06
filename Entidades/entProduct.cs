@@ -16,7 +16,7 @@ namespace Entidades
         public Double Descuento_Prod { get; set; }
        public Double Precio_Prod { get; set; }
    
-       public String ITBIS_Prod { get; set; }
+       public int  ITBIS_Prod { get; set; }
        public int Stock_Prod { get; set; }
        public int StockProm_Prod { get; set; }
        public int StockMin_Prod { get; set; }

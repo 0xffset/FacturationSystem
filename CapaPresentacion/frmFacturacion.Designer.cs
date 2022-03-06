@@ -44,6 +44,10 @@
             this.txtCodoU = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNetTotal = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblITBIS = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnCancelInvoice = new System.Windows.Forms.Button();
             this.btnPrintInvoice = new System.Windows.Forms.Button();
             this.btnNewInvoice = new System.Windows.Forms.Button();
@@ -55,10 +59,6 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblserie = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gbCliente.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -72,7 +72,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(339, 95);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Facturation System";
+            this.label1.Text = "Billing System";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
@@ -92,7 +92,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 24);
             this.label3.TabIndex = 3;
-            this.label3.Text = "INVOICE";
+            this.label3.Text = "BILL";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblcorre
@@ -118,7 +118,7 @@
             this.gbCliente.Controls.Add(this.label4);
             this.gbCliente.Location = new System.Drawing.Point(28, 133);
             this.gbCliente.Name = "gbCliente";
-            this.gbCliente.Size = new System.Drawing.Size(570, 159);
+            this.gbCliente.Size = new System.Drawing.Size(881, 159);
             this.gbCliente.TabIndex = 4;
             this.gbCliente.TabStop = false;
             // 
@@ -216,9 +216,9 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.lblNetTotal);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblITBIS);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.btnCancelInvoice);
             this.panel1.Controls.Add(this.btnPrintInvoice);
@@ -232,42 +232,78 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Location = new System.Drawing.Point(21, 307);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 395);
+            this.panel1.Size = new System.Drawing.Size(893, 395);
             this.panel1.TabIndex = 5;
+            // 
+            // lblNetTotal
+            // 
+            this.lblNetTotal.BackColor = System.Drawing.Color.White;
+            this.lblNetTotal.Location = new System.Drawing.Point(794, 254);
+            this.lblNetTotal.Name = "lblNetTotal";
+            this.lblNetTotal.Size = new System.Drawing.Size(97, 21);
+            this.lblNetTotal.TabIndex = 20;
+            this.lblNetTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(712, 257);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 14);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Net Total $";
+            // 
+            // lblITBIS
+            // 
+            this.lblITBIS.BackColor = System.Drawing.Color.White;
+            this.lblITBIS.Location = new System.Drawing.Point(793, 289);
+            this.lblITBIS.Name = "lblITBIS";
+            this.lblITBIS.Size = new System.Drawing.Size(97, 21);
+            this.lblITBIS.TabIndex = 18;
+            this.lblITBIS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(722, 292);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 14);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "ITBIS 18%";
             // 
             // btnCancelInvoice
             // 
-            this.btnCancelInvoice.Location = new System.Drawing.Point(347, 355);
+            this.btnCancelInvoice.Location = new System.Drawing.Point(530, 355);
             this.btnCancelInvoice.Name = "btnCancelInvoice";
             this.btnCancelInvoice.Size = new System.Drawing.Size(68, 37);
             this.btnCancelInvoice.TabIndex = 16;
-            this.btnCancelInvoice.Text = "Cancel invoice";
+            this.btnCancelInvoice.Text = "Cancel bill";
             this.btnCancelInvoice.UseVisualStyleBackColor = true;
             this.btnCancelInvoice.Click += new System.EventHandler(this.btnAnular_Click);
             // 
             // btnPrintInvoice
             // 
-            this.btnPrintInvoice.Location = new System.Drawing.Point(272, 355);
+            this.btnPrintInvoice.Location = new System.Drawing.Point(455, 355);
             this.btnPrintInvoice.Name = "btnPrintInvoice";
             this.btnPrintInvoice.Size = new System.Drawing.Size(69, 37);
             this.btnPrintInvoice.TabIndex = 15;
-            this.btnPrintInvoice.Text = "Print invoice";
+            this.btnPrintInvoice.Text = "Print bill";
             this.btnPrintInvoice.UseVisualStyleBackColor = true;
             this.btnPrintInvoice.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNewInvoice
             // 
-            this.btnNewInvoice.Location = new System.Drawing.Point(202, 355);
+            this.btnNewInvoice.Location = new System.Drawing.Point(385, 355);
             this.btnNewInvoice.Name = "btnNewInvoice";
             this.btnNewInvoice.Size = new System.Drawing.Size(64, 37);
             this.btnNewInvoice.TabIndex = 14;
-            this.btnNewInvoice.Text = "New invoice";
+            this.btnNewInvoice.Text = "New bill";
             this.btnNewInvoice.UseVisualStyleBackColor = true;
             this.btnNewInvoice.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(8, 355);
+            this.btnAtras.Location = new System.Drawing.Point(7, 355);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(56, 37);
             this.btnAtras.TabIndex = 13;
@@ -278,7 +314,7 @@
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.Color.White;
-            this.txtTotal.Location = new System.Drawing.Point(496, 325);
+            this.txtTotal.Location = new System.Drawing.Point(791, 320);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(97, 21);
             this.txtTotal.TabIndex = 12;
@@ -288,7 +324,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(434, 328);
+            this.label10.Location = new System.Drawing.Point(723, 323);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 14);
             this.label10.TabIndex = 10;
@@ -309,7 +345,7 @@
             this.dgvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInvoice.Location = new System.Drawing.Point(17, 27);
             this.dgvInvoice.Name = "dgvInvoice";
-            this.dgvInvoice.Size = new System.Drawing.Size(576, 223);
+            this.dgvInvoice.Size = new System.Drawing.Size(873, 223);
             this.dgvInvoice.TabIndex = 2;
             this.dgvInvoice.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellClick);
             this.dgvInvoice.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgvFactura_KeyUp);
@@ -317,7 +353,7 @@
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.Color.Red;
-            this.btnRemove.Location = new System.Drawing.Point(496, 3);
+            this.btnRemove.Location = new System.Drawing.Point(796, 3);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(97, 23);
             this.btnRemove.TabIndex = 1;
@@ -344,48 +380,12 @@
             this.lblserie.Size = new System.Drawing.Size(82, 24);
             this.lblserie.TabIndex = 4;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(493, 294);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 21);
-            this.label2.TabIndex = 18;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(422, 297);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 14);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "ITBIS 18%";
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(494, 259);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 21);
-            this.label9.TabIndex = 20;
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(412, 262);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 14);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Net Total $";
-            // 
             // frmFacturation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(634, 753);
+            this.ClientSize = new System.Drawing.Size(926, 753);
             this.Controls.Add(this.lblserie);
             this.Controls.Add(this.lblcorre);
             this.Controls.Add(this.panel1);
@@ -393,6 +393,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
             this.Name = "frmFacturation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Invoice :.";
@@ -436,9 +437,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtFechaFac;
         private System.Windows.Forms.Label lblserie;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblNetTotal;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblITBIS;
         private System.Windows.Forms.Label label7;
     }
 }
