@@ -364,6 +364,24 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
         }
 
+        public int getLastIdSale()
+        {
+            SqlCommand cmd = null;
+            var a = 0;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                cmd = new SqlCommand("spGetLastSale", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                a = (Int32)cmd.ExecuteScalar();
+                return a;
+            }
+            catch (Exception) { throw; }
+            finally { cmd.Connection.Close(); }
+
+        }
+
         #endregion
     }
 }

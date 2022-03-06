@@ -80,6 +80,12 @@
     <Compile Include="frmAdvancedSalesReport.Designer.cs">
       <DependentUpon>frmAdvancedSalesReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInvoicePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoicePrint.Designer.cs">
+      <DependentUpon>frmInvoicePrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSearchProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <EmbeddedResource Include="frmAdvancedSalesReport.resx">
       <DependentUpon>frmAdvancedSalesReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoicePrint.resx">
+      <DependentUpon>frmInvoicePrint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSearchProduct.resx">
       <DependentUpon>frmSearchProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +245,9 @@
       <DependentUpon>BDsistemaROLEYDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.CustomerInvoiceData.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.InvoicePrintDomain.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.ListingInvoiceSaleDetails.datasource" />
     <None Include="Properties\DataSources\CapaNegocio.Reports.NetSalesByPeriod.datasource" />
     <None Include="Properties\DataSources\CapaNegocio.Reports.SalesListing.datasource" />
     <None Include="Properties\DataSources\CapaNegocio.Reports.SalesReports.datasource" />

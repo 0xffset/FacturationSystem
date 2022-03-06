@@ -46,6 +46,9 @@
     <Compile Include="IBusinessUser.cs" />
     <Compile Include="IBusinessSale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CustomerInvoiceData.cs" />
+    <Compile Include="Reports\InvoicePrintDomain.cs" />
+    <Compile Include="Reports\ListingInvoiceSaleDetails.cs" />
     <Compile Include="Reports\NetSalesByPeriod.cs" />
     <Compile Include="Reports\SalesListing.cs" />
     <Compile Include="Reports\SalesReports.cs" />
@@ -62,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.CustomerInvoiceData.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.InvoicePrintDomain.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.ListingInvoiceSaleDetails.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.NetSalesByPeriod.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.SalesListing.datasource" />
+    <None Include="Properties\DataSources\CapaNegocio.Reports.SalesReports.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

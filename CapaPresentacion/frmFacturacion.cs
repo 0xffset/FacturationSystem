@@ -469,7 +469,16 @@ namespace CapaPresentacion
 
            }
         }
-
+        private void printInvoice ()
+        {
+            try
+            {
+                int idLatSale = IBusinessSale.Instancia.getLastIdSale();
+                frmInvoicePrint frmInvoicePrint = new frmInvoicePrint(idLatSale);
+                frmInvoicePrint.ShowDialog();
+            }
+            catch (Exception) { throw; }
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -524,6 +533,8 @@ namespace CapaPresentacion
                     btnAdd.Enabled = false; btnCancelInvoice.Enabled = true;
                     ac.bloqueartxt(this.gbCliente, false);
                     ac.bloqueartxt(this.panel1, false);
+
+                    printInvoice();
                     
 
                 }

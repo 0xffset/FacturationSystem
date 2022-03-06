@@ -130,6 +130,16 @@ namespace CapaNegocio
             catch (Exception) { throw; }
         }
 
+        public int getLastIdSale()
+        {
+            try
+            {
+                int i = IDataAccessSale.Instancia.getLastIdSale();
+                return i;
+            }
+            catch (Exception) { throw; }
+        }
+
       public int guardarventa(entSale ven, int idtipdoventa, String serie)
       {
           try 

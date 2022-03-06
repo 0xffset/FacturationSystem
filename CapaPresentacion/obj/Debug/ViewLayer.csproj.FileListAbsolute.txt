@@ -186,3 +186,4 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\bin\Debug\zh-CHT\Mic
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.cache
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\RdlCompile.compiled
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmAdvancedSalesReport.resources
+C:\Users\rogge\Desktop\System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.frmInvoicePrint.resources
