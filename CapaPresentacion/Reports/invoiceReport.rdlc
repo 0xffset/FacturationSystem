@@ -9,28 +9,28 @@
               <Width>1.61024cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.75274cm</Width>
+              <Width>5.55073cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.78422cm</Width>
+              <Width>1.22977cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.91682cm</Width>
+              <Width>1.19841cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.39045cm</Width>
+              <Width>2.10886cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.39045cm</Width>
+              <Width>2.09941cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.39045cm</Width>
+              <Width>1.83483cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.39045cm</Width>
+              <Width>1.99358cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.39045cm</Width>
+              <Width>2.27517cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -536,7 +536,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PriceProd_Det.Value</Value>
+                              <Value>=Fields!Amount_Det.Value*Fields!PriceProd_Det.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>#,0.00;(#,0.00)</Format>
@@ -692,47 +692,13 @@
         <Top>0.36724cm</Top>
         <Left>0.76412cm</Left>
         <Height>1.2cm</Height>
-        <Width>20.01627cm</Width>
+        <Width>19.90099cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="Textbox59">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Sum(Fields!PriceProd_Det.Value, "listingInvoiceSaleDetails")</Value>
-                <Style>
-                  <Format>'$'#,0.00;('$'#,0.00)</Format>
-                  <Color>Gray</Color>
-                  <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox59</rd:DefaultName>
-        <Top>2.08703cm</Top>
-        <Left>11.4097cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.13763cm</Width>
-        <ZIndex>1</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
       <Textbox Name="Textbox60">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
@@ -755,7 +721,7 @@
         <Left>13.83838cm</Left>
         <Height>0.6cm</Height>
         <Width>2.08471cm</Width>
-        <ZIndex>2</ZIndex>
+        <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -789,7 +755,7 @@
         <Left>16.28364cm</Left>
         <Height>0.6cm</Height>
         <Width>2.1063cm</Width>
-        <ZIndex>3</ZIndex>
+        <ZIndex>2</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -823,7 +789,7 @@
         <Left>18.69572cm</Left>
         <Height>0.6cm</Height>
         <Width>2.08471cm</Width>
-        <ZIndex>4</ZIndex>
+        <ZIndex>3</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -856,7 +822,7 @@
         <Left>8.98103cm</Left>
         <Height>0.6cm</Height>
         <Width>2.28756cm</Width>
-        <ZIndex>5</ZIndex>
+        <ZIndex>4</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -873,7 +839,7 @@
         <Left>0.76412cm</Left>
         <Height>0cm</Height>
         <Width>20.01631cm</Width>
-        <ZIndex>6</ZIndex>
+        <ZIndex>5</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -1535,7 +1501,37 @@
           <Top>0.40641cm</Top>
           <Left>0.97578cm</Left>
           <Height>0.6cm</Height>
-          <Width>2.5cm</Width>
+          <Width>1.67097cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox31">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=CountRows("listingInvoiceSaleDetails")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox31</rd:DefaultName>
+          <Top>0.40641cm</Top>
+          <Left>2.82314cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.33583cm</Width>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>

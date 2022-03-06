@@ -12,6 +12,7 @@ namespace Entidades
        public int Id_Prod_Det { get; set; }
        public Double PrecProd_Det { get; set; }
        public int Cantidad_Det { get; set; }
+       public Double Itbis_Det { get; set; }
        public Double Descuento_det { get; set; }
        
        //Relacion 

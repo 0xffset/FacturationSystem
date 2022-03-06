@@ -43,23 +43,26 @@ namespace CapaPresentacion
             {
                 dgvInvoice.Columns.Add("ColumnIdProd", "Idprod");
                 dgvInvoice.Columns.Add("ColumnNombreProd", "Product");
-                dgvInvoice.Columns.Add("ColumnCantidad", "Amount");
+                dgvInvoice.Columns.Add("ColumnCantidad", "Quantity");
                 dgvInvoice.Columns.Add("ColumnPrecio", "Unit Price $");
+                dgvInvoice.Columns.Add("ColumnItbis", "ITBIS");
                 dgvInvoice.Columns.Add("ColumnTotal", "Total");
 
                 dgvInvoice.Columns[0].Visible = false;
                 dgvInvoice.Columns[1].Width = 315;
                 dgvInvoice.Columns[2].Width = 70;
                 dgvInvoice.Columns[3].Width = 70;
-                dgvInvoice.Columns[4].Width = 100;
+                dgvInvoice.Columns[4].Width = 70;
+                dgvInvoice.Columns[5].Width = 100;
              
 
                 dgvInvoice.Columns[1].ReadOnly = true;
                  dgvInvoice.Columns[2].ReadOnly = false;
                  dgvInvoice.Columns[3].ReadOnly = true;
                  dgvInvoice.Columns[4].ReadOnly = true;
+                 dgvInvoice.Columns[5].ReadOnly = true;
 
-                dgvInvoice.Columns[4].DefaultCellStyle.BackColor = Color.GreenYellow;
+                dgvInvoice.Columns[5].DefaultCellStyle.BackColor = Color.GreenYellow;
 
                 DataGridViewCellStyle css = new DataGridViewCellStyle();
                 css.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -95,13 +98,25 @@ namespace CapaPresentacion
         {
             try 
             {
+                double itbis_producto = 0;
                 dgvInvoice.Rows.Clear();
                 for (int i = 0; i < Lista.Count; i++)
                 {
+                    if (Lista[i].ITBIS_Prod == 18)
+                    {
+                        itbis_producto = 0.18 * Lista[i].Precio_Prod;
+                    }
+                    if (Lista[i].ITBIS_Prod == 16)
+                    {
+                        itbis_producto = 0.16 * Lista[i].Precio_Prod;
+                    }
+                    if (Lista[i].ITBIS_Prod == 0)
+                    {
+                        itbis_producto = 0;
+                    }
                     String[] fila = new string[] {
                         Lista[i].Id_Prod.ToString(), Lista[i].Nombre_Prod, Lista[i].Cantidad_.ToString(),
-                        Lista[i].Precio_Prod.ToString(),
-                        (Lista[i].Precio_Prod * 5).ToString()
+                        Lista[i].Precio_Prod.ToString(), itbis_producto.ToString("0.0")
                     };
                     dgvInvoice.Rows.Add(fila);
                 }
@@ -114,21 +129,28 @@ namespace CapaPresentacion
             try
             {
                 double subtotal = 0.0;
+                double totalItbis = 0.0;
                 foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
                      if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
-                     row.Cells[4].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
-
+                     row.Cells[5].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
+                     
                     if (row.Cells[3].Value == null) row.Cells[3].Value = 0;
-                     row.Cells[4].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
-                    subtotal += Convert.ToDouble(row.Cells[4].Value);
+                     row.Cells[5].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
+                    subtotal += Convert.ToDouble(row.Cells[5].Value);
+                    totalItbis += Convert.ToDouble(row.Cells[4].Value) * Convert.ToDouble(row.Cells[2].Value);
 
-                    txtTotal.Text = subtotal.ToString("0.00");
+
+                    lblITBIS.Text = totalItbis.ToString("0.0");
+                    lblNetTotal.Text = subtotal.ToString("0.00");
+                    txtTotal.Text = (subtotal + totalItbis).ToString("0.0");
 
                     
                 }
                 if(dgvInvoice.Rows.Count == 0) {
                     txtTotal.Text = "0";
+                    lblITBIS.Text = "0";
+                    lblNetTotal.Text = "0";
                 }
             }
             catch (Exception) {throw;}
@@ -166,7 +188,7 @@ namespace CapaPresentacion
                     res = int.TryParse(valor, out i);
                     if (res == false)
                     {
-                        MessageBox.Show("Esta tratando de ingresar un valor invalido ne 'Cantidad '", "Advertencia",
+                        MessageBox.Show("You are trying to enter an invalid value in 'Quantity'", "Advertencia",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         row.Cells[2].Value = i;
                     }
@@ -511,7 +533,7 @@ namespace CapaPresentacion
                     entTipoPago tp = new entTipoPago();
                     tp.Id_TipPago = 2;
                     v.tipopago = tp;
-                    v.Igv_Venta = 0;
+                    v.Igv_Venta = Convert.ToDouble(lblITBIS.Text.ToString());
                     v.Descuento_Venta = 0.0;
                     List<entDetalleVenta> detalle = new List<entDetalleVenta>();
                     foreach (DataGridViewRow row in dgvInvoice.Rows)
@@ -520,6 +542,7 @@ namespace CapaPresentacion
                         dt.Id_Prod_Det = Convert.ToInt32(row.Cells[0].Value);
                         dt.PrecProd_Det = Convert.ToDouble(row.Cells[3].Value);
                         dt.Cantidad_Det = Convert.ToInt32(row.Cells[2].Value);
+                        dt.Itbis_Det = Convert.ToDouble(row.Cells[4].Value) * Convert.ToInt32(row.Cells[2].Value);
                         detalle.Add(dt);
                     }
                     ProductReduction();

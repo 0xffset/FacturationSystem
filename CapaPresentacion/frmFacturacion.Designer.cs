@@ -78,7 +78,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(452, 11);
+            this.groupBox1.Location = new System.Drawing.Point(746, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(168, 92);
             this.groupBox1.TabIndex = 1;
@@ -116,9 +116,9 @@
             this.gbCliente.Controls.Add(this.label5);
             this.gbCliente.Controls.Add(this.txtCodoU);
             this.gbCliente.Controls.Add(this.label4);
-            this.gbCliente.Location = new System.Drawing.Point(28, 133);
+            this.gbCliente.Location = new System.Drawing.Point(197, 136);
             this.gbCliente.Name = "gbCliente";
-            this.gbCliente.Size = new System.Drawing.Size(881, 159);
+            this.gbCliente.Size = new System.Drawing.Size(586, 159);
             this.gbCliente.TabIndex = 4;
             this.gbCliente.TabStop = false;
             // 
@@ -232,7 +232,7 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Location = new System.Drawing.Point(21, 307);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(893, 395);
+            this.panel1.Size = new System.Drawing.Size(893, 401);
             this.panel1.TabIndex = 5;
             // 
             // lblNetTotal
@@ -273,7 +273,7 @@
             // 
             // btnCancelInvoice
             // 
-            this.btnCancelInvoice.Location = new System.Drawing.Point(530, 355);
+            this.btnCancelInvoice.Location = new System.Drawing.Point(497, 355);
             this.btnCancelInvoice.Name = "btnCancelInvoice";
             this.btnCancelInvoice.Size = new System.Drawing.Size(68, 37);
             this.btnCancelInvoice.TabIndex = 16;
@@ -283,7 +283,7 @@
             // 
             // btnPrintInvoice
             // 
-            this.btnPrintInvoice.Location = new System.Drawing.Point(455, 355);
+            this.btnPrintInvoice.Location = new System.Drawing.Point(422, 355);
             this.btnPrintInvoice.Name = "btnPrintInvoice";
             this.btnPrintInvoice.Size = new System.Drawing.Size(69, 37);
             this.btnPrintInvoice.TabIndex = 15;
@@ -293,7 +293,7 @@
             // 
             // btnNewInvoice
             // 
-            this.btnNewInvoice.Location = new System.Drawing.Point(385, 355);
+            this.btnNewInvoice.Location = new System.Drawing.Point(352, 355);
             this.btnNewInvoice.Name = "btnNewInvoice";
             this.btnNewInvoice.Size = new System.Drawing.Size(64, 37);
             this.btnNewInvoice.TabIndex = 14;
@@ -385,7 +385,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(926, 753);
+            this.ClientSize = new System.Drawing.Size(926, 720);
             this.Controls.Add(this.lblserie);
             this.Controls.Add(this.lblcorre);
             this.Controls.Add(this.panel1);

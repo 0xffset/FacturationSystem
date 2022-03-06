@@ -165,6 +165,7 @@ namespace CapaNegocio
                   Cadxml += "<detalle ";
                   Cadxml += "idproducto='" + dt.Id_Prod_Det + "' ";
                   Cadxml += "precioprod='" + dt.PrecProd_Det.ToString().Replace(",", ".") + "' ";
+                  Cadxml += "itbis='" + dt.Itbis_Det + "' ";
                   Cadxml += "cantidad='" + dt.Cantidad_Det + "'/>";
               }
               Cadxml += "</venta>";

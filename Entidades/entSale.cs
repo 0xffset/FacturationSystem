@@ -12,7 +12,7 @@ namespace Entidades
         public String Codigo_Venta { get; set; }
         public int Serie_Venta { get; set; }
         public String Correlativo_Venta { get; set; }
-        public int Igv_Venta { get; set; }
+        public Double  Igv_Venta { get; set; }
         public Double MontoIgv_Venta { get; set; }
         public DateTime FechaVenta { get; set; }
         public String Estado_Venta { get; set; }
