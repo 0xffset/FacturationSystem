@@ -153,7 +153,7 @@ namespace CapaPresentacion
               
                 if (dgvr.Cells["ColumnStatus"].Value.ToString() == "Enough")
                 {
-                    dgvr.DefaultCellStyle.BackColor = Color.Green;
+                    dgvr.DefaultCellStyle.BackColor = Color.LightGreen;
                    
                 }
 
@@ -164,7 +164,7 @@ namespace CapaPresentacion
 
                 if (dgvr.Cells["ColumnStatus"].Value.ToString() == "Minimun")
                 {
-                    dgvr.DefaultCellStyle.BackColor = Color.Red;
+                    dgvr.DefaultCellStyle.BackColor = Color.LightCoral;
                 }
 
             }

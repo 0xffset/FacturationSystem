@@ -59,7 +59,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(1244, 37);
             this.label12.TabIndex = 4;
-            this.label12.Text = ".: STOCK DE PRODUCTO :.";
+            this.label12.Text = ".: INVENTARY PRODUCT :.";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
@@ -195,7 +195,7 @@
             // 
             // label3
             // 
-            this.label3.Image = global::CapaPresentacion.Properties.Resources.circulo_verde24x242;
+            this.label3.BackColor = System.Drawing.Color.LightGreen;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(890, 62);
             this.label3.Name = "label3";
@@ -206,7 +206,7 @@
             // 
             // label4
             // 
-            this.label4.Image = global::CapaPresentacion.Properties.Resources.CirculoNaranja24x241;
+            this.label4.BackColor = System.Drawing.Color.Orange;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label4.Location = new System.Drawing.Point(890, 96);
             this.label4.Name = "label4";
@@ -217,7 +217,7 @@
             // 
             // label5
             // 
-            this.label5.Image = global::CapaPresentacion.Properties.Resources.circulorojo_24x24;
+            this.label5.BackColor = System.Drawing.Color.LightCoral;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label5.Location = new System.Drawing.Point(890, 131);
             this.label5.Name = "label5";
