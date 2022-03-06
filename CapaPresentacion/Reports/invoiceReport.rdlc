@@ -369,7 +369,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Code_Product">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -401,7 +401,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Name_Product">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -433,7 +433,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Amount_Det">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -465,7 +465,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Unit_Product">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -497,7 +497,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="PriceProd_Det">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -506,8 +506,7 @@
                               <Value>=Fields!PriceProd_Det.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>'$'#,0.00;('$'#,0.00)</Format>
-                                <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -531,7 +530,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="PriceProd_Det1">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -540,8 +539,7 @@
                               <Value>=Fields!PriceProd_Det.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>'$'#,0.00;('$'#,0.00)</Format>
-                                <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -565,7 +563,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Discount_Det">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -574,8 +572,7 @@
                               <Value>=Fields!Discount_Det.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>'$'#,0.00;('$'#,0.00)</Format>
-                                <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -599,7 +596,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Itbis_Det">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -608,8 +605,7 @@
                               <Value>=Fields!Itbis_Det.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>'$'#,0.00;('$'#,0.00)</Format>
-                                <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -633,7 +629,7 @@
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Total_Det">
-                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -642,7 +638,7 @@
                               <Value>=Fields!Total_Det.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>'$'#,0.00;('$'#,0.00)</Format>
+                                <Format>#,0.00;(#,0.00)</Format>
                                 <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                               </Style>
                             </TextRun>
@@ -691,11 +687,12 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <RepeatColumnHeaders>true</RepeatColumnHeaders>
         <DataSetName>listingInvoiceSaleDetails</DataSetName>
         <Top>0.36724cm</Top>
         <Left>0.76412cm</Left>
         <Height>1.2cm</Height>
-        <Width>20.01631cm</Width>
+        <Width>20.01627cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -710,7 +707,11 @@
             <TextRuns>
               <TextRun>
                 <Value>=Sum(Fields!PriceProd_Det.Value, "listingInvoiceSaleDetails")</Value>
-                <Style />
+                <Style>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                  <Color>Gray</Color>
+                  <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -740,7 +741,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=Sum(Fields!Discount_Det.Value, "listingInvoiceSaleDetails")</Value>
-                <Style />
+                <Style>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                  <Color>Gray</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -760,6 +764,7 @@
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
         </Style>
       </Textbox>
       <Textbox Name="Textbox61">
@@ -770,7 +775,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=Sum(Fields!Itbis_Det.Value, "listingInvoiceSaleDetails")</Value>
-                <Style />
+                <Style>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                  <Color>Gray</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -778,7 +786,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox59</rd:DefaultName>
         <Top>2.08703cm</Top>
-        <Left>16.26705cm</Left>
+        <Left>16.28364cm</Left>
         <Height>0.6cm</Height>
         <Width>2.1063cm</Width>
         <ZIndex>3</ZIndex>
@@ -790,6 +798,7 @@
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
         </Style>
       </Textbox>
       <Textbox Name="Textbox62">
@@ -800,7 +809,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=Sum(Fields!Total_Det.Value, "listingInvoiceSaleDetails")</Value>
-                <Style />
+                <Style>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                  <Color>Gray</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -820,6 +832,7 @@
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
         </Style>
       </Textbox>
       <Textbox Name="Textbox63">
@@ -848,6 +861,7 @@
           <Border>
             <Style>None</Style>
           </Border>
+          <BackgroundColor>Gray</BackgroundColor>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -1145,9 +1159,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox8</rd:DefaultName>
               <Top>0.29903cm</Top>
-              <Left>2.79105cm</Left>
+              <Left>2.47355cm</Left>
               <Height>0.6cm</Height>
-              <Width>3.05562cm</Width>
+              <Width>4.17412cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -1306,9 +1320,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox8</rd:DefaultName>
-              <Top>2.59292cm</Top>
+              <Top>2.27542cm</Top>
               <Left>0.07056cm</Left>
-              <Height>1.00691cm</Height>
+              <Height>1.12333cm</Height>
               <Width>7.48707cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
@@ -1502,6 +1516,37 @@
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>No. Items</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox6</rd:DefaultName>
+          <Top>0.40641cm</Top>
+          <Left>0.97578cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
