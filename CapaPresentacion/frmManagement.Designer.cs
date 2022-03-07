@@ -30,6 +30,9 @@
         {
             this.tbcPrincipal = new System.Windows.Forms.TabControl();
             this.tcpProducts = new System.Windows.Forms.TabPage();
+            this.rb0 = new System.Windows.Forms.RadioButton();
+            this.rb116ITBIS = new System.Windows.Forms.RadioButton();
+            this.rb18ITBIS = new System.Windows.Forms.RadioButton();
             this.txtDescuento = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.lblvenprod = new System.Windows.Forms.Label();
@@ -123,9 +126,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.rb18ITBIS = new System.Windows.Forms.RadioButton();
-            this.rb116ITBIS = new System.Windows.Forms.RadioButton();
-            this.rb0 = new System.Windows.Forms.RadioButton();
             this.tbcPrincipal.SuspendLayout();
             this.tcpProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproduct)).BeginInit();
@@ -200,6 +200,39 @@
             this.tcpProducts.TabIndex = 0;
             this.tcpProducts.Text = "PRODUCTS";
             this.tcpProducts.Click += new System.EventHandler(this.tcpProducto_Click);
+            // 
+            // rb0
+            // 
+            this.rb0.AutoSize = true;
+            this.rb0.Location = new System.Drawing.Point(316, 170);
+            this.rb0.Name = "rb0";
+            this.rb0.Size = new System.Drawing.Size(32, 18);
+            this.rb0.TabIndex = 82;
+            this.rb0.TabStop = true;
+            this.rb0.Text = "E";
+            this.rb0.UseVisualStyleBackColor = true;
+            // 
+            // rb116ITBIS
+            // 
+            this.rb116ITBIS.AutoSize = true;
+            this.rb116ITBIS.Location = new System.Drawing.Point(316, 150);
+            this.rb116ITBIS.Name = "rb116ITBIS";
+            this.rb116ITBIS.Size = new System.Drawing.Size(95, 18);
+            this.rb116ITBIS.TabIndex = 81;
+            this.rb116ITBIS.TabStop = true;
+            this.rb116ITBIS.Text = "16 % ITBIS";
+            this.rb116ITBIS.UseVisualStyleBackColor = true;
+            // 
+            // rb18ITBIS
+            // 
+            this.rb18ITBIS.AutoSize = true;
+            this.rb18ITBIS.Location = new System.Drawing.Point(316, 131);
+            this.rb18ITBIS.Name = "rb18ITBIS";
+            this.rb18ITBIS.Size = new System.Drawing.Size(88, 18);
+            this.rb18ITBIS.TabIndex = 80;
+            this.rb18ITBIS.TabStop = true;
+            this.rb18ITBIS.Text = "18% ITBIS";
+            this.rb18ITBIS.UseVisualStyleBackColor = true;
             // 
             // txtDescuento
             // 
@@ -380,9 +413,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(499, 172);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 14);
+            this.label9.Size = new System.Drawing.Size(35, 14);
             this.label9.TabIndex = 62;
-            this.label9.Text = "Prod. present.:";
+            this.label9.Text = "UM.:";
             // 
             // label10
             // 
@@ -527,9 +560,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(118, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 14);
+            this.label2.Size = new System.Drawing.Size(63, 14);
             this.label2.TabIndex = 44;
-            this.label2.Text = "Producto: ";
+            this.label2.Text = "Product:";
             // 
             // label3
             // 
@@ -1156,39 +1189,6 @@
             this.label12.Text = ".: PRODUCTS | SUPPLIERS | PROD. PRESENTATION | CATEGORIES :.";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label12_Click);
-            // 
-            // rb18ITBIS
-            // 
-            this.rb18ITBIS.AutoSize = true;
-            this.rb18ITBIS.Location = new System.Drawing.Point(316, 131);
-            this.rb18ITBIS.Name = "rb18ITBIS";
-            this.rb18ITBIS.Size = new System.Drawing.Size(88, 18);
-            this.rb18ITBIS.TabIndex = 80;
-            this.rb18ITBIS.TabStop = true;
-            this.rb18ITBIS.Text = "18% ITBIS";
-            this.rb18ITBIS.UseVisualStyleBackColor = true;
-            // 
-            // rb116ITBIS
-            // 
-            this.rb116ITBIS.AutoSize = true;
-            this.rb116ITBIS.Location = new System.Drawing.Point(316, 150);
-            this.rb116ITBIS.Name = "rb116ITBIS";
-            this.rb116ITBIS.Size = new System.Drawing.Size(95, 18);
-            this.rb116ITBIS.TabIndex = 81;
-            this.rb116ITBIS.TabStop = true;
-            this.rb116ITBIS.Text = "16 % ITBIS";
-            this.rb116ITBIS.UseVisualStyleBackColor = true;
-            // 
-            // rb0
-            // 
-            this.rb0.AutoSize = true;
-            this.rb0.Location = new System.Drawing.Point(316, 170);
-            this.rb0.Name = "rb0";
-            this.rb0.Size = new System.Drawing.Size(32, 18);
-            this.rb0.TabIndex = 82;
-            this.rb0.TabStop = true;
-            this.rb0.Text = "E";
-            this.rb0.UseVisualStyleBackColor = true;
             // 
             // frmManagement
             // 
