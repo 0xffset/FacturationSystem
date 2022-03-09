@@ -250,7 +250,9 @@
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1187, 644);
+            this.MinimumSize = new System.Drawing.Size(1187, 644);
             this.Name = "frmIndicaProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Product Invetary :.";
             this.Load += new System.EventHandler(this.frmIndicaProducto_Load);
             this.groupBox1.ResumeLayout(false);

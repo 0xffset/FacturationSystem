@@ -1,22 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaAccesoDatos.SalesReports;
-namespace CapaNegocio.Reports
+﻿namespace CapaNegocio.Reports
 {
+    using CapaAccesoDatos.SalesReports;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    /// <summary>
+    /// Defines the <see cref="SalesReports" />.
+    /// </summary>
     public class SalesReports
     {
         //Attributes-Properties
+        /// <summary>
+        /// Gets the reportDate.
+        /// </summary>
         public DateTime reportDate { get; private set; }
-        public DateTime startDate { get; private set; }
-        public DateTime endDate { get; set; }
-        public List<SalesListing> salesListing { get; private set; }
-        public List<NetSalesByPeriod> netSalesByPeriod { get; private set; }
-       public double totalNetSales { get; private set; }
 
-     public void createdSalesReport (DateTime fromDate, DateTime toDate)
+        /// <summary>
+        /// Gets the startDate.
+        /// </summary>
+        public DateTime startDate { get; private set; }
+
+        /// <summary>
+        /// Gets or sets the endDate.
+        /// </summary>
+        public DateTime endDate { get; set; }
+
+        /// <summary>
+        /// Gets the salesListing.
+        /// </summary>
+        public List<SalesListing> salesListing { get; private set; }
+
+        /// <summary>
+        /// Gets the netSalesByPeriod.
+        /// </summary>
+        public List<NetSalesByPeriod> netSalesByPeriod { get; private set; }
+
+        /// <summary>
+        /// Gets the totalNetSales.
+        /// </summary>
+        public double totalNetSales { get; private set; }
+
+        /// <summary>
+        /// The createdSalesReport.
+        /// </summary>
+        /// <param name="fromDate">The fromDate<see cref="DateTime"/>.</param>
+        /// <param name="toDate">The toDate<see cref="DateTime"/>.</param>
+        public void createdSalesReport(DateTime fromDate, DateTime toDate)
         {
             reportDate = DateTime.Now;
             startDate = fromDate;
@@ -66,16 +96,16 @@ namespace CapaNegocio.Reports
                                     }).ToList();
             }
 
-            else if (totalDays <=30)
+            else if (totalDays <= 30)
             {
                 netSalesByPeriod = (from sales in listSalesByDate
                                     group sales by
                                     System.Globalization.CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
-                                        sales.date,System.Globalization.CalendarWeekRule.FirstDay,DayOfWeek.Monday)
+                                        sales.date, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Monday)
                                       into listSales
                                     select new NetSalesByPeriod
                                     {
-                                        period = "Week" +listSales.Key,
+                                        period = "Week" + listSales.Key,
                                         netSale = listSales.Sum(item => item.amount)
                                     }).ToList();
             }
@@ -84,16 +114,16 @@ namespace CapaNegocio.Reports
             {
                 netSalesByPeriod = (from sales in listSalesByDate
                                     group sales by sales.date.ToString("MMM-yyyy")
-                                 
+
                                     into listSales
                                     select new NetSalesByPeriod
                                     {
-                                        period =  listSales.Key,
+                                        period = listSales.Key,
                                         netSale = listSales.Sum(item => item.amount)
                                     }).ToList();
             }
 
-            else 
+            else
             {
                 netSalesByPeriod = (from sales in listSalesByDate
                                     group sales by sales.date.ToString("yyyy")
@@ -105,7 +135,6 @@ namespace CapaNegocio.Reports
                                         netSale = listSales.Sum(item => item.amount)
                                     }).ToList();
             }
-
         }
     }
 }

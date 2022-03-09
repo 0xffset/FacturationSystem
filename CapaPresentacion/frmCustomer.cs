@@ -1,25 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Entidades;
-using CapaNegocio;
-
-namespace CapaPresentacion
+﻿namespace CapaPresentacion
 {
+    using CapaNegocio;
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Defines the <see cref="frmCustomer" />.
+    /// </summary>
     public partial class frmCustomer : Form
     {
-        int IdUsuario = 0;
+        /// <summary>
+        /// Defines the IdUsuario.
+        /// </summary>
+        internal int IdUsuario = 0;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmCustomer"/> class.
+        /// </summary>
+        /// <param name="Id_Usuario">The Id_Usuario<see cref="int?"/>.</param>
         public frmCustomer(int? Id_Usuario)
         {
             InitializeComponent();
             this.IdUsuario = (int)Id_Usuario;
         }
+
+        /// <summary>
+        /// The controlb.
+        /// </summary>
+        /// <param name="nuevo">The nuevo<see cref="Boolean"/>.</param>
+        /// <param name="editar">The editar<see cref="Boolean"/>.</param>
+        /// <param name="eliminar">The eliminar<see cref="Boolean"/>.</param>
+        /// <param name="salir">The salir<see cref="Boolean"/>.</param>
+        /// <param name="vender">The vender<see cref="Boolean"/>.</param>
         private void controlb(Boolean nuevo, Boolean editar, Boolean eliminar, Boolean salir, Boolean vender)
         {
             try
@@ -34,6 +49,9 @@ namespace CapaPresentacion
             { throw; }
         }
 
+        /// <summary>
+        /// The creargrid.
+        /// </summary>
         private void creargrid()
         {
             try
@@ -51,11 +69,11 @@ namespace CapaPresentacion
                 dgvcustomer.Columns[0].Visible = false;
                 dgvcustomer.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 dgvcustomer.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-              
+
                 dgvcustomer.Columns[3].Visible = false;
                 dgvcustomer.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 dgvcustomer.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-               dgvcustomer.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                dgvcustomer.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 dgvcustomer.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 dgvcustomer.Columns[8].Width = 250;
 
@@ -73,6 +91,9 @@ namespace CapaPresentacion
             { throw; }
         }
 
+        /// <summary>
+        /// The llenargrid.
+        /// </summary>
         private void llenargrid()
         {
             try
@@ -80,7 +101,7 @@ namespace CapaPresentacion
                 int num = 0;
                 dgvcustomer.Rows.Clear();
                 dgvcustomer.Rows.Clear();
-                List<entCustomer> Lista = IBusinessCustomer.Instancia.listCustomers();
+                List<entCustomer> Lista = IBusinessCustomer.Instance.ListCustomer();
                 for (int i = 0; i < Lista.Count; i++)
                 {
                     num++;
@@ -92,9 +113,13 @@ namespace CapaPresentacion
             }
             catch (ApplicationException ae) { MessageBox.Show(ae.Message, "Algo ocurre", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             catch (Exception) { throw; }
-
         }
 
+        /// <summary>
+        /// The frmCliente_Load.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void frmCliente_Load(object sender, EventArgs e)
         {
             try
@@ -107,6 +132,11 @@ namespace CapaPresentacion
             { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        /// <summary>
+        /// The BTNnuevo_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void BTNnuevo_Click(object sender, EventArgs e)
         {
             try
@@ -120,6 +150,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The dgvcliente_CellClick.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
         private void dgvcliente_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -132,6 +167,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The BTNeditar_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void BTNeditar_Click(object sender, EventArgs e)
         {
             try
@@ -152,6 +192,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The BTneliminar_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void BTneliminar_Click(object sender, EventArgs e)
         {
             try
@@ -161,8 +206,9 @@ namespace CapaPresentacion
                 cliente.Customer_Id = Convert.ToInt32(dgvcustomer.CurrentRow.Cells[0].Value);
                 cliente.tipodocumento = td;
                 DialogResult i = MessageBox.Show("¿Desea elimnar el registro seleccionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(i == DialogResult.Yes) {
-                    int resultado = IBusinessCustomer.Instancia.CustomersManagement(cliente, 3);
+                if (i == DialogResult.Yes)
+                {
+                    int resultado = IBusinessCustomer.Instance.CustomersManagement(cliente, 3);
                     MessageBox.Show("El registro fue elimnado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     llenargrid();
                 }
@@ -175,13 +221,18 @@ namespace CapaPresentacion
             { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        /// <summary>
+        /// The btnBuscar_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
                 entCustomer c = new entCustomer();
                 String Nro_doc = txtindetifCard.Text;
-                c = IBusinessCustomer.Instancia.searchCustomer(0, Nro_doc);
+                c = IBusinessCustomer.Instance.SearchCustomer(0, Nro_doc);
                 dgvcustomer.Rows.Clear();
                 String[] fila = new String[] {c.Customer_Id.ToString(),1.ToString(), c.Customer_Name,
                 c.tipodocumento.Nombre_TipDoc, c.CustomerDoc_Number, c.Customer_Phone, c.Customer_Cellphone,
@@ -202,6 +253,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The txtnombre_KeyUp.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
         private void txtnombre_KeyUp(object sender, KeyEventArgs e)
         {
             try
@@ -209,7 +265,7 @@ namespace CapaPresentacion
                 dgvcustomer.Rows.Clear();
                 int numero = 0;
                 String Nom_cli = txtNameSearch.Text;
-                List<entCustomer> Lista = IBusinessCustomer.Instancia.AdvancedSearchCustomer(Nom_cli);
+                List<entCustomer> Lista = IBusinessCustomer.Instance.AdvancedSearchCustomer(Nom_cli);
                 for (int i = 0; i < Lista.Count; i++)
                 {
                     numero++;
@@ -217,7 +273,8 @@ namespace CapaPresentacion
                     Lista[i].tipodocumento.Nombre_TipDoc, Lista[i].CustomerDoc_Number, Lista[i].Customer_Phone, Lista[i].Customer_Cellphone,
                     Lista[i].Customer_Email, Lista[i].Customer_Address};
                     dgvcustomer.Rows.Add(row);
-                } controlb(true, false, false, true, false);
+                }
+                controlb(true, false, false, true, false);
             }
             catch (ApplicationException ea)
             {
@@ -229,6 +286,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The BTNsalir_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void BTNsalir_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("¿Desea cerrar la ventana actual?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -238,15 +300,20 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The BTNvender_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void BTNvender_Click(object sender, EventArgs e)
         {
-            try 
+            try
 
             {
                 int id_cli = Convert.ToInt32(dgvcustomer.CurrentRow.Cells[0].Value);
                 localdatabase.Instancia.returnidcliente(1, id_cli);
                 int frminvocador = localdatabase.Instancia.invocar(0, 0);
-                if(frminvocador == 1)
+                if (frminvocador == 1)
                 {
                     localdatabase.Instancia.returnidcliente(1, id_cli);
                 }
@@ -259,19 +326,23 @@ namespace CapaPresentacion
                     localdatabase.Instancia.invocar(1, 0);
                 }
                 this.Close();
-                
-                
+
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
         }
 
+        /// <summary>
+        /// The button1_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            try 
+            try
             {
                 if (dgvcustomer.Rows.Count > 0)
                 {
@@ -294,27 +365,29 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The cBoxocultar_CheckedChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void cBoxocultar_CheckedChanged(object sender, EventArgs e)
         {
             controlb(true, false, false, true, false);
             if (cBoxocultar.CheckState == CheckState.Checked)
             {
                 txtindetifCard.Enabled = false; btnSearch.Enabled = false;
-                txtNameSearch.Enabled = true; 
+                txtNameSearch.Enabled = true;
             }
             else { txtNameSearch.Enabled = true; btnSearch.Enabled = true; txtNameSearch.Enabled = false; }
         }
 
+        /// <summary>
+        /// The txtnombre_TextChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void txtnombre_TextChanged(object sender, EventArgs e)
         {
-
         }
-
-        
     }
-}  
-        
-
-
-        
-  
+}

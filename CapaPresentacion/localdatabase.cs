@@ -129,7 +129,7 @@ namespace CapaNegocio
                             throw new ApplicationException("Ya fue agregado este producto");
                         }
                     }
-                    entProduct p = IBusinessManagement.Instancia.BuscarProd(idprod);
+                    entProduct p = IBusinessManagement.Instance.SearchProduct(idprod);
                     p.Cantidad_ = canti;
                     detFactura.Add(p);
                 }

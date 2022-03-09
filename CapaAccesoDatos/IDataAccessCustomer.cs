@@ -1,33 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Entidades;
-using System.Data.SqlClient;
-using System.Data;
-
-namespace CapaAccesoDatos
+﻿namespace CapaAccesoDatos
 {
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
+
+    /// <summary>
+    /// Defines the <see cref="IDataAccessCustomer" />.
+    /// </summary>
     public class IDataAccessCustomer
     {
-        #region singleton
-        private static readonly IDataAccessCustomer _instancia = new IDataAccessCustomer();
-        public static IDataAccessCustomer Instancia
-        {
-            get { return IDataAccessCustomer._instancia; }
-        }
-        #endregion singleton
+        /// <summary>
+        /// Defines the _instancia.
+        /// </summary>
+        private static readonly IDataAccessCustomer _instance = new IDataAccessCustomer();
 
-        #region metodos
-        public List<entCustomer> AdvSearchCustomer(String nom_cli)
+        /// <summary>
+        /// Gets the Instancia.
+        /// </summary>
+        public static IDataAccessCustomer Instance
+        {
+            get { return IDataAccessCustomer._instance; }
+        }
+
+        /// <summary>
+        /// The IAdvancedSearchCustomer.
+        /// </summary>
+        /// <param name="nom_cli">The nom_cli<see cref="String"/>.</param>
+        /// <returns>The <see cref="List{entCustomer}"/>.</returns>
+        public List<entCustomer> IAdvancedSearchCustomer(String nom_cli)
         {
             SqlCommand cmd = null;
             SqlDataReader dr = null;
             List<entCustomer> list = null;
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spSearchCustomerByName", cn);
                 cmd.Parameters.AddWithValue("@prmName_Customer", nom_cli);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -51,7 +60,7 @@ namespace CapaAccesoDatos
                     list.Add(cliente);
 
 
-                    
+
                 }
             }
             catch (Exception) { throw; }
@@ -59,7 +68,13 @@ namespace CapaAccesoDatos
             return list;
         }
 
-        public entCustomer SearchClient(int id_cli, String nro_Doc)
+        /// <summary>
+        /// The ISearchCustomer.
+        /// </summary>
+        /// <param name="id_cli">The id_cli<see cref="int"/>.</param>
+        /// <param name="nro_Doc">The nro_Doc<see cref="String"/>.</param>
+        /// <returns>The <see cref="entCustomer"/>.</returns>
+        public entCustomer ISearchCustomer(int id_cli, String nro_Doc)
         {
             SqlCommand cmd = null;
             SqlDataReader dr = null;
@@ -67,14 +82,14 @@ namespace CapaAccesoDatos
 
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spBuscarCliente", cn);
                 cmd.Parameters.AddWithValue("@prmidCliente", id_cli);
                 cmd.Parameters.AddWithValue("@prmNroDoc", nro_Doc);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 dr = cmd.ExecuteReader();
-                if(dr.Read())
+                if (dr.Read())
                 {
                     cliente = new entCustomer();
                     cliente.Customer_Id = Convert.ToInt32(dr["Id_Cliente"]);
@@ -99,14 +114,18 @@ namespace CapaAccesoDatos
             return cliente;
         }
 
-        public List<entCustomer> ListCustomers()
+        /// <summary>
+        /// The IListCustomer.
+        /// </summary>
+        /// <returns>The <see cref="List{entCustomer}"/>.</returns>
+        public List<entCustomer> IListCustomer()
         {
-            SqlCommand cmd  = null;
+            SqlCommand cmd = null;
             SqlDataReader dr = null;
             List<entCustomer> Lista = null;
-            try 
+            try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spCustomerList", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
@@ -127,21 +146,25 @@ namespace CapaAccesoDatos
                     customer.Customer_Address = dr["Direccion_Cliente"].ToString();
                     Lista.Add(customer);
                 }
-                
+
 
             }
             catch (Exception) { throw; }
             finally { cmd.Connection.Close(); }
             return Lista;
         }
-        
-        public int numCliente()
+
+        /// <summary>
+        /// The IShowNumCustomers.
+        /// </summary>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int IShowNumCustomers()
         {
             SqlCommand cmd = null;
             var resultado = 0;
-            try 
+            try
             {
-                SqlConnection cnd = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cnd = Conexion.Instance.sqlConnectionCursor();
 
                 cmd = new SqlCommand("spNumClientes", cnd);
                 cnd.Open();
@@ -155,14 +178,19 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
         }
 
-        public int customerManagement(String cadXml)
+        /// <summary>
+        /// The ICustomerMagament.
+        /// </summary>
+        /// <param name="cadXml">The cadXml<see cref="String"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int ICustomerMagament(String cadXml)
         {
             SqlCommand cmd = null;
             var resultado = 0;
 
-            try 
+            try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spInsEditElimCliente", cn);
                 cmd.Parameters.AddWithValue("@prmCadXml", cadXml);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -174,44 +202,39 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
         }
 
-        public List<entTipoDocumento> listartipdoc(){
-    
-        SqlCommand cmd = null;
-        SqlDataReader dr = null;
-        List<entTipoDocumento> Lista = null;
-        try
+        /// <summary>
+        /// The IListTipDocument.
+        /// </summary>
+        /// <returns>The <see cref="List{entTipoDocumento}"/>.</returns>
+        public List<entTipoDocumento> IListTipDocument()
         {
-            SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
-            cmd = new SqlCommand("spListarTipDoc", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cn.Open();
-            dr = cmd.ExecuteReader();
-            Lista = new List<entTipoDocumento>();
-            while (dr.Read())
+
+            SqlCommand cmd = null;
+            SqlDataReader dr = null;
+            List<entTipoDocumento> Lista = null;
+            try
             {
-                entTipoDocumento td = new entTipoDocumento();
-                td.Id_TipDoc = Convert.ToInt32(dr["Id_TipDoc"]);
-                td.Abreviatura_TipDoc = dr["Abreviatura_TipDoc"].ToString();
-                Lista.Add(td);
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
+                cmd = new SqlCommand("spListarTipDoc", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                dr = cmd.ExecuteReader();
+                Lista = new List<entTipoDocumento>();
+                while (dr.Read())
+                {
+                    entTipoDocumento td = new entTipoDocumento();
+                    td.Id_TipDoc = Convert.ToInt32(dr["Id_TipDoc"]);
+                    td.Abreviatura_TipDoc = dr["Abreviatura_TipDoc"].ToString();
+                    Lista.Add(td);
+                }
+
+
+
             }
-         
+            catch (Exception) { throw; }
+            finally { cmd.Connection.Close(); }
 
-
+            return Lista;
         }
-        catch (Exception) { throw; }
-        finally { cmd.Connection.Close(); }
-
-        return Lista;
-
-
-
-
-       
-        
-        
-    }
-
-
-        #endregion
     }
 }

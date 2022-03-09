@@ -44,8 +44,6 @@
             this.MSIproducts = new System.Windows.Forms.ToolStripMenuItem();
             this.MSsales = new System.Windows.Forms.ToolStripMenuItem();
             this.MSIreportes = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteGenerarDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteGenerarDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeVentasPorClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MSIayuda = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,15 +106,13 @@
             this.toolStripMenuItem1,
             this.MSILogOut,
             this.MSIsalir});
-            this.incicioToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Home_48px;
             this.incicioToolStripMenuItem.Name = "incicioToolStripMenuItem";
-            this.incicioToolStripMenuItem.Size = new System.Drawing.Size(78, 40);
+            this.incicioToolStripMenuItem.Size = new System.Drawing.Size(62, 40);
             this.incicioToolStripMenuItem.Text = "&Home";
             this.incicioToolStripMenuItem.Click += new System.EventHandler(this.incicioToolStripMenuItem_Click);
             // 
             // MSIseguridad
             // 
-            this.MSIseguridad.Image = global::CapaPresentacion.Properties.Resources.Security_24px;
             this.MSIseguridad.Name = "MSIseguridad";
             this.MSIseguridad.ShortcutKeyDisplayString = "";
             this.MSIseguridad.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
@@ -126,7 +122,6 @@
             // 
             // MSIcliente
             // 
-            this.MSIcliente.Image = global::CapaPresentacion.Properties.Resources.C_16px;
             this.MSIcliente.Name = "MSIcliente";
             this.MSIcliente.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
             this.MSIcliente.Size = new System.Drawing.Size(240, 26);
@@ -135,7 +130,6 @@
             // 
             // MSImatenimientos
             // 
-            this.MSImatenimientos.Image = global::CapaPresentacion.Properties.Resources.Maintenance_24px;
             this.MSImatenimientos.Name = "MSImatenimientos";
             this.MSImatenimientos.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.M)));
             this.MSImatenimientos.Size = new System.Drawing.Size(240, 26);
@@ -166,14 +160,12 @@
             // 
             this.efecturarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MSIventa});
-            this.efecturarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.ToDo_32px;
             this.efecturarToolStripMenuItem.Name = "efecturarToolStripMenuItem";
-            this.efecturarToolStripMenuItem.Size = new System.Drawing.Size(148, 40);
+            this.efecturarToolStripMenuItem.Size = new System.Drawing.Size(132, 40);
             this.efecturarToolStripMenuItem.Text = "&Facturation";
             // 
             // MSIventa
             // 
-            this.MSIventa.Image = global::CapaPresentacion.Properties.Resources.Buying_24px;
             this.MSIventa.Name = "MSIventa";
             this.MSIventa.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.MSIventa.Size = new System.Drawing.Size(240, 26);
@@ -185,14 +177,12 @@
             this.MSIQueries.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MSIproducts,
             this.MSsales});
-            this.MSIQueries.Image = global::CapaPresentacion.Properties.Resources.Statistics_32px;
             this.MSIQueries.Name = "MSIQueries";
-            this.MSIQueries.Size = new System.Drawing.Size(108, 40);
+            this.MSIQueries.Size = new System.Drawing.Size(92, 40);
             this.MSIQueries.Text = "&Queries";
             // 
             // MSIproducts
             // 
-            this.MSIproducts.Image = global::CapaPresentacion.Properties.Resources.CardboardBox_16px;
             this.MSIproducts.Name = "MSIproducts";
             this.MSIproducts.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
             this.MSIproducts.Size = new System.Drawing.Size(220, 26);
@@ -201,7 +191,6 @@
             // 
             // MSsales
             // 
-            this.MSsales.Image = global::CapaPresentacion.Properties.Resources.Sales_16px;
             this.MSsales.Name = "MSsales";
             this.MSsales.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.V)));
             this.MSsales.Size = new System.Drawing.Size(220, 26);
@@ -211,55 +200,34 @@
             // MSIreportes
             // 
             this.MSIreportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reporteGenerarDeVentasToolStripMenuItem,
-            this.reporteGenerarDeProductosToolStripMenuItem,
             this.reporteDeVentasPorClienteToolStripMenuItem});
-            this.MSIreportes.Image = global::CapaPresentacion.Properties.Resources.Report_48px;
             this.MSIreportes.Name = "MSIreportes";
-            this.MSIreportes.Size = new System.Drawing.Size(108, 40);
+            this.MSIreportes.Size = new System.Drawing.Size(92, 40);
             this.MSIreportes.Text = "&Reports";
             this.MSIreportes.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
-            // 
-            // reporteGenerarDeVentasToolStripMenuItem
-            // 
-            this.reporteGenerarDeVentasToolStripMenuItem.Name = "reporteGenerarDeVentasToolStripMenuItem";
-            this.reporteGenerarDeVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.V)));
-            this.reporteGenerarDeVentasToolStripMenuItem.Size = new System.Drawing.Size(470, 26);
-            this.reporteGenerarDeVentasToolStripMenuItem.Text = "R&eporte general de ventas";
-            this.reporteGenerarDeVentasToolStripMenuItem.Click += new System.EventHandler(this.reporteGenerarDeVentasToolStripMenuItem_Click);
-            // 
-            // reporteGenerarDeProductosToolStripMenuItem
-            // 
-            this.reporteGenerarDeProductosToolStripMenuItem.Name = "reporteGenerarDeProductosToolStripMenuItem";
-            this.reporteGenerarDeProductosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.P)));
-            this.reporteGenerarDeProductosToolStripMenuItem.Size = new System.Drawing.Size(470, 26);
-            this.reporteGenerarDeProductosToolStripMenuItem.Text = "R&eporte general de productos";
-            this.reporteGenerarDeProductosToolStripMenuItem.Click += new System.EventHandler(this.reporteGenerarDeProductosToolStripMenuItem_Click);
             // 
             // reporteDeVentasPorClienteToolStripMenuItem
             // 
             this.reporteDeVentasPorClienteToolStripMenuItem.Name = "reporteDeVentasPorClienteToolStripMenuItem";
-            this.reporteDeVentasPorClienteToolStripMenuItem.Size = new System.Drawing.Size(470, 26);
-            this.reporteDeVentasPorClienteToolStripMenuItem.Text = "Reporte de ventas por cliente";
+            this.reporteDeVentasPorClienteToolStripMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.reporteDeVentasPorClienteToolStripMenuItem.Text = "Sale Report By Customers";
             this.reporteDeVentasPorClienteToolStripMenuItem.Click += new System.EventHandler(this.reporteDeVentasPorClienteToolStripMenuItem_Click);
             // 
             // MSIayuda
             // 
             this.MSIayuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acercaDeToolStripMenuItem});
-            this.MSIayuda.Image = global::CapaPresentacion.Properties.Resources.Help_48px;
             this.MSIayuda.Name = "MSIayuda";
-            this.MSIayuda.Size = new System.Drawing.Size(108, 40);
+            this.MSIayuda.Size = new System.Drawing.Size(92, 40);
             this.MSIayuda.Text = "&Support";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
-            this.acercaDeToolStripMenuItem.Text = "Ace&rca de";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.acercaDeToolStripMenuItem.Text = "About";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // machineLearningToolStripMenuItem
             // 
@@ -294,7 +262,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(21, 440);
+            this.groupBox1.Location = new System.Drawing.Point(4, 238);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(760, 156);
             this.groupBox1.TabIndex = 3;
@@ -336,9 +304,9 @@
             this.label4.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(508, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 40);
+            this.label4.Size = new System.Drawing.Size(196, 40);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Clientes";
+            this.label4.Text = "Customers";
             // 
             // label3
             // 
@@ -346,9 +314,9 @@
             this.label3.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(258, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 40);
+            this.label3.Size = new System.Drawing.Size(165, 40);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Productos";
+            this.label3.Text = "Products";
             // 
             // label2
             // 
@@ -356,9 +324,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 40);
+            this.label2.Size = new System.Drawing.Size(106, 40);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ventas";
+            this.label2.Text = "Sales";
             // 
             // timer1
             // 
@@ -378,7 +346,7 @@
             this.panelControllers.Controls.Add(this.btnCustomers);
             this.panelControllers.Controls.Add(this.btnUsers);
             this.panelControllers.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelControllers.Location = new System.Drawing.Point(12, 249);
+            this.panelControllers.Location = new System.Drawing.Point(4, 47);
             this.panelControllers.Name = "panelControllers";
             this.panelControllers.Size = new System.Drawing.Size(886, 185);
             this.panelControllers.TabIndex = 5;
@@ -443,7 +411,9 @@
             this.Controls.Add(this.LBLusuario);
             this.Controls.Add(this.label1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(1248, 764);
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturation System 1.0 release";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
@@ -472,8 +442,6 @@
         private System.Windows.Forms.ToolStripMenuItem MSIproducts;
         private System.Windows.Forms.ToolStripMenuItem MSsales;
         private System.Windows.Forms.ToolStripMenuItem MSIreportes;
-        private System.Windows.Forms.ToolStripMenuItem reporteGenerarDeVentasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteGenerarDeProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MSIayuda;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MSIventa;

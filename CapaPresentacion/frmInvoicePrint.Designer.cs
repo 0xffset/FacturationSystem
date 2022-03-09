@@ -96,6 +96,7 @@ namespace CapaPresentacion
             this.ClientSize = new System.Drawing.Size(1273, 610);
             this.Controls.Add(this.reportViewer1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1289, 649);
             this.MinimumSize = new System.Drawing.Size(1289, 649);
             this.Name = "frmInvoicePrint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

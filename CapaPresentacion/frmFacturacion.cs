@@ -1,32 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CapaNegocio;
-using Entidades;
-
-namespace CapaPresentacion
+﻿namespace CapaPresentacion
 {
+    using CapaNegocio;
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Defines the <see cref="frmFacturation" />.
+    /// </summary>
     public partial class frmFacturation : Form
     {
-        entUser usu = null;
-        int iduser = 0;
-        String ser, corr;
-        controlsStates ac = new controlsStates();
-        entSerie serie = new entSerie();
+        /// <summary>
+        /// Defines the usu.
+        /// </summary>
+        internal entUser usu = null;
 
+        /// <summary>
+        /// Defines the iduser.
+        /// </summary>
+        internal int iduser = 0;
+
+        /// <summary>
+        /// Defines the ser, corr.
+        /// </summary>
+        internal String ser, corr;
+
+        /// <summary>
+        /// Defines the ac.
+        /// </summary>
+        internal controlsStates ac = new controlsStates();
+
+        /// <summary>
+        /// Defines the serie.
+        /// </summary>
+        internal entSerie serie = new entSerie();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmFacturation"/> class.
+        /// </summary>
+        /// <param name="id_user">The id_user<see cref="int"/>.</param>
         public frmFacturation(int id_user)
         {
             InitializeComponent();
             this.iduser = id_user;
         }
 
-        private void controbo(Boolean nuevo, Boolean guardar,  Boolean quitaritems)
+        /// <summary>
+        /// The controbo.
+        /// </summary>
+        /// <param name="nuevo">The nuevo<see cref="Boolean"/>.</param>
+        /// <param name="guardar">The guardar<see cref="Boolean"/>.</param>
+        /// <param name="quitaritems">The quitaritems<see cref="Boolean"/>.</param>
+        private void controbo(Boolean nuevo, Boolean guardar, Boolean quitaritems)
         {
             try
             {
@@ -34,9 +61,12 @@ namespace CapaPresentacion
                 btnPrintInvoice.Enabled = guardar;
                 btnRemove.Enabled = quitaritems;
             }
-            catch (Exception) {throw;}
+            catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The BuildProductToSaleGrid.
+        /// </summary>
         private void BuildProductToSaleGrid()
         {
             try
@@ -54,13 +84,13 @@ namespace CapaPresentacion
                 dgvInvoice.Columns[3].Width = 70;
                 dgvInvoice.Columns[4].Width = 70;
                 dgvInvoice.Columns[5].Width = 100;
-             
+
 
                 dgvInvoice.Columns[1].ReadOnly = true;
-                 dgvInvoice.Columns[2].ReadOnly = false;
-                 dgvInvoice.Columns[3].ReadOnly = true;
-                 dgvInvoice.Columns[4].ReadOnly = true;
-                 dgvInvoice.Columns[5].ReadOnly = true;
+                dgvInvoice.Columns[2].ReadOnly = false;
+                dgvInvoice.Columns[3].ReadOnly = true;
+                dgvInvoice.Columns[4].ReadOnly = true;
+                dgvInvoice.Columns[5].ReadOnly = true;
 
                 dgvInvoice.Columns[5].DefaultCellStyle.BackColor = Color.GreenYellow;
 
@@ -77,9 +107,12 @@ namespace CapaPresentacion
 
 
             }
-            catch (Exception) {throw;}
+            catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The CountNumberOfItems.
+        /// </summary>
         private void CountNumberOfItems()
         {
             try
@@ -89,14 +122,18 @@ namespace CapaPresentacion
                 {
                     num++;
                 }
-                lblItems.Text  = "No. Items: " + num;
+                lblItems.Text = "No. Items: " + num;
             }
-            catch (Exception) {throw;}
+            catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The FillProductToSaleGrid.
+        /// </summary>
+        /// <param name="Lista">The Lista<see cref="List{entProduct}"/>.</param>
         private void FillProductToSaleGrid(List<entProduct> Lista)
         {
-            try 
+            try
             {
                 double itbis_producto = 0;
                 dgvInvoice.Rows.Clear();
@@ -121,9 +158,12 @@ namespace CapaPresentacion
                     dgvInvoice.Rows.Add(fila);
                 }
             }
-            catch (Exception) {throw;}
+            catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The UpdatAmountGrid.
+        /// </summary>
         private void UpdatAmountGrid()
         {
             try
@@ -132,11 +172,11 @@ namespace CapaPresentacion
                 double totalItbis = 0.0;
                 foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
-                     if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
-                     row.Cells[5].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
-                     
+                    if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
+                    row.Cells[5].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
+
                     if (row.Cells[3].Value == null) row.Cells[3].Value = 0;
-                     row.Cells[5].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
+                    row.Cells[5].Value = (Convert.ToDouble((row.Cells[2].Value)) * Convert.ToDouble((row.Cells[3].Value)));
                     subtotal += Convert.ToDouble(row.Cells[5].Value);
                     totalItbis += Convert.ToDouble(row.Cells[4].Value) * Convert.ToDouble(row.Cells[2].Value);
 
@@ -145,17 +185,21 @@ namespace CapaPresentacion
                     lblNetTotal.Text = subtotal.ToString("0.00");
                     txtTotal.Text = (subtotal + totalItbis).ToString("0.0");
 
-                    
+
                 }
-                if(dgvInvoice.Rows.Count == 0) {
+                if (dgvInvoice.Rows.Count == 0)
+                {
                     txtTotal.Text = "0";
                     lblITBIS.Text = "0";
                     lblNetTotal.Text = "0";
                 }
             }
-            catch (Exception) {throw;}
+            catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The WriteNewAmountGrid.
+        /// </summary>
         private void WriteNewAmountGrid()
         {
             try
@@ -169,18 +213,21 @@ namespace CapaPresentacion
 
                     if (cantidad_ > 1)
                     {
-                        List<entProduct> lista =  localdatabase.Instancia.returnDetventa(1,idprod, cantidad_);
+                        List<entProduct> lista = localdatabase.Instancia.returnDetventa(1, idprod, cantidad_);
                     }
                 }
             }
-            catch (Exception) {throw;}
+            catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The OnlyNumberOnTheCell.
+        /// </summary>
         private void OnlyNumberOnTheCell()
         {
             try
             {
-                int i = 0; decimal j=0; String valor, valor01; Boolean res = false;
+                int i = 0; decimal j = 0; String valor, valor01; Boolean res = false;
                 foreach (DataGridViewRow row in dgvInvoice.Rows)
                 {
                     if (row.Cells[2].Value == null) row.Cells[2].Value = 0;
@@ -193,70 +240,103 @@ namespace CapaPresentacion
                         row.Cells[2].Value = i;
                     }
                     if (row.Cells[3].Value == null) row.Cells[3].Value = 0;
-                    valor01 = row.Cells[3].Value.ToString().Replace(".",".");
+                    valor01 = row.Cells[3].Value.ToString().Replace(".", ".");
                     if (!Decimal.TryParse(valor01, out j))
                     {
-                        MessageBox.Show("Hola","Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Hola", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         row.Cells[3].Value = 0;
                     }
-                    else 
+                    else
                     {
                         row.Cells[3].Value = valor01;
                     }
                 }
             }
-        
+
             catch (Exception)
             {
-                throw;  
+                throw;
             }
-    }
+        }
 
+        /// <summary>
+        /// The cargarseriecore.
+        /// </summary>
         private void cargarseriecore()
         {
             try
             {
-                serie = IBusinessSale.Instancia.cargarserie(2, 1);
+                serie = IBusinessSale.Instance.ListSerie(2, 1);
                 ser = serie.Numero_Serie;
-                lblserie.Text =  serie.Numero_Serie + "-";
-                lblcorre.Text = "No. " + IBusinessSale.Instancia.cargarcorrelativo(2, serie.Numero_Serie);
-                corr = IBusinessSale.Instancia.cargarcorrelativo(2, serie.Numero_Serie);
+                lblserie.Text = serie.Numero_Serie + "-";
+                lblcorre.Text = "No. " + IBusinessSale.Instance.ListCorrelative(2, serie.Numero_Serie);
+                corr = IBusinessSale.Instance.ListCorrelative(2, serie.Numero_Serie);
 
 
 
             }
-            catch(Exception) {throw;}
+            catch (Exception) { throw; }
         }
+
+        /// <summary>
+        /// The label1_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The textBox1_TextChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The label5_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label5_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The button2_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void button2_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The label8_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label8_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The label11_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label11_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The frmFacturacion_Load.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void frmFacturacion_Load(object sender, EventArgs e)
         {
             try
@@ -264,9 +344,9 @@ namespace CapaPresentacion
 
                 BuildProductToSaleGrid();
                 CountNumberOfItems();
-                ac.LlenarCboTipDoc(this.gbCliente);
+                ac.fillComboboxes(this.gbCliente);
                 controbo(true, false, false); btnSearchDNI.Enabled = false;
-                usu = IBusinessUser.Instancia.BuscarUsuario("Id", this.iduser.ToString());
+                usu = IBusinessUser.Instance.SearchUserByValue("Id", this.iduser.ToString());
                 this.iduser = usu.User_Id;
                 txtCodoU.Text = usu.User_Code;
                 cargarseriecore();
@@ -281,11 +361,20 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The label9_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label9_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The button4_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void button4_Click(object sender, EventArgs e)
         {
             try
@@ -298,15 +387,15 @@ namespace CapaPresentacion
                     localdatabase.Instancia.limpiardetalleventa();
                     List<entProduct> Lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
                     FillProductToSaleGrid(Lista);
-                    ac.limtext(this.gbCliente);
+                    ac.clearTextBox(this.gbCliente);
                     CountNumberOfItems();
                     UpdatAmountGrid();
                     cargarseriecore();
                     dgvInvoice.Enabled = true;
                     controbo(true, true, false);
-                    ac.bloqueartxt(this.gbCliente, true);
-                    ac.bloqueartxt(this.panel1, true);
-                    
+                    ac.BlockTextBox(this.gbCliente, true);
+                    ac.BlockTextBox(this.panel1, true);
+
                     btnCancelInvoice.Enabled = false;
                     btnAdd.Enabled = true;
                 }
@@ -315,15 +404,20 @@ namespace CapaPresentacion
             catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The btnAnular_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnAnular_Click(object sender, EventArgs e)
         {
             try
             {
                 DialogResult dr = MessageBox.Show("Do you want to cancel the current sale?", "Message",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr==DialogResult.Yes)
+                if (dr == DialogResult.Yes)
                 {
-                    int result = IBusinessSale.Instancia.anularcomprobante(ser, corr, 2);
+                    int result = IBusinessSale.Instance.CancelCompro(ser, corr, 2);
                     MessageBox.Show("Sale was revoke succesfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnCancelInvoice.Enabled = false;
                 }
@@ -334,18 +428,27 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The label8_Click_1.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label8_Click_1(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The btnBuscarCe_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnBuscarCe_Click(object sender, EventArgs e)
         {
             try
             {
                 entCustomer c = null;
                 String numdoc = txtDNI.Text;
-                c = IBusinessCustomer.Instancia.searchCustomer(0, numdoc);
+                c = IBusinessCustomer.Instance.SearchCustomer(0, numdoc);
                 txtCustomerName.Text = c.Customer_Name;
                 int cedula = 6;
                 cedula = c.tipodocumento.Id_TipDoc;
@@ -370,13 +473,18 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The btnBuscarxId_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnBuscarxId_Click(object sender, EventArgs e)
         {
             try
             {
                 entCustomer c = null;
                 int idcli = localdatabase.Instancia.returnidcliente(0, 0);
-                c = IBusinessCustomer.Instancia.searchCustomer(idcli, 0.ToString());
+                c = IBusinessCustomer.Instance.SearchCustomer(idcli, 0.ToString());
                 btnSearchById.Enabled = false; btnSearchDNI.Enabled = true;
                 txtCustomerName.Text = c.Customer_Name;
                 int cedula = 6;
@@ -387,6 +495,11 @@ namespace CapaPresentacion
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        /// <summary>
+        /// The btnAdd_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
@@ -406,11 +519,16 @@ namespace CapaPresentacion
                     frmSearchProduct buscarprod = new frmSearchProduct(iduser);
                     buscarprod.ShowDialog();
                 }
-               
+
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        /// <summary>
+        /// The dgvFactura_CellClick.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
         private void dgvFactura_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -423,13 +541,18 @@ namespace CapaPresentacion
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        /// <summary>
+        /// The btnQuitar_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnQuitar_Click(object sender, EventArgs e)
         {
             try
             {
                 DialogResult r = MessageBox.Show("Are you sure you want to remove the selection?",
                     "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (r== DialogResult.Yes)
+                if (r == DialogResult.Yes)
                 {
                     int idprod = Convert.ToInt32(dgvInvoice.CurrentRow.Cells[0].Value);
                     localdatabase.Instancia.Quitaritemproducto(idprod);
@@ -447,6 +570,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The dgvFactura_KeyUp.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
         private void dgvFactura_KeyUp(object sender, KeyEventArgs e)
         {
             try
@@ -462,11 +590,16 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The btnAtras_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnAtras_Click(object sender, EventArgs e)
         {
             DialogResult r = MessageBox.Show("Do you want to exit?", "Message",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (r== DialogResult.Yes)
+            if (r == DialogResult.Yes)
             {
                 localdatabase.Instancia.limpiardetalleventa();
                 localdatabase.Instancia.returnidcliente(1, 0);
@@ -474,40 +607,56 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The txtCedula_KeyUp.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
         private void txtCedula_KeyUp(object sender, KeyEventArgs e)
         {
-                 
-            
         }
 
+        /// <summary>
+        /// The ProductReduction.
+        /// </summary>
         private void ProductReduction()
         {
-           foreach (DataGridViewRow Row in dgvInvoice.Rows)
-           {
-               entProduct prod = new entProduct();
-               int i = prod.Stock_Prod;
-               int a = prod.Stock_Prod = i - Convert.ToInt32(Row.Cells[2].Value) ;
-               prod.Stock_Prod = a;
+            foreach (DataGridViewRow Row in dgvInvoice.Rows)
+            {
+                entProduct prod = new entProduct();
+                int i = prod.Stock_Prod;
+                int a = prod.Stock_Prod = i - Convert.ToInt32(Row.Cells[2].Value);
+                prod.Stock_Prod = a;
 
-           }
+            }
         }
-        private void printInvoice ()
+
+        /// <summary>
+        /// The printInvoice.
+        /// </summary>
+        private void printInvoice()
         {
             try
             {
-                int idLatSale = IBusinessSale.Instancia.getLastIdSale();
+                int idLatSale = IBusinessSale.Instance.GetLastIdSale();
                 frmInvoicePrint frmInvoicePrint = new frmInvoicePrint(idLatSale);
                 frmInvoicePrint.ShowDialog();
             }
             catch (Exception) { throw; }
         }
+
+        /// <summary>
+        /// The btnGuardar_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
             {
                 DialogResult r = MessageBox.Show("¿Are you sure to save the sale?",
                     "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (r==DialogResult.Yes)
+                if (r == DialogResult.Yes)
                 {
                     OnlyNumberOnTheCell();
                     WriteNewAmountGrid();
@@ -549,16 +698,16 @@ namespace CapaPresentacion
                     v.detalleventa = detalle;
                     v.Desc_Venta = "";
                     cargarseriecore();
-                    int resuta = IBusinessSale.Instancia.guardarventa(v, 2, serie.Numero_Serie);
+                    int resuta = IBusinessSale.Instance.SaveSale(v, 2, serie.Numero_Serie);
                     MessageBox.Show("The sale has been saved successfully", "Message",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dgvInvoice.Enabled = false; controbo(true, false, false);
                     btnAdd.Enabled = false; btnCancelInvoice.Enabled = true;
-                    ac.bloqueartxt(this.gbCliente, false);
-                    ac.bloqueartxt(this.panel1, false);
+                    ac.BlockTextBox(this.gbCliente, false);
+                    ac.BlockTextBox(this.panel1, false);
 
                     printInvoice();
-                    
+
 
                 }
             }

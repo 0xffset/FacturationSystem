@@ -12,9 +12,9 @@ using CapaAccesoDatos;
 using Entidades;
 namespace CapaPresentacion
 {
-    public partial class reportVentasXClientes : Form
+    public partial class frmSalesReportByCustomers : Form
     {
-        public reportVentasXClientes()
+        public frmSalesReportByCustomers()
         {
             InitializeComponent();
         }
@@ -50,7 +50,7 @@ namespace CapaPresentacion
             try
             {
                 dgvLayout.Rows.Clear();
-                List<entSale> v = IBusinessSale.Instancia.listarVentasXnombreClie(textBox1.Text);
+                List<entSale> v = IBusinessSale.Instance.ListSalesByCustomerName(txtSearch.Text);
                 for (int i = 0; i < v.Count; i++)
                 {
                     String[] values = new String[]
@@ -101,7 +101,7 @@ namespace CapaPresentacion
                 label2.Visible = true;
             }
             int id = Convert.ToInt32(dgvLayout.CurrentRow.Cells[0].Value);
-            frmVentasClienteXId cargar = new frmVentasClienteXId(id);
+            frmSalesByCustomers cargar = new frmSalesByCustomers(id);
             cargar.Show();
 
            

@@ -1,28 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Entidades;
-using CapaAccesoDatos;
-
-
-namespace CapaNegocio
+﻿namespace CapaNegocio
 {
+    using CapaAccesoDatos;
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// Defines the <see cref="IBusinessUser" />.
+    /// </summary>
     public class IBusinessUser
     {
-        #region singleton
-        private static readonly IBusinessUser _instancia = new IBusinessUser();
-        public static IBusinessUser Instancia
+        /// <summary>
+        /// Defines the _instancia.
+        /// </summary>
+        private static readonly IBusinessUser _instance = new IBusinessUser();
+
+        /// <summary>
+        /// Gets the Instancia.
+        /// </summary>
+        public static IBusinessUser Instance
         {
             get
             {
-                return IBusinessUser._instancia;
+                return IBusinessUser._instance;
             }
         }
-        #endregion
 
-        public int MatenimientoUsuario(entUser u, int tipoedicion)
+        /// <summary>
+        /// The UserManagement.
+        /// </summary>
+        /// <param name="u">The u<see cref="entUser"/>.</param>
+        /// <param name="tipoedicion">The tipoedicion<see cref="int"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int UserManagement(entUser u, int tipoedicion)
         {
 
             try
@@ -31,7 +41,7 @@ namespace CapaNegocio
                 CadXml += "<usuario ";
                 CadXml += "idusuario='" + u.User_Id + "' ";
                 CadXml += "idnivelacceso='" + u.access_level.Id_NivelAcc + "' ";
-     
+
                 CadXml += "nombre='" + u.User_Name + "' ";
                 CadXml += "logeo='" + u.User_Login + "' ";
                 CadXml += "pass='" + u.User_Password + "' ";
@@ -44,7 +54,7 @@ namespace CapaNegocio
                 CadXml += "tipoedicion='" + tipoedicion + "'/>";
 
                 CadXml = "<root>" + CadXml + "</root>";
-                int result = IDataAccessUser.Instancia.MatenimientoUsuario(CadXml);
+                int result = IDataAccessUser.Instance.IUserManagement(CadXml);
                 if (result == 0) throw new ApplicationException("Ocurrio un error al registrar, intentalo de nuevo");
 
                 return result;
@@ -55,45 +65,64 @@ namespace CapaNegocio
             }
         }
 
-        public entUser BuscarUsuario(String por, String valor)
+        /// <summary>
+        /// The SearchUserByValue.
+        /// </summary>
+        /// <param name="por">The por<see cref="String"/>.</param>
+        /// <param name="valor">The valor<see cref="String"/>.</param>
+        /// <returns>The <see cref="entUser"/>.</returns>
+        public entUser SearchUserByValue(String por, String valor)
         {
             try
             {
                 if (por.Equals("<<<<< Selecionar >>>>>"))
                 {
-                    throw new ApplicationException("Seleccione un campo de búsqueda");
+                    throw new ApplicationException("You must enter a search parameter");
                 }
                 entUser u = null;
-                u = IDataAccessUser.Instancia.BuscarUsuario(por, valor);
+                u = IDataAccessUser.Instance.ISearchUserByValue(por, valor);
                 if (u == null)
                 {
-                    throw new ApplicationException("No se encontraron registros");
+                    throw new ApplicationException("No records found.");
                 }
                 return u;
             }
             catch (Exception) { throw; }
         }
 
-     
-        public entAccessLevel ListarNivelAcceDesc(Int32 idnivel)
+        /// <summary>
+        /// The ListAccessLevel.
+        /// </summary>
+        /// <param name="idnivel">The idnivel<see cref="Int32"/>.</param>
+        /// <returns>The <see cref="entAccessLevel"/>.</returns>
+        public entAccessLevel ListAccessLevel(Int32 idnivel)
         {
             try
             {
-                return IDataAccessUser.Instancia.ListarNivelAccesoDesc(idnivel);
-            }
-            catch (Exception) { throw; }
-        }
-        public List<entAccessLevel> ListarNivelAcceso()
-        {
-            try
-            {
-                return IDataAccessUser.Instancia.ListarNivelAcceso();
+                return IDataAccessUser.Instance.IListDescAccessLevel(idnivel);
             }
             catch (Exception) { throw; }
         }
 
-   
-        
+        /// <summary>
+        /// The ListarNivelAcceso.
+        /// </summary>
+        /// <returns>The <see cref="List{entAccessLevel}"/>.</returns>
+        public List<entAccessLevel> ListarNivelAcceso()
+        {
+            try
+            {
+                return IDataAccessUser.Instance.IListAccessLevel();
+            }
+            catch (Exception) { throw; }
+        }
+
+        /// <summary>
+        /// The SystemAuthentication.
+        /// </summary>
+        /// <param name="usu">The usu<see cref="String"/>.</param>
+        /// <param name="pass">The pass<see cref="String"/>.</param>
+        /// <returns>The <see cref="entUser"/>.</returns>
         public entUser SystemAuthentication(String usu, String pass)
         {
             try
@@ -101,8 +130,8 @@ namespace CapaNegocio
                 if (usu == "") throw new ApplicationException("Enter a proper user");
                 if (pass == "") throw new ApplicationException("Enter a proper password");
                 entUser u = null;
-                u = IDataAccessUser.Instancia.AccessVerification(usu , pass);
-               if (u == null)
+                u = IDataAccessUser.Instance.ISystemAuthentication(usu, pass);
+                if (u == null)
                 {
                     throw new ApplicationException("User or password invalid");
                 }
@@ -110,20 +139,18 @@ namespace CapaNegocio
                 {
                     if (u.User_State == false)
                     {
-                        throw new ApplicationException("Usuario Inactivo");
+                        throw new ApplicationException("User inactive");
 
                     }
                     else if (Convert.ToDateTime(u.User_Expiration) < DateTime.Now)
                     {
-                        throw new ApplicationException("El Usuario ha expirado");
+                        throw new ApplicationException("User has been expired.");
                     }
                 }
                 return u;
 
             }
             catch (Exception) { throw; }
-
         }
-
     }
 }

@@ -1,21 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
-namespace CapaAccesoDatos.SalesReports
+﻿namespace CapaAccesoDatos.SalesReports
 {
+    using System;
+    using System.Data;
+    using System.Data.SqlClient;
+
+    /// <summary>
+    /// Defines the <see cref="SalesDataAccesReport" />.
+    /// </summary>
     public class SalesDataAccesReport
     {
-        SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+        /// <summary>
+        /// Defines the cn.
+        /// </summary>
+        internal SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
+
+        /// <summary>
+        /// The getSales.
+        /// </summary>
+        /// <param name="fromDate">The fromDate<see cref="DateTime"/>.</param>
+        /// <param name="toDate">The toDate<see cref="DateTime"/>.</param>
+        /// <returns>The <see cref="DataTable"/>.</returns>
         public DataTable getSales(DateTime fromDate, DateTime toDate)
         {
             using (var connection = cn)
             {
                 connection.Open();
-                using (var command = new SqlCommand()) {
+                using (var command = new SqlCommand())
+                {
                     command.Connection = connection;
                     command.CommandText = @"select v.Id_Venta, v.Codigo_Venta, c.Nombre_Cliente, v.FechaVenta, 
                         Productos = stuff((select ' - ' + 'x'+convert(varchar (10),vt2.Cantidad_Det)+' '+ Producto.Nombre_Prod

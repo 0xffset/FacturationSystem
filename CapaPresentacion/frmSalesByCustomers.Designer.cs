@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmVentasClienteXId
+    partial class frmSalesByCustomers
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
             this.groupBox1.Size = new System.Drawing.Size(332, 88);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cliente";
+            this.groupBox1.Text = "Customer";
             // 
             // label2
             // 
@@ -68,9 +68,9 @@
             this.lblNombreCli.AutoSize = true;
             this.lblNombreCli.Location = new System.Drawing.Point(7, 30);
             this.lblNombreCli.Name = "lblNombreCli";
-            this.lblNombreCli.Size = new System.Drawing.Size(113, 14);
+            this.lblNombreCli.Size = new System.Drawing.Size(97, 14);
             this.lblNombreCli.TabIndex = 0;
-            this.lblNombreCli.Text = "Nombre Del Cliente";
+            this.lblNombreCli.Text = "Customer Name";
             // 
             // groupBox2
             // 
@@ -82,7 +82,7 @@
             this.groupBox2.Size = new System.Drawing.Size(371, 85);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Vendedor";
+            this.groupBox2.Text = "Seller";
             // 
             // CodigoVendedor
             // 
@@ -106,9 +106,9 @@
             this.lblNombreVen.AutoSize = true;
             this.lblNombreVen.Location = new System.Drawing.Point(7, 30);
             this.lblNombreVen.Name = "lblNombreVen";
-            this.lblNombreVen.Size = new System.Drawing.Size(128, 14);
+            this.lblNombreVen.Size = new System.Drawing.Size(73, 14);
             this.lblNombreVen.TabIndex = 0;
-            this.lblNombreVen.Text = "Nombre del Vendedor";
+            this.lblNombreVen.Text = "Seller Name";
             // 
             // lblFechVenta
             // 
@@ -152,11 +152,11 @@
             this.lblCodigoFac.AutoSize = true;
             this.lblCodigoFac.Location = new System.Drawing.Point(21, 9);
             this.lblCodigoFac.Name = "lblCodigoFac";
-            this.lblCodigoFac.Size = new System.Drawing.Size(78, 14);
+            this.lblCodigoFac.Size = new System.Drawing.Size(68, 14);
             this.lblCodigoFac.TabIndex = 6;
-            this.lblCodigoFac.Text = "Estado Venta";
+            this.lblCodigoFac.Text = "Sale Status";
             // 
-            // frmVentasClienteXId
+            // frmSalesByCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,8 +169,12 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmVentasClienteXId";
-            this.Text = "frmVentasClienteXId";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(949, 524);
+            this.MinimumSize = new System.Drawing.Size(949, 524);
+            this.Name = "frmSalesByCustomers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = ".: Sales Customers :.";
             this.Load += new System.EventHandler(this.frmVentasClienteXId_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

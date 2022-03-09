@@ -1,26 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CapaNegocio;
-using Entidades;
-
-namespace CapaPresentacion
+﻿namespace CapaPresentacion
 {
+    using CapaNegocio;
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Defines the <see cref="frmConsultSales" />.
+    /// </summary>
     public partial class frmConsultSales : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmConsultSales"/> class.
+        /// </summary>
         public frmConsultSales()
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// The creargrid.
+        /// </summary>
         private void creargrid()
         {
-            try 
+            try
             {
                 dgvSaleHistory.Columns.Add("ColumnId", "Id");
                 dgvSaleHistory.Columns.Add("ColumnCodigo", "Code");
@@ -58,14 +63,17 @@ namespace CapaPresentacion
             catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The Llenargrid.
+        /// </summary>
         private void Llenargrid()
         {
             try
             {
                 dgvSaleHistory.Rows.Clear();
                 int idsucursal = 1;
-                List<entSale> Lista = IBusinessSale.Instancia.listarventa(dtpStart.Value.ToString("yyyy/MM/dd"), dtpEnd.Value.ToString("yyyy/MM/dd"), idsucursal);
-                for (int i = 0; i<Lista.Count; i++)
+                List<entSale> Lista = IBusinessSale.Instance.ListSalesByDates(dtpStart.Value.ToString("yyyy/MM/dd"), dtpEnd.Value.ToString("yyyy/MM/dd"), idsucursal);
+                for (int i = 0; i < Lista.Count; i++)
                 {
                     String[] fila = new String[] {
                         Lista[i].Id_Venta.ToString(), Lista[i].Codigo_Venta, Lista[i].Estado_Venta, Lista[i].tipocomprobante.Nombre_TipCom,
@@ -77,12 +85,17 @@ namespace CapaPresentacion
                     Lista[i].tipocomprobante.Id_TipCom = 2;
                     Lista[i].tipopago.Id_TipPago = 1;
                     Lista[i].Utilidad = Lista[i].Total;
-                    
+
                 }
             }
             catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The frmConsultarVentas_Load.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void frmConsultarVentas_Load(object sender, EventArgs e)
         {
 
@@ -105,21 +118,30 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The btnDetVenta_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnDetVenta_Click(object sender, EventArgs e)
         {
             try
             {
                 int idven = Convert.ToInt32(dgvSaleHistory.CurrentRow.Cells[0].Value);
-                frmSaleDetails db =  new frmSaleDetails(idven);
+                frmSaleDetails db = new frmSaleDetails(idven);
                 db.ShowDialog();
             }
             catch (Exception)
             {
                 throw;
             }
-           
         }
 
+        /// <summary>
+        /// The btnBuscar_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -138,6 +160,11 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The btnAnularVenta_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnAnularVenta_Click(object sender, EventArgs e)
         {
             try
@@ -145,9 +172,9 @@ namespace CapaPresentacion
                 int idventa = Convert.ToInt32(dgvSaleHistory.CurrentRow.Cells[0].Value);
                 DialogResult resu = MessageBox.Show("¿Desean anular esta venta?", "Mensaje",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (resu==DialogResult.Yes)
+                if (resu == DialogResult.Yes)
                 {
-                    int i = IBusinessSale.Instancia.anularventaxId(idventa);
+                    int i = IBusinessSale.Instance.CancelSaleById(idventa);
                     MessageBox.Show("La venta fue anulada", "Mensaje",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -164,22 +191,40 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The dgvHisVentas_CellClick.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
         private void dgvHisVentas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnSaleDetails.Enabled = true;
             btnCancelSale.Enabled = true;
         }
 
+        /// <summary>
+        /// The dgvHisVentas_CellContentClick.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
         private void dgvHisVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The label1_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The btnSalesReports_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void btnSalesReports_Click(object sender, EventArgs e)
         {
             frmAdvancedSalesReport frmAdvancedSalesReport = new frmAdvancedSalesReport();

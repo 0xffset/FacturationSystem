@@ -1,24 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
-using Entidades;
-using CapaNegocio;
-namespace CapaPresentacion
+﻿namespace CapaPresentacion
 {
+    using CapaNegocio;
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Defines the <see cref="frmIndicaProducto" />.
+    /// </summary>
     public partial class frmIndicaProducto : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmIndicaProducto"/> class.
+        /// </summary>
         public frmIndicaProducto()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// The BuildProductGrid.
+        /// </summary>
         private void BuildProductGrid()
         {
             try
@@ -44,7 +48,7 @@ namespace CapaPresentacion
                 dgvProduct.Columns[7].Width = 100;
                 dgvProduct.Columns[8].Width = 120;
                 dgvProduct.Columns[9].Width = 120;
-              
+
                 DataGridViewCellStyle css = new DataGridViewCellStyle();
                 css.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvProduct.ColumnHeadersDefaultCellStyle = css;
@@ -57,18 +61,25 @@ namespace CapaPresentacion
             catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The FillComboBox.
+        /// </summary>
         private void FillComboBox()
         {
             try
             {
                 cboCategory.ValueMember = "Id_Cat";
                 cboCategory.DisplayMember = "Nombre_Cat";
-                cboCategory.DataSource = IBusinessManagement.Instancia.listarcategoria();
+                cboCategory.DataSource = IBusinessManagement.Instance.ListCategories();
                 rbStock.Checked = true;
             }
             catch (Exception) { throw; }
         }
-       
+
+        /// <summary>
+        /// The FillProductGrid.
+        /// </summary>
+        /// <param name="name">The name<see cref="String"/>.</param>
         private void FillProductGrid(String name)
         {
             try
@@ -83,24 +94,25 @@ namespace CapaPresentacion
                 int rango = 0; String img = null;
                 if (rbStock.Checked == true) rango = 3;
                 else if (rbStockPro.Checked == true) rango = 2;
-                else if (rbStockMin.Checked == true) rango =1;
-                else if (rbStockMin.Checked == true) rango =0;
+                else if (rbStockMin.Checked == true) rango = 1;
+                else if (rbStockMin.Checked == true) rango = 0;
                 List<entProduct> Lista = null;
-                if (name ==null) 
+                if (name == null)
                 {
-                    Lista = IBusinessManagement.Instancia.ListarProdIndicador(txtCodeProduct.Text,(int)cat, rango); }
-                    else { Lista = IBusinessManagement.Instancia.BuscarprodAvanzadaIndicador(name);}
-                    for (int i =0; i <Lista.Count; i++)
-                    {
+                    Lista = IBusinessManagement.Instance.ListProductByCodeCatRan(txtCodeProduct.Text, (int)cat, rango);
+                }
+                else { Lista = IBusinessManagement.Instance.SearchAvancedProductByName(name); }
+                for (int i = 0; i < Lista.Count; i++)
+                {
                     if (Lista[i].Stock_Prod >= 0 && Lista[i].Stock_Prod <= Lista[i].StockMin_Prod)
                     {
                         img = "Minimun";
-                        
+
                     }
                     else if (Lista[i].Stock_Prod > Lista[i].StockMin_Prod && Lista[i].Stock_Prod <= Lista[i].StockProm_Prod)
                     {
                         img = "Avarage";
-                        
+
                     }
                     else if (Lista[i].Stock_Prod > Lista[i].StockProm_Prod)
                     {
@@ -108,30 +120,39 @@ namespace CapaPresentacion
                         img = "Enough";
                     }
 
-                        String[] fila = new String[] {
+                    String[] fila = new String[] {
                             Lista[i].Id_Prod.ToString(), Lista[i].Codigo_Prod, Lista[i].Nombre_Prod, Lista[i].PrecioCompra_Prod.ToString(), Lista[i].Precio_Prod.ToString(),
                             Lista[i].Stock_Prod.ToString(),Lista[i].FechVen_Pord.ToString(), Lista[i].categoria.Nombre_Cat, Lista[i].unidmedida.Abreviatura_Umed };
-                            dgvProduct.Rows.Add(fila);
-                            dgvProduct.Rows[i].Cells[9].Value = img;
-   
-                       }
-                    }
-            
+                    dgvProduct.Rows.Add(fila);
+                    dgvProduct.Rows[i].Cells[9].Value = img;
+
+                }
+            }
+
             catch (Exception) { throw; }
         }
 
+        /// <summary>
+        /// The rbStock_CheckedChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void rbStock_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
+        /// <summary>
+        /// The frmIndicaProducto_Load.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void frmIndicaProducto_Load(object sender, EventArgs e)
         {
             try
             {
                 BuildProductGrid();
                 FillComboBox();
-                
+
             }
             catch (ApplicationException es)
             {
@@ -142,19 +163,23 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message,
                   "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } 
+            }
         }
+
+        /// <summary>
+        /// The addDataGridViewCellColors.
+        /// </summary>
         private void addDataGridViewCellColors()
         {
-           
+
             foreach (DataGridViewRow dgvr in dgvProduct.Rows)
             {
 
-              
+
                 if (dgvr.Cells["ColumnStatus"].Value.ToString() == "Enough")
                 {
                     dgvr.DefaultCellStyle.BackColor = Color.LightGreen;
-                   
+
                 }
 
                 if (dgvr.Cells["ColumnStatus"].Value.ToString() == "Avarage")
@@ -169,6 +194,12 @@ namespace CapaPresentacion
 
             }
         }
+
+        /// <summary>
+        /// The button1_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -187,10 +218,15 @@ namespace CapaPresentacion
             }
         }
 
+        /// <summary>
+        /// The txtCodigop_KeyUp.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
         private void txtCodigop_KeyUp(object sender, KeyEventArgs e)
         {
 
-              try
+            try
             {
                 FillProductGrid(txtCodeProduct.Text);
             }
@@ -199,12 +235,18 @@ namespace CapaPresentacion
                 MessageBox.Show(es.Message, "Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception ex) { MessageBox.Show(ex.Message,
-                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);} 
-        
-        
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,
+"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        /// <summary>
+        /// The txtNombrePro_KeyUp.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
         private void txtNombrePro_KeyUp(object sender, KeyEventArgs e)
         {
             try
@@ -217,6 +259,5 @@ namespace CapaPresentacion
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
     }
 }

@@ -1,28 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Entidades;
-using CapaNegocio;
-
-namespace CapaPresentacion
+﻿namespace CapaPresentacion
 {
-    public partial class frmVentasClienteXId : Form
+    using CapaNegocio;
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Defines the <see cref="frmSalesByCustomers" />.
+    /// </summary>
+    public partial class frmSalesByCustomers : Form
     {
-        int id;
-        public frmVentasClienteXId(int id)
+        /// <summary>
+        /// Defines the id.
+        /// </summary>
+        internal int id;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmSalesByCustomers"/> class.
+        /// </summary>
+        /// <param name="id">The id<see cref="int"/>.</param>
+        public frmSalesByCustomers(int id)
         {
-            
+
             InitializeComponent();
-            this.id = id; 
+            this.id = id;
         }
 
-        private void loadDates()
+        /// <summary>
+        /// The BuildGridSalesCustomers.
+        /// </summary>
+        private void BuildGridSalesCustomers()
         {
             try
 
@@ -33,18 +42,26 @@ namespace CapaPresentacion
                 listView1.Columns.Add("PRECIO", 80, HorizontalAlignment.Center);
                 listView1.Columns.Add("CANTIDAD", 80, HorizontalAlignment.Center);
                 listView1.Columns.Add("TOTAL", 80, HorizontalAlignment.Center);
-                
+
             }
             catch (Exception) { throw; }
         }
-        entSale v;
-        private void upload()
+
+        /// <summary>
+        /// Defines the v.
+        /// </summary>
+        internal entSale v;
+
+        /// <summary>
+        /// The LoadSaleCustomer.
+        /// </summary>
+        private void LoadSaleCustomer()
         {
-            
+
             double total = 0.0;
             try
             {
-                v = IBusinessSale.Instancia.ventadetalle(this.id);
+                v = IBusinessSale.Instance.ListSaleDetails(this.id);
                 List<entDetalleVenta> Lista = v.detalleventa;
                 entDetalleVenta l = new entDetalleVenta();
                 for (int i = 0; i < Lista.Count; i++)
@@ -69,22 +86,29 @@ namespace CapaPresentacion
                 }
                 lblTotal.Text = total.ToString();
 
-                
+
             }
-            catch(Exception) { throw;  }
+            catch (Exception) { throw; }
         }
 
-       
-
+        /// <summary>
+        /// The frmVentasClienteXId_Load.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void frmVentasClienteXId_Load(object sender, EventArgs e)
         {
-            upload();
-            loadDates();
+            LoadSaleCustomer();
+            BuildGridSalesCustomers();
         }
 
+        /// <summary>
+        /// The listView1_SelectedIndexChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

@@ -1,15 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
-namespace CapaAccesoDatos.SalesReports
+﻿namespace CapaAccesoDatos.SalesReports
 {
-   public class InvoicePrint
+    using System.Data;
+    using System.Data.SqlClient;
+
+    /// <summary>
+    /// Defines the <see cref="InvoicePrint" />.
+    /// </summary>
+    public class InvoicePrint
     {
-        SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+        /// <summary>
+        /// Defines the cn.
+        /// </summary>
+        internal SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
+
+        /// <summary>
+        /// The getSaleDetailsByIdSale.
+        /// </summary>
+        /// <param name="_IdSale">The _IdSale<see cref="int"/>.</param>
+        /// <returns>The <see cref="DataTable"/>.</returns>
         public DataTable getSaleDetailsByIdSale(int _IdSale)
         {
             using (var connection = cn)
@@ -38,6 +46,11 @@ namespace CapaAccesoDatos.SalesReports
             }
         }
 
+        /// <summary>
+        /// The getCustomerDataBySaleId.
+        /// </summary>
+        /// <param name="_idSale">The _idSale<see cref="int"/>.</param>
+        /// <returns>The <see cref="DataTable"/>.</returns>
         public DataTable getCustomerDataBySaleId(int _idSale)
         {
             using (var connection = cn)

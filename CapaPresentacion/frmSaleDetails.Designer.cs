@@ -152,7 +152,7 @@
             this.lblHour.BackColor = System.Drawing.SystemColors.Control;
             this.lblHour.Location = new System.Drawing.Point(579, 111);
             this.lblHour.Name = "lblHour";
-            this.lblHour.Size = new System.Drawing.Size(74, 21);
+            this.lblHour.Size = new System.Drawing.Size(103, 21);
             this.lblHour.TabIndex = 11;
             this.lblHour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -269,6 +269,9 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(756, 683);
+            this.MinimumSize = new System.Drawing.Size(756, 683);
             this.Name = "frmSaleDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Sale Details :.";

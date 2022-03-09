@@ -1,32 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Entidades;
-using System.Data.SqlClient;
-using System.Data;
-namespace CapaAccesoDatos
+﻿namespace CapaAccesoDatos
 {
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
 
+    /// <summary>
+    /// Defines the <see cref="IDataAccessUser" />.
+    /// </summary>
     public class IDataAccessUser
     {
-        #region sigleton
-        private static readonly IDataAccessUser _instancia = new IDataAccessUser();
-        public static IDataAccessUser Instancia
-        {
-            get { return IDataAccessUser._instancia; }
-        }
-        #endregion
+        /// <summary>
+        /// Defines the _instance.
+        /// </summary>
+        private static readonly IDataAccessUser _instance = new IDataAccessUser();
 
-        #region metodos
-        public int MatenimientoUsuario(String cadxml)
+        /// <summary>
+        /// Gets the Instance.
+        /// </summary>
+        public static IDataAccessUser Instance
+        {
+            get { return IDataAccessUser._instance; }
+        }
+
+        /// <summary>
+        /// The IUserManagement.
+        /// </summary>
+        /// <param name="cadxml">The cadxml<see cref="String"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int IUserManagement(String cadxml)
         {
             SqlCommand cmd = null;
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spInsEditElimUsario", cn);
                 cmd.Parameters.AddWithValue("@Cadxml", cadxml);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -45,14 +53,20 @@ namespace CapaAccesoDatos
             }
         }
 
-        public entUser BuscarUsuario(String por, String valor)
+        /// <summary>
+        /// The ISearchUserByValue.
+        /// </summary>
+        /// <param name="por">The por<see cref="String"/>.</param>
+        /// <param name="valor">The valor<see cref="String"/>.</param>
+        /// <returns>The <see cref="entUser"/>.</returns>
+        public entUser ISearchUserByValue(String por, String valor)
         {
             SqlCommand cmd = null;
             SqlDataReader dr = null;
             entUser u = null;
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spBuscarUsuario", cn);
                 cmd.Parameters.AddWithValue("@prmBusqueda", por);
                 cmd.Parameters.AddWithValue("@prmValor", valor);
@@ -75,7 +89,7 @@ namespace CapaAccesoDatos
                     entAccessLevel na = new entAccessLevel();
                     na.Id_NivelAcc = Convert.ToInt32(dr["Id_NivelAcc"]);
                     u.access_level = na;
-                    
+
 
 
                 }
@@ -87,9 +101,12 @@ namespace CapaAccesoDatos
             return u;
         }
 
-   
-
-        public entAccessLevel ListarNivelAccesoDesc(Int32 idnivel)
+        /// <summary>
+        /// The IListDescAccessLevel.
+        /// </summary>
+        /// <param name="idnivel">The idnivel<see cref="Int32"/>.</param>
+        /// <returns>The <see cref="entAccessLevel"/>.</returns>
+        public entAccessLevel IListDescAccessLevel(Int32 idnivel)
         {
             SqlCommand cmd = null;
             SqlDataReader dr = null;
@@ -97,7 +114,7 @@ namespace CapaAccesoDatos
 
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("SpMostrarDescNivel", cn);
                 cmd.Parameters.AddWithValue("@prmNivelAcceso", idnivel);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -114,7 +131,12 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
             return na;
         }
-        public List<entAccessLevel> ListarNivelAcceso()
+
+        /// <summary>
+        /// The IListAccessLevel.
+        /// </summary>
+        /// <returns>The <see cref="List{entAccessLevel}"/>.</returns>
+        public List<entAccessLevel> IListAccessLevel()
         {
             SqlCommand cmd = null;
             SqlDataReader dr = null;
@@ -122,10 +144,10 @@ namespace CapaAccesoDatos
 
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spListaNivelAcceso", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cn.Open(); /* AQUI TENIA UN ERROR xD! */    
+                cn.Open(); /* AQUI TENIA UN ERROR xD! */
                 dr = cmd.ExecuteReader();
                 Lista = new List<entAccessLevel>();
                 while (dr.Read())
@@ -143,9 +165,13 @@ namespace CapaAccesoDatos
             return Lista;
         }
 
-        
-
-        public entUser AccessVerification(String user, String password)
+        /// <summary>
+        /// The ISystemAuthentication.
+        /// </summary>
+        /// <param name="user">The user<see cref="String"/>.</param>
+        /// <param name="password">The password<see cref="String"/>.</param>
+        /// <returns>The <see cref="entUser"/>.</returns>
+        public entUser ISystemAuthentication(String user, String password)
         {
             SqlCommand cmd = null;
             SqlDataReader dr = null;
@@ -153,7 +179,7 @@ namespace CapaAccesoDatos
 
             try
             {
-                SqlConnection cn = Conexion.Instancia.sqlConnectionCursor();
+                SqlConnection cn = Conexion.Instance.sqlConnectionCursor();
                 cmd = new SqlCommand("spVerifyAccess", cn);
                 cmd.Parameters.AddWithValue("@prmUser", user);
                 cmd.Parameters.AddWithValue("@prmPassword", password);
@@ -171,7 +197,7 @@ namespace CapaAccesoDatos
                     na.Id_NivelAcc = Convert.ToInt32(dr["Id_NivelAcc"]);
                     na.Numero_NivelAcc = Convert.ToInt32(dr["Numero_NivelAcc"]);
                     u.access_level = na;
-                  
+
                 }
             }
             catch (Exception)
@@ -181,6 +207,5 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
             return u;
         }
-        #endregion
     }
 }

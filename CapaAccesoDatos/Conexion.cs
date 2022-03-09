@@ -1,26 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-
-namespace CapaAccesoDatos
+﻿namespace CapaAccesoDatos
 {
+    using System;
+    using System.Data.SqlClient;
+
+    /// <summary>
+    /// Defines the <see cref="Conexion" />.
+    /// </summary>
     public class Conexion
     {
-        #region singleton
-        private static readonly Conexion _instancia = new Conexion();
-        public static Conexion Instancia
+        /// <summary>
+        /// Defines the _instance.
+        /// </summary>
+        private static readonly Conexion _instance = new Conexion();
+
+        /// <summary>
+        /// Gets the Instance.
+        /// </summary>
+        public static Conexion Instance
         {
             get
             {
-                return Conexion._instancia;
+                return Conexion._instance;
             }
         }
-        #endregion
 
-        #region metodos
+        /// <summary>
+        /// The sqlConnectionCursor.
+        /// </summary>
+        /// <returns>The <see cref="SqlConnection"/>.</returns>
         public SqlConnection sqlConnectionCursor()
         {
             try
@@ -35,10 +42,4 @@ namespace CapaAccesoDatos
             }
         }
     }
-        #endregion
 }
-
-
-   
-   
-

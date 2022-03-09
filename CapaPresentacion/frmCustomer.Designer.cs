@@ -248,7 +248,9 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1301, 555);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1301, 555);
             this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Customers :.";

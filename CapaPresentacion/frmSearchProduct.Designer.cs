@@ -163,7 +163,7 @@
             this.BTNExit.UseVisualStyleBackColor = true;
             this.BTNExit.Click += new System.EventHandler(this.BTNsalir_Click);
             // 
-            // frmBuscarProd
+            // frmSearchProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,7 +177,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label12);
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmBuscarProd";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1300, 574);
+            this.MinimumSize = new System.Drawing.Size(1300, 574);
+            this.Name = "frmSearchProduct";
             this.Text = ".: Search Products :.";
             this.Load += new System.EventHandler(this.frmBuscarProd_Load);
             this.groupBox1.ResumeLayout(false);

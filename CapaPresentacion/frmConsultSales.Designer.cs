@@ -36,10 +36,10 @@
             this.dtpStart = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSalesReports = new System.Windows.Forms.Button();
             this.btnCancelSale = new System.Windows.Forms.Button();
             this.btnSaleDetails = new System.Windows.Forms.Button();
             this.dgvSaleHistory = new System.Windows.Forms.DataGridView();
-            this.btnSalesReports = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSaleHistory)).BeginInit();
@@ -129,6 +129,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Operations";
             // 
+            // btnSalesReports
+            // 
+            this.btnSalesReports.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalesReports.Location = new System.Drawing.Point(204, 35);
+            this.btnSalesReports.Name = "btnSalesReports";
+            this.btnSalesReports.Size = new System.Drawing.Size(85, 46);
+            this.btnSalesReports.TabIndex = 21;
+            this.btnSalesReports.Text = "Sale Reports";
+            this.btnSalesReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalesReports.UseVisualStyleBackColor = true;
+            this.btnSalesReports.Click += new System.EventHandler(this.btnSalesReports_Click);
+            // 
             // btnCancelSale
             // 
             this.btnCancelSale.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -163,18 +175,6 @@
             this.dgvSaleHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHisVentas_CellClick);
             this.dgvSaleHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHisVentas_CellContentClick);
             // 
-            // btnSalesReports
-            // 
-            this.btnSalesReports.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalesReports.Location = new System.Drawing.Point(204, 35);
-            this.btnSalesReports.Name = "btnSalesReports";
-            this.btnSalesReports.Size = new System.Drawing.Size(85, 46);
-            this.btnSalesReports.TabIndex = 21;
-            this.btnSalesReports.Text = "Sale Reports";
-            this.btnSalesReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalesReports.UseVisualStyleBackColor = true;
-            this.btnSalesReports.Click += new System.EventHandler(this.btnSalesReports_Click);
-            // 
             // frmConsultSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -186,6 +186,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(788, 581);
+            this.MinimumSize = new System.Drawing.Size(788, 581);
             this.Name = "frmConsultSales";
             this.Text = ".: Sales History :.";
             this.Load += new System.EventHandler(this.frmConsultarVentas_Load);

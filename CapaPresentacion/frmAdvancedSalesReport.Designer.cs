@@ -30,9 +30,9 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.SalesListingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SalesReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.NetSalesByPeriodBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,15 +69,15 @@ namespace CapaPresentacion
             // 
             // reportViewer1
             // 
-            reportDataSource4.Name = "salesListing";
-            reportDataSource4.Value = this.SalesListingBindingSource;
-            reportDataSource5.Name = "SalesReports";
-            reportDataSource5.Value = this.SalesReportsBindingSource;
-            reportDataSource6.Name = "netSalesByPeriod";
-            reportDataSource6.Value = this.NetSalesByPeriodBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
+            reportDataSource1.Name = "salesListing";
+            reportDataSource1.Value = this.SalesListingBindingSource;
+            reportDataSource2.Name = "SalesReports";
+            reportDataSource2.Value = this.SalesReportsBindingSource;
+            reportDataSource3.Name = "netSalesByPeriod";
+            reportDataSource3.Value = this.NetSalesByPeriodBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reports.salesAvancedReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(258, 11);
             this.reportViewer1.Name = "reportViewer1";
@@ -215,8 +215,10 @@ namespace CapaPresentacion
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.reportViewer1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1770, 816);
             this.MinimumSize = new System.Drawing.Size(1770, 816);
             this.Name = "frmAdvancedSalesReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Avanced Sales Report :.";
             this.Load += new System.EventHandler(this.frmAdvancedSalesReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SalesListingBindingSource)).EndInit();

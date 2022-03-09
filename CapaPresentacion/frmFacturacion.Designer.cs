@@ -394,6 +394,8 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(942, 759);
+            this.MinimumSize = new System.Drawing.Size(942, 759);
             this.Name = "frmFacturation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Invoice :.";

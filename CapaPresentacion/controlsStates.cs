@@ -154,7 +154,7 @@ namespace CapaPresentacion
 
         }
 
-        public void LlenarCboTipDoc(Control control)
+        public void fillComboboxes(Control control)
         {
             try 
             {
@@ -177,7 +177,7 @@ namespace CapaPresentacion
             catch (Exception) { throw;  }
         }
 
-        public void limtext(Control control)
+        public void clearTextBox(Control control)
         {
             try
             {
@@ -206,7 +206,7 @@ namespace CapaPresentacion
             catch (Exception) { throw; }
         }
 
-        public void bloqueartxt(Control control, Boolean estado)
+        public void BlockTextBox(Control control, Boolean estado)
         {
             try
             {
