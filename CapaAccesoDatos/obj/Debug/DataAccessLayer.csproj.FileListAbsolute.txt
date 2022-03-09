@@ -44,3 +44,13 @@ C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessL
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
 C:\Users\rogge\Desktop\System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll.config
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.pdb
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\bin\Debug\Entidades.dll.config
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb

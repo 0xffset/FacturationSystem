@@ -407,27 +407,7 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void reporteGenerarDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = null;
-            SqlConnection cn = new SqlConnection("Data Source=DESKTOP-3QR4NTR\\SQLEXPRESS;Initial Catalog=BDsistemaROLEY;Integrated Security=True");
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
-            DataSet dataSet = new DataSet();
-            string sqlQuery = "select Codigo_Venta, FechaVenta, Estado_Venta from Venta";
-            int i = 0;
-            int ypoint = 0;
-            int ylintes = 100;
-
-            string CodigoVenta;
-            string FechaVenta;
-            string EstadoVenta;
-            cn.Open();
-            cmd = new SqlCommand(sqlQuery, cn);
-            sqlDataAdapter.SelectCommand = cmd;
-            sqlDataAdapter.Fill(dataSet);
-            cn.Close();
-
-
-
-            MessageBox.Show("Reporte creado", "Mensaje", MessageBoxButtons.OK);
+            
         }
 
         /// <summary>

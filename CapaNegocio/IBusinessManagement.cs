@@ -42,16 +42,16 @@
         /// <summary>
         /// The ListProductByCodeCatRan.
         /// </summary>
-        /// <param name="codigo">The codigo<see cref="String"/>.</param>
+        /// <param name="code">The codigo<see cref="String"/>.</param>
         /// <param name="idcat">The idcat<see cref="int"/>.</param>
-        /// <param name="rango">The rango<see cref="int"/>.</param>
+        /// <param name="range">The rango<see cref="int"/>.</param>
         /// <returns>The <see cref="List{entProduct}"/>.</returns>
-        public List<entProduct> ListProductByCodeCatRan(String codigo, int idcat, int rango)
+        public List<entProduct> ListProductByCodeCatRan(String code, int idcat, int range)
         {
             try
             {
                 List<entProduct> Lista = null;
-                Lista = IDataAccessManagement.Instance.IListProductByCodeCatRan(codigo, idcat, rango);
+                Lista = IDataAccessManagement.Instance.IListProductByCodeCatRan(code, idcat, range);
                 if (Lista.Count == 0) throw new ApplicationException("No record found");
                 else if (Lista == null) throw new ApplicationException("Hay un error en los productos");
                 return Lista;
@@ -159,22 +159,22 @@
         /// <summary>
         /// The SupplierManagement.
         /// </summary>
-        /// <param name="prov">The prov<see cref="entSupplier"/>.</param>
+        /// <param name="supplier">The prov<see cref="entSupplier"/>.</param>
         /// <param name="tipoedi">The tipoedi<see cref="int"/>.</param>
         /// <returns>The <see cref="int"/>.</returns>
-        public int SupplierManagement(entSupplier prov, int tipoedi)
+        public int SupplierManagement(entSupplier supplier, int tipoedi)
         {
             try
             {
                 String cadXml = "";
                 cadXml += "<proveedor ";
-                cadXml += "idprove='" + prov.Id_Proveedor + "' ";
-                cadXml += "razonsocial='" + prov.RazSocial_Proveedor + "' ";
-                cadXml += "ruc='" + prov.Rnc_Proveedor + "' ";
-                cadXml += "direccion='" + prov.Direccion_Proveedor + "' ";
-                cadXml += "telefono='" + prov.Telefono_Proveedor + "' ";
-                cadXml += "celular='" + prov.Celular_Proveedor + "' ";
-                cadXml += "correo='" + prov.Correo_Proveedor + "' ";
+                cadXml += "idprove='" + supplier.Id_Proveedor + "' ";
+                cadXml += "razonsocial='" + supplier.RazSocial_Proveedor + "' ";
+                cadXml += "ruc='" + supplier.Rnc_Proveedor + "' ";
+                cadXml += "direccion='" + supplier.Direccion_Proveedor + "' ";
+                cadXml += "telefono='" + supplier.Telefono_Proveedor + "' ";
+                cadXml += "celular='" + supplier.Celular_Proveedor + "' ";
+                cadXml += "correo='" + supplier.Correo_Proveedor + "' ";
                 cadXml += "tipoedicion='" + tipoedi + "'/>";
                 cadXml = "<root>" + cadXml + "</root>";
                 int i = IDataAccessManagement.Instance.ISupplierManagement(cadXml);
@@ -191,22 +191,22 @@
         /// <summary>
         /// The UnitMeasureProductManagement.
         /// </summary>
-        /// <param name="presentac">The presentac<see cref="entUnidadMedida"/>.</param>
-        /// <param name="tipoedi">The tipoedi<see cref="int"/>.</param>
+        /// <param name="UnitMeasureProduct">The presentac<see cref="entUnidadMedida"/>.</param>
+        /// <param name="editTyped">The tipoedi<see cref="int"/>.</param>
         /// <returns>The <see cref="int"/>.</returns>
-        public int UnitMeasureProductManagement(entUnidadMedida presentac, int tipoedi)
+        public int UnitMeasureProductManagement(entUnidadMedida UnitMeasureProduct, int editTyped)
         {
 
             try
             {
-                entUnidadMedida pres = new entUnidadMedida();
-                pres = presentac;
+                entUnidadMedida UnitMe = new entUnidadMedida();
+                UnitMe = UnitMeasureProduct;
                 String cadXml = "";
                 cadXml += "<unmedida ";
-                cadXml += "idunmedida='" + pres.Id_Umed + "' ";
-                cadXml += "descripcion='" + pres.Descripcion_Umed + "' ";
-                cadXml += "abreviatura='" + pres.Abreviatura_Umed + "' ";
-                cadXml += "tipoedicion='" + tipoedi + "' />";
+                cadXml += "idunmedida='" + UnitMe.Id_Umed + "' ";
+                cadXml += "descripcion='" + UnitMe.Descripcion_Umed + "' ";
+                cadXml += "abreviatura='" + UnitMe.Abreviatura_Umed + "' ";
+                cadXml += "tipoedicion='" + editTyped + "' />";
                 cadXml = "<root>" + cadXml + "</root>";
                 int i = IDataAccessManagement.Instance.IUnitMeasureProductManagement(cadXml);
                 if (i <= 0)
@@ -224,14 +224,14 @@
         /// <summary>
         /// The SearchSupplier.
         /// </summary>
-        /// <param name="prove">The prove<see cref="int"/>.</param>
+        /// <param name="idSupplier">The prove<see cref="int"/>.</param>
         /// <returns>The <see cref="entSupplier"/>.</returns>
-        public entSupplier SearchSupplier(int prove)
+        public entSupplier SearchSupplier(int idSupplier)
         {
             try
             {
                 entSupplier prov = null;
-                prov = IDataAccessManagement.Instance.ISearchSupplier(prove);
+                prov = IDataAccessManagement.Instance.ISearchSupplier(idSupplier);
                 if (prov == null) throw new ApplicationException("no records");
                 return prov;
             }
@@ -251,14 +251,14 @@
         /// <summary>
         /// The SearchUnitMeasureProduct.
         /// </summary>
-        /// <param name="idpre">The idpre<see cref="int"/>.</param>
+        /// <param name="idUnitMeasure">The idpre<see cref="int"/>.</param>
         /// <returns>The <see cref="entUnidadMedida"/>.</returns>
-        public entUnidadMedida SearchUnitMeasureProduct(int idpre)
+        public entUnidadMedida SearchUnitMeasureProduct(int idUnitMeasure)
         {
             try
             {
                 entUnidadMedida pres = null;
-                pres = IDataAccessManagement.Instance.ISearchUnitMeasureProduct(idpre);
+                pres = IDataAccessManagement.Instance.ISearchUnitMeasureProduct(idUnitMeasure);
                 if (pres == null) throw new ApplicationException("No records");
                 return pres;
             }
@@ -298,15 +298,15 @@
         /// <summary>
         /// The SearchCategories.
         /// </summary>
-        /// <param name="catid">The catid<see cref="int"/>.</param>
+        /// <param name="idCategory">The catid<see cref="int"/>.</param>
         /// <returns>The <see cref="entCategory"/>.</returns>
-        public entCategory SearchCategories(int catid)
+        public entCategory SearchCategories(int idCategory)
         {
             try
             {
-                if (catid.ToString() == "") throw new ApplicationException("You must select a record");
+                if (idCategory.ToString() == "") throw new ApplicationException("You must select a record");
                 entCategory cat = null;
-                cat = IDataAccessManagement.Instance.ISearchCategory(catid);
+                cat = IDataAccessManagement.Instance.ISearchCategory(idCategory);
                 if (cat == null) throw new ApplicationException("No records");
                 return cat;
             }
@@ -316,23 +316,23 @@
         /// <summary>
         /// The CategoryManagement.
         /// </summary>
-        /// <param name="categoria">The categoria<see cref="entCategory"/>.</param>
-        /// <param name="tipoedicion">The tipoedicion<see cref="int"/>.</param>
+        /// <param name="category">The categoria<see cref="entCategory"/>.</param>
+        /// <param name="editTyped">The tipoedicion<see cref="int"/>.</param>
         /// <returns>The <see cref="int"/>.</returns>
-        public int CategoryManagement(entCategory categoria, int tipoedicion)
+        public int CategoryManagement(entCategory category, int editTyped)
         {
             try
             {
-                entCategory cat = new entCategory();
-                cat = categoria;
+                entCategory eCategory = new entCategory();
+                eCategory = category;
                 String CadXml = "";
                 CadXml += "<categoria ";
-                CadXml += "idcategoria='" + cat.Id_Cat + "' ";
-                CadXml += "nombre='" + cat.Nombre_Cat + "' ";
-                CadXml += "descripcion='" + cat.Descripcion_Cat + "' ";
-                CadXml += "usuariocreacion='" + cat.UsuarioCreacion_Cat + "' ";
-                CadXml += "usuarioupdate='" + cat.UsuarioUpdate_Cat + "' ";
-                CadXml += "tipoedicion='" + tipoedicion + "'/>";
+                CadXml += "idcategoria='" + eCategory.Id_Cat + "' ";
+                CadXml += "nombre='" + eCategory.Nombre_Cat + "' ";
+                CadXml += "descripcion='" + eCategory.Descripcion_Cat + "' ";
+                CadXml += "usuariocreacion='" + eCategory.UsuarioCreacion_Cat + "' ";
+                CadXml += "usuarioupdate='" + eCategory.UsuarioUpdate_Cat + "' ";
+                CadXml += "tipoedicion='" + editTyped + "'/>";
                 CadXml = "<root>" + CadXml + "</root>";
                 int i = IDataAccessManagement.Instance.ICategoryManagement(CadXml);
                 if (i <= 0)

@@ -23,7 +23,7 @@
         internal int iduser = 0;
 
         /// <summary>
-        /// Defines the ser, corr.
+        /// Defines the ser, corr..
         /// </summary>
         internal String ser, corr;
 
@@ -181,9 +181,9 @@
                     totalItbis += Convert.ToDouble(row.Cells[4].Value) * Convert.ToDouble(row.Cells[2].Value);
 
 
-                    lblITBIS.Text = totalItbis.ToString("0.0");
+                    lblITBIS.Text = totalItbis.ToString("0.00");
                     lblNetTotal.Text = subtotal.ToString("0.00");
-                    txtTotal.Text = (subtotal + totalItbis).ToString("0.0");
+                    txtTotal.Text = (subtotal + totalItbis).ToString("0.00");
 
 
                 }
@@ -213,11 +213,22 @@
 
                     if (cantidad_ > 1)
                     {
-                        List<entProduct> lista = localdatabase.Instancia.returnDetventa(1, idprod, cantidad_);
+                        List<entProduct> lista = localdatabase.Instance.ReturnDetailsSale(1, idprod, cantidad_);
                     }
                 }
             }
             catch (Exception) { throw; }
+        }
+
+        /// <summary>
+        /// The FIllTextBoxProduct.
+        /// </summary>
+        private void FIllTextBoxProduct()
+        {
+
+            txtNameProduct.Text = dgvInvoice.CurrentRow.Cells[1].Value.ToString();
+            txtQuanityProduct.Text = dgvInvoice.CurrentRow.Cells[2].Value.ToString();
+            txtPriceProduct.Text = dgvInvoice.CurrentRow.Cells[3].Value.ToString();
         }
 
         /// <summary>
@@ -344,14 +355,14 @@
 
                 BuildProductToSaleGrid();
                 CountNumberOfItems();
-                ac.fillComboboxes(this.gbCliente);
+                ac.fillComboBoxes(this.gbCliente);
                 controbo(true, false, false); btnSearchDNI.Enabled = false;
                 usu = IBusinessUser.Instance.SearchUserByValue("Id", this.iduser.ToString());
                 this.iduser = usu.User_Id;
                 txtCodoU.Text = usu.User_Code;
                 cargarseriecore();
                 btnCancelInvoice.Enabled = false;
-                int idclien = localdatabase.Instancia.returnidcliente(0, 0);
+                int idclien = localdatabase.Instance.ReturnIdCustomer(0, 0);
                 if (idclien != 0) { btnSearchDNI.Enabled = false; btnSearchById.Enabled = true; }
                 lblserie.Visible = false;
             }
@@ -383,9 +394,9 @@
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
-                    int idcli = localdatabase.Instancia.returnidcliente(1, 0);
-                    localdatabase.Instancia.limpiardetalleventa();
-                    List<entProduct> Lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
+                    int idcli = localdatabase.Instance.ReturnIdCustomer(1, 0);
+                    localdatabase.Instance.ClearSaleDetails();
+                    List<entProduct> Lista = localdatabase.Instance.ReturnDetailsSale(0, 0, 0);
                     FillProductToSaleGrid(Lista);
                     ac.clearTextBox(this.gbCliente);
                     CountNumberOfItems();
@@ -453,7 +464,7 @@
                 int cedula = 6;
                 cedula = c.tipodocumento.Id_TipDoc;
                 txtDNI.Text = c.CustomerDoc_Number.Trim();
-                int i = localdatabase.Instancia.returnidcliente(1, c.Customer_Id);
+                int i = localdatabase.Instance.ReturnIdCustomer(1, c.Customer_Id);
             }
             catch (ApplicationException)
             {
@@ -461,7 +472,7 @@
                     "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (r == DialogResult.Yes)
                 {
-                    localdatabase.Instancia.invocar(1, 1);
+                    localdatabase.Instance.Invoke(1, 1);
                     frmCustomer buscarcliente = new frmCustomer(iduser);
                     buscarcliente.ShowDialog();
                     btnSearchDNI.Enabled = false; btnSearchById.Enabled = true;
@@ -483,7 +494,7 @@
             try
             {
                 entCustomer c = null;
-                int idcli = localdatabase.Instancia.returnidcliente(0, 0);
+                int idcli = localdatabase.Instance.ReturnIdCustomer(0, 0);
                 c = IBusinessCustomer.Instance.SearchCustomer(idcli, 0.ToString());
                 btnSearchById.Enabled = false; btnSearchDNI.Enabled = true;
                 txtCustomerName.Text = c.Customer_Name;
@@ -504,18 +515,18 @@
         {
             try
             {
-                int intento = localdatabase.Instancia.Returnintento(0, 0);
+                int intento = localdatabase.Instance.ReturnTried(0, 0);
                 if (intento != 0)
                 {
-                    List<entProduct> Lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
-                    intento = localdatabase.Instancia.Returnintento(1, 0);
+                    List<entProduct> Lista = localdatabase.Instance.ReturnDetailsSale(0, 0, 0);
+                    intento = localdatabase.Instance.ReturnTried(1, 0);
                     FillProductToSaleGrid(Lista);
                     CountNumberOfItems();
                     UpdatAmountGrid();
                 }
                 else
                 {
-                    localdatabase.Instancia.invocar(1, 1);
+                    localdatabase.Instance.Invoke(1, 1);
                     frmSearchProduct buscarprod = new frmSearchProduct(iduser);
                     buscarprod.ShowDialog();
                 }
@@ -537,6 +548,8 @@
                 OnlyNumberOnTheCell();
                 WriteNewAmountGrid();
                 UpdatAmountGrid();
+                FIllTextBoxProduct();
+
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
@@ -555,8 +568,8 @@
                 if (r == DialogResult.Yes)
                 {
                     int idprod = Convert.ToInt32(dgvInvoice.CurrentRow.Cells[0].Value);
-                    localdatabase.Instancia.Quitaritemproducto(idprod);
-                    List<entProduct> lista = localdatabase.Instancia.returnDetventa(0, 0, 0);
+                    localdatabase.Instance.RemoveProduct(idprod);
+                    List<entProduct> lista = localdatabase.Instance.ReturnDetailsSale(0, 0, 0);
                     if (lista.Count == 0) controbo(true, false, false);
                     FillProductToSaleGrid(lista);
                     CountNumberOfItems();
@@ -601,8 +614,8 @@
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
-                localdatabase.Instancia.limpiardetalleventa();
-                localdatabase.Instancia.returnidcliente(1, 0);
+                localdatabase.Instance.ClearSaleDetails();
+                localdatabase.Instance.ReturnIdCustomer(1, 0);
                 this.Dispose();
             }
         }
@@ -646,6 +659,38 @@
         }
 
         /// <summary>
+        /// The dgvInvoice_SelectionChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
+        private void dgvInvoice_SelectionChanged(object sender, EventArgs e)
+        {
+            FIllTextBoxProduct();
+        }
+
+        /// <summary>
+        /// The txtQuanityProduct_TextChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
+        private void txtQuanityProduct_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvInvoice.CurrentRow == null)
+                {
+                    txtQuanityProduct.Text = "";
+                }
+                else
+                {
+                    dgvInvoice.CurrentRow.Cells[2].Value = txtQuanityProduct.Text;
+                }
+            }
+
+            catch (Exception) { throw; }
+        }
+
+        /// <summary>
         /// The btnGuardar_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
@@ -663,7 +708,7 @@
                     UpdatAmountGrid();
                     entSale v = new entSale();
                     entCustomer c = new entCustomer();
-                    c.Customer_Id = localdatabase.Instancia.returnidcliente(0, 0);
+                    c.Customer_Id = localdatabase.Instance.ReturnIdCustomer(0, 0);
                     v.cliente = c;
                     entUser u = new entUser();
                     u = usu;

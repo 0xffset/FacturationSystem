@@ -59,10 +59,18 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblserie = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtNameProduct = new System.Windows.Forms.TextBox();
+            this.txtPriceProduct = new System.Windows.Forms.TextBox();
+            this.txtQuanityProduct = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.gbCliente.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvoice)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -116,9 +124,9 @@
             this.gbCliente.Controls.Add(this.label5);
             this.gbCliente.Controls.Add(this.txtCodoU);
             this.gbCliente.Controls.Add(this.label4);
-            this.gbCliente.Location = new System.Drawing.Point(197, 136);
+            this.gbCliente.Location = new System.Drawing.Point(21, 77);
             this.gbCliente.Name = "gbCliente";
-            this.gbCliente.Size = new System.Drawing.Size(586, 159);
+            this.gbCliente.Size = new System.Drawing.Size(586, 115);
             this.gbCliente.TabIndex = 4;
             this.gbCliente.TabStop = false;
             // 
@@ -348,6 +356,7 @@
             this.dgvInvoice.Size = new System.Drawing.Size(873, 223);
             this.dgvInvoice.TabIndex = 2;
             this.dgvInvoice.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellClick);
+            this.dgvInvoice.SelectionChanged += new System.EventHandler(this.dgvInvoice_SelectionChanged);
             this.dgvInvoice.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgvFactura_KeyUp);
             // 
             // btnRemove
@@ -380,12 +389,79 @@
             this.lblserie.Size = new System.Drawing.Size(82, 24);
             this.lblserie.TabIndex = 4;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtQuanityProduct);
+            this.groupBox2.Controls.Add(this.txtPriceProduct);
+            this.groupBox2.Controls.Add(this.txtNameProduct);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(21, 198);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(826, 90);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Product";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 14);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Name: ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 56);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 14);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Price: ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(381, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 14);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Quantity:";
+            // 
+            // txtNameProduct
+            // 
+            this.txtNameProduct.Enabled = false;
+            this.txtNameProduct.Location = new System.Drawing.Point(52, 21);
+            this.txtNameProduct.Name = "txtNameProduct";
+            this.txtNameProduct.Size = new System.Drawing.Size(300, 22);
+            this.txtNameProduct.TabIndex = 3;
+            // 
+            // txtPriceProduct
+            // 
+            this.txtPriceProduct.Enabled = false;
+            this.txtPriceProduct.Location = new System.Drawing.Point(52, 49);
+            this.txtPriceProduct.Name = "txtPriceProduct";
+            this.txtPriceProduct.Size = new System.Drawing.Size(84, 22);
+            this.txtPriceProduct.TabIndex = 4;
+            // 
+            // txtQuanityProduct
+            // 
+            this.txtQuanityProduct.Location = new System.Drawing.Point(457, 21);
+            this.txtQuanityProduct.Name = "txtQuanityProduct";
+            this.txtQuanityProduct.Size = new System.Drawing.Size(84, 22);
+            this.txtQuanityProduct.TabIndex = 5;
+            this.txtQuanityProduct.TextChanged += new System.EventHandler(this.txtQuanityProduct_TextChanged);
+            // 
             // frmFacturation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(926, 720);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblserie);
             this.Controls.Add(this.lblcorre);
             this.Controls.Add(this.panel1);
@@ -406,6 +482,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvoice)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -443,5 +521,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblITBIS;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtQuanityProduct;
+        private System.Windows.Forms.TextBox txtPriceProduct;
+        private System.Windows.Forms.TextBox txtNameProduct;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label2;
     }
 }

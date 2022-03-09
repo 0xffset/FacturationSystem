@@ -26,13 +26,13 @@
         /// <summary>
         /// The ListSaleDetails.
         /// </summary>
-        /// <param name="idventa">The idventa<see cref="int"/>.</param>
+        /// <param name="idSale">The idventa<see cref="int"/>.</param>
         /// <returns>The <see cref="entSale"/>.</returns>
-        public entSale ListSaleDetails(int idventa)
+        public entSale ListSaleDetails(int idSale)
         {
             try
             {
-                entSale ven = IDataAccessSale.Instance.IListSaleDetails(idventa);
+                entSale ven = IDataAccessSale.Instance.IListSaleDetails(idSale);
                 if (ven == null) throw new ApplicationException("Error displaying details");
                 return ven;
             }
@@ -60,13 +60,13 @@
         /// <summary>
         /// The CancelSaleById.
         /// </summary>
-        /// <param name="idventa">The idventa<see cref="int"/>.</param>
+        /// <param name="idSale">The idventa<see cref="int"/>.</param>
         /// <returns>The <see cref="int"/>.</returns>
-        public int CancelSaleById(int idventa)
+        public int CancelSaleById(int idSale)
         {
             try
             {
-                int retorn = IDataAccessSale.Instance.ICancelSaleById(idventa);
+                int retorn = IDataAccessSale.Instance.ICancelSaleById(idSale);
                 if (retorn == 0) throw new AccessViolationException("Error could not execute action");
                 return retorn;
             }
@@ -76,15 +76,15 @@
         /// <summary>
         /// The ListSalesByDates.
         /// </summary>
-        /// <param name="fdesde">The fdesde<see cref="String"/>.</param>
-        /// <param name="fhasta">The fhasta<see cref="String"/>.</param>
+        /// <param name="fromDate">The fdesde<see cref="String"/>.</param>
+        /// <param name="toDate">The fhasta<see cref="String"/>.</param>
         /// <param name="sucu">The sucu<see cref="int"/>.</param>
         /// <returns>The <see cref="List{entSale}"/>.</returns>
-        public List<entSale> ListSalesByDates(String fdesde, String fhasta, int sucu)
+        public List<entSale> ListSalesByDates(String fromDate, String toDate, int sucu)
         {
             try
             {
-                List<entSale> listar = IDataAccessSale.Instance.IListSale(fdesde, fhasta, sucu);
+                List<entSale> listar = IDataAccessSale.Instance.IListSale(fromDate, toDate, sucu);
                 if (listar == null) throw new ApplicationException("Error loading sales");
                 else if (listar.Count == 0) throw new ApplicationException("The sales list is empty");
                 return listar;
@@ -95,13 +95,13 @@
         /// <summary>
         /// The ListSaleById.
         /// </summary>
-        /// <param name="id">The id<see cref="int"/>.</param>
+        /// <param name="idSale">The id<see cref="int"/>.</param>
         /// <returns>The <see cref="List{entDetalleVenta}"/>.</returns>
-        public List<entDetalleVenta> ListSaleById(int id)
+        public List<entDetalleVenta> ListSaleById(int idSale)
         {
             try
             {
-                List<entDetalleVenta> lista = IDataAccessSale.Instance.IListProductCustomerById(id);
+                List<entDetalleVenta> lista = IDataAccessSale.Instance.IListProductCustomerById(idSale);
                 if (lista == null) throw new ApplicationException("Error loading list");
                 else if (lista.Count == 0) throw new ApplicationException("The list is empty");
                 return lista;
@@ -112,13 +112,13 @@
         /// <summary>
         /// The ListSalesByCustomerName.
         /// </summary>
-        /// <param name="name">The name<see cref="string"/>.</param>
+        /// <param name="customerName">The name<see cref="string"/>.</param>
         /// <returns>The <see cref="List{entSale}"/>.</returns>
-        public List<entSale> ListSalesByCustomerName(string name)
+        public List<entSale> ListSalesByCustomerName(string customerName)
         {
             try
             {
-                List<entSale> l = IDataAccessSale.Instance.IListSalesProducts(name);
+                List<entSale> l = IDataAccessSale.Instance.IListSalesProducts(customerName);
                 if (l == null) throw new ApplicationException("Error");
                 else if (l.Count == 0) throw new ApplicationException("List empty");
                 return l;

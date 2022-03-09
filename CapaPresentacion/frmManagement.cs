@@ -1349,14 +1349,14 @@
             {
                 frmSearchProduct frmB = new frmSearchProduct(this._idUser);
                 frmB.ShowDialog();
-                int dop = localdatabase.Instancia.returnidprod(0, 0);
+                int dop = localdatabase.Instance.ReturnIdProduct(0, 0);
                 for (int i = 0; i < dgvproduct.RowCount; i++)
                 {
                     if (Convert.ToInt32(dgvproduct.Rows[1].Cells[0].Value) == dop)
                     {
                         dgvproduct.Rows[i].Selected = true;
                         ShowRowSelected(dop);
-                        localdatabase.Instancia.returnidprod(1, 0);
+                        localdatabase.Instance.ReturnIdProduct(1, 0);
                         return;
                     }
                 }

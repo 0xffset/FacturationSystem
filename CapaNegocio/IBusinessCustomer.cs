@@ -26,14 +26,14 @@
         /// <summary>
         /// The AdvancedSearchCustomer.
         /// </summary>
-        /// <param name="nameCli">The nameCli<see cref="String"/>.</param>
+        /// <param name="CustomerName">The nameCli<see cref="String"/>.</param>
         /// <returns>The <see cref="List{entCustomer}"/>.</returns>
-        public List<entCustomer> AdvancedSearchCustomer(String nameCli)
+        public List<entCustomer> AdvancedSearchCustomer(String CustomerName)
         {
             try
             {
                 List<entCustomer> Lista = null;
-                Lista = IDataAccessCustomer.Instance.IAdvancedSearchCustomer(nameCli);
+                Lista = IDataAccessCustomer.Instance.IAdvancedSearchCustomer(CustomerName);
                 if (Lista == null) throw new ApplicationException("Error in the search");
                 return Lista;
             }
@@ -53,7 +53,7 @@
             {
                 entCustomer c = null;
                 c = IDataAccessCustomer.Instance.ISearchCustomer(id_cli, nro_Doc);
-                if (c == null) throw new ApplicationException("El registro no existe");
+                if (c == null) throw new ApplicationException("Record does not exist");
                 return c;
             }
             catch (Exception)
@@ -80,9 +80,9 @@
         /// The CustomersManagement.
         /// </summary>
         /// <param name="c">The c<see cref="entCustomer"/>.</param>
-        /// <param name="tipoedicion">The tipoedicion<see cref="int"/>.</param>
+        /// <param name="editType">The tipoedicion<see cref="int"/>.</param>
         /// <returns>The <see cref="int"/>.</returns>
-        public int CustomersManagement(entCustomer c, int tipoedicion)
+        public int CustomersManagement(entCustomer c, int editType)
         {
             try
             {
@@ -98,11 +98,11 @@
                 CadXml += "direccion='" + c.Customer_Address + "' ";
                 CadXml += "usuariocreacion='" + c.CustomerCreated_User + "' ";
                 CadXml += "usuarioupdate='" + c.CustomerUpdated_User + "' ";
-                CadXml += "tipoedicion='" + tipoedicion + "' />";
+                CadXml += "tipoedicion='" + editType + "' />";
 
                 CadXml = "<root>" + CadXml + "</root>";
                 int resultado = IDataAccessCustomer.Instance.ICustomerMagament(CadXml);
-                if (resultado <= 0) throw new ApplicationException("Error al registrar");
+                if (resultado <= 0) throw new ApplicationException("Registration error");
                 return resultado;
 
             }
@@ -118,8 +118,8 @@
             try
             {
                 List<entTipoDocumento> Lista = IDataAccessCustomer.Instance.IListTipDocument();
-                if (Lista.Count <= 0) throw new ApplicationException("Lista Vacia");
-                else if (Lista == null) throw new ApplicationException("Error al cargar lista");
+                if (Lista.Count <= 0) throw new ApplicationException("Empty List");
+                else if (Lista == null) throw new ApplicationException("Error loading list");
                 return Lista;
             }
             catch (Exception) { throw; }

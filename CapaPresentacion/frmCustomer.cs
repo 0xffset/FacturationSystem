@@ -311,19 +311,19 @@
 
             {
                 int id_cli = Convert.ToInt32(dgvcustomer.CurrentRow.Cells[0].Value);
-                localdatabase.Instancia.returnidcliente(1, id_cli);
-                int frminvocador = localdatabase.Instancia.invocar(0, 0);
+                localdatabase.Instance.ReturnIdCustomer(1, id_cli);
+                int frminvocador = localdatabase.Instance.Invoke(0, 0);
                 if (frminvocador == 1)
                 {
-                    localdatabase.Instancia.returnidcliente(1, id_cli);
+                    localdatabase.Instance.ReturnIdCustomer(1, id_cli);
                 }
                 else if (frminvocador == 2)
                 {
-                    localdatabase.Instancia.returnidclientenv(1, id_cli);
+                    localdatabase.Instance.ReturnIdCustomerEnv(1, id_cli);
                 }
                 else
                 {
-                    localdatabase.Instancia.invocar(1, 0);
+                    localdatabase.Instance.Invoke(1, 0);
                 }
                 this.Close();
 

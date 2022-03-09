@@ -101,18 +101,18 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void BTNvender_Click(object sender, EventArgs e)
         {
-            int inten = localdatabase.Instancia.Returnintento(1, 1);
-            int invoca = localdatabase.Instancia.invocar(0, 0);
+            int inten = localdatabase.Instance.ReturnTried(1, 1);
+            int invoca = localdatabase.Instance.Invoke(0, 0);
 
             if (invoca == 1)
             {
                 int idprod = Convert.ToInt32(dgvproduct.CurrentRow.Cells[0].Value);
-                localdatabase.Instancia.returnDetventa(1, idprod, 1);
+                localdatabase.Instance.ReturnDetailsSale(1, idprod, 1);
             }
 
             else
             {
-                localdatabase.Instancia.invocar(1, 0);
+                localdatabase.Instance.Invoke(1, 0);
             }
             this.Close();
         }
@@ -244,7 +244,7 @@
             try
             {
                 int idprod = Convert.ToInt32(dgvproduct.CurrentRow.Cells[0].Value);
-                localdatabase.Instancia.returnidprod(1, idprod);
+                localdatabase.Instance.ReturnIdProduct(1, idprod);
                 this.Dispose();
 
             }

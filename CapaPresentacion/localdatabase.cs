@@ -1,53 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Entidades;
-using CapaNegocio;
-
-namespace CapaNegocio
+﻿namespace CapaNegocio
 {
+    using Entidades;
+    using System;
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// Defines the <see cref="localdatabase" />.
+    /// </summary>
     public class localdatabase
     {
-        #region singleton
-        private static readonly localdatabase _instancia = new localdatabase();
-        public static localdatabase Instancia
+        /// <summary>
+        /// Defines the _instance.
+        /// </summary>
+        private static readonly localdatabase _instance = new localdatabase();
+
+        /// <summary>
+        /// Gets the Instance.
+        /// </summary>
+        public static localdatabase Instance
         {
-            get { return localdatabase._instancia;  }
+            get { return localdatabase._instance; }
         }
-        #endregion
-#region metodos
-        int Iidcliente = 0, idClienteNV=0;
-        int IdProd =0;
-        int internto = 0;
 
-        int invocador = 0;
+        /// <summary>
+        /// Defines the _IdCustomer.
+        /// </summary>
+        internal int _IdCustomer = 0;
 
-        List<entProduct> detFactura = new List<entProduct>();
+        /// <summary>
+        /// Defines the _IdProduct.
+        /// </summary>
+        internal int _IdProduct = 0;
 
+        /// <summary>
+        /// Defines the _Tried.
+        /// </summary>
+        internal int _Tried = 0;
 
-        public int invocar(int getset, int frm)
+        /// <summary>
+        /// Defines the _Invoke.
+        /// </summary>
+        internal int _Invoke = 0;
+
+        /// <summary>
+        /// Defines the detInvoice.
+        /// </summary>
+        internal List<entProduct> detInvoice = new List<entProduct>();
+
+        /// <summary>
+        /// The invocar.
+        /// </summary>
+        /// <param name="getset">The getset<see cref="int"/>.</param>
+        /// <param name="frm">The frm<see cref="int"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int Invoke(int getset, int frm)
         {
             try
             {
-                if (getset == 1) invocador = frm;
+                if (getset == 1) _Invoke = frm;
             }
             catch (Exception)
             {
                 throw;
-            } return invocador;
+            }
+            return _Invoke;
         }
 
-        public void Quitaritemproducto(int idprod)
+        /// <summary>
+        /// The Quitaritemproducto.
+        /// </summary>
+        /// <param name="idprod">The idprod<see cref="int"/>.</param>
+        public void RemoveProduct(int idprod)
         {
             try
             {
-                foreach (entProduct p in detFactura)
+                foreach (entProduct p in detInvoice)
                 {
                     if (p.Id_Prod == idprod)
                     {
-                        detFactura.Remove(p);
+                        detInvoice.Remove(p);
                         return;
                     }
                 }
@@ -55,109 +86,141 @@ namespace CapaNegocio
             catch (Exception) { throw; }
         }
 
-        public void limpiardetalleventa()
+        /// <summary>
+        /// The limpiardetalleventa.
+        /// </summary>
+        public void ClearSaleDetails()
         {
             try
             {
-                detFactura.RemoveRange(0, detFactura.Count);
+                detInvoice.RemoveRange(0, detInvoice.Count);
             }
             catch (Exception) { throw; }
         }
 
-        public int Returnintento (int getset, int intent)
+        /// <summary>
+        /// The Returnintento.
+        /// </summary>
+        /// <param name="getset">The getset<see cref="int"/>.</param>
+        /// <param name="intent">The intent<see cref="int"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int ReturnTried(int getset, int intent)
         {
             try
             {
                 if (getset == 1)
                 {
-                    internto = intent;
+                    _Tried = intent;
                 }
-                return internto;
+                return _Tried;
             }
             catch (Exception) { throw; }
         }
-        public int returnidcliente(int getset, int idCliente)
+
+        /// <summary>
+        /// The returnidcliente.
+        /// </summary>
+        /// <param name="getset">The getset<see cref="int"/>.</param>
+        /// <param name="idCustomer">The idCliente<see cref="int"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int ReturnIdCustomer(int getset, int idCustomer)
         {
             try
             {
                 if (getset == 1)
                 {
-                    Iidcliente = idCliente;
+                    _IdCustomer = idCustomer;
                 }
-                return Iidcliente;
+                return _IdCustomer;
             }
             catch (Exception)
             {
                 throw;
             }
         }
-        public int returnidclientenv(int getset, int idcliente)
+
+        /// <summary>
+        /// The returnidclientenv.
+        /// </summary>
+        /// <param name="getset">The getset<see cref="int"/>.</param>
+        /// <param name="idCustomer">The idcliente<see cref="int"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int ReturnIdCustomerEnv(int getset, int idCustomer)
         {
             try
-            { 
+            {
                 if (getset == 1)
                 {
-                    Iidcliente = idcliente;
+                    _IdCustomer = idCustomer;
                 }
-                return Iidcliente;
+                return _IdCustomer;
             }
             catch (Exception) { throw; }
         }
-             public List<entProduct> returnDetventa(int getsetm, int idprod, int canti)
-    {
-        try
+
+        /// <summary>
+        /// The returnDetventa.
+        /// </summary>
+        /// <param name="getsetm">The getsetm<see cref="int"/>.</param>
+        /// <param name="idprod">The idprod<see cref="int"/>.</param>
+        /// <param name="canti">The canti<see cref="int"/>.</param>
+        /// <returns>The <see cref="List{entProduct}"/>.</returns>
+        public List<entProduct> ReturnDetailsSale(int getsetm, int idprod, int canti)
         {
-            if (getsetm == 1)
+            try
             {
-                if (canti >1)
+                if (getsetm == 1)
                 {
-                    for (int i = 0; i < detFactura.Count; i++)
+                    if (canti > 1)
                     {
-                        if (detFactura[i].Id_Prod ==idprod)
+                        for (int i = 0; i < detInvoice.Count; i++)
                         {
-                            detFactura[i].Cantidad_ = canti;
-                            break;
+                            if (detInvoice[i].Id_Prod == idprod)
+                            {
+                                detInvoice[i].Cantidad_ = canti;
+                                break;
+                            }
                         }
                     }
-                }
-                else
-                {
-                    for (int i = 0; i < detFactura.Count; i++)
+                    else
                     {
-                        if (detFactura[i].Id_Prod == idprod)
+                        for (int i = 0; i < detInvoice.Count; i++)
                         {
-                            throw new ApplicationException("Ya fue agregado este producto");
+                            if (detInvoice[i].Id_Prod == idprod)
+                            {
+                                throw new ApplicationException("This product has already been added");
+                            }
                         }
+                        entProduct p = IBusinessManagement.Instance.SearchProduct(idprod);
+                        p.Cantidad_ = canti;
+                        detInvoice.Add(p);
                     }
-                    entProduct p = IBusinessManagement.Instance.SearchProduct(idprod);
-                    p.Cantidad_ = canti;
-                    detFactura.Add(p);
                 }
+
+                return detInvoice;
+
+            }
+            catch (Exception) { throw; }
+        }
+
+        /// <summary>
+        /// The returnidprod.
+        /// </summary>
+        /// <param name="getset">The getset<see cref="int"/>.</param>
+        /// <param name="idprodu">The idprodu<see cref="int"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
+        public int ReturnIdProduct(int getset, int idprodu)
+        {
+            try
+            {
+                if (getset == 1)
+                {
+                    _IdProduct = idprodu;
+                }
+                return _IdProduct;
             }
 
-            return detFactura;
-
+            catch (Exception) { throw; }
         }
-        catch (Exception) { throw; }
-    }
-
-       public int returnidprod(int getset, int idprodu)
-             {
-                 try
-                 {
-                     if (getset == 1)
-                     {
-                         IdProd = idprodu;
-                     }
-                     return IdProd;
-                 }
-
-                 catch (Exception) { throw; }
-             }
-
-   
-   
-        
-#endregion
     }
 }
