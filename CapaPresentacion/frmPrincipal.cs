@@ -38,7 +38,7 @@
         /// <summary>
         /// The RestrincionUsuario.
         /// </summary>
-        private void RestrincionUsuario()
+        private void UserRestrictions()
         {
             if (u.access_level.Numero_NivelAcc == 1)
             {
@@ -115,17 +115,17 @@
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
 
-            RestrincionUsuario();
+            UserRestrictions();
             try
             {
-                //buscar formularios abiertos
+                //Looking for current open forms
                 Form frmlogin = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmLogin);
-                //si exite una instancia en frmlogin visible FALSE
+                //if exits a instance, change form visibility
                 if (frmlogin != null)
                 {
                     frmlogin.Visible = false;
                 }
-                LBLusuario.Text = "Welcome: " + u.User_Name + " with access level:  " + u.access_level.Numero_NivelAcc;
+                LBLusuario.Text = "WELCOME " + u.User_Name + " WITH ACCESS LEVEL " + (u.access_level.Numero_NivelAcc == 1 ? " ADMIN AUTH " : " SELLER AUTH ");
 
             }
             catch (ArgumentNullException ne)
@@ -536,7 +536,7 @@
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Aviso",
+                MessageBox.Show(ex.Message, "Warning",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
