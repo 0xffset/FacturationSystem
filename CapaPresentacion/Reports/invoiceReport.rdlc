@@ -9,10 +9,10 @@
               <Width>1.50072cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.55073cm</Width>
+              <Width>5.44366cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.22977cm</Width>
+              <Width>1.33684cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.19841cm</Width>
@@ -820,8 +820,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>DISCOUNT</Value>
-                <Style />
+                <Value>DISCOUNT:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -850,8 +852,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>TAXES</Value>
-                <Style />
+                <Value>TAXES:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -880,8 +884,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>TOTAL</Value>
-                <Style />
+                <Value>TOTAL:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -944,8 +950,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>SUB-TOTAL</Value>
-                <Style />
+                <Value>SUB-TOTAL:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -974,8 +982,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>No. Items</Value>
-                <Style />
+                <Value>No. Items:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -983,9 +993,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>3.63981cm</Top>
-        <Left>10.24375cm</Left>
+        <Left>9.95271cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.67097cm</Width>
+        <Width>1.96201cm</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -1034,9 +1044,8 @@
   <Width>21.12439cm</Width>
   <Page>
     <PageHeader>
-      <Height>8.5725cm</Height>
+      <Height>8.255cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
-      <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
         <Textbox Name="Textbox1">
           <CanGrow>true</CanGrow>
@@ -1224,11 +1233,13 @@
                       </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox5</rd:DefaultName>
-              <Top>0.26375cm</Top>
+              <Top>1.04014cm</Top>
               <Left>0cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
@@ -1253,6 +1264,21 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Style>None</Style>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Width>1pt</Width>
+            </RightBorder>
             <BackgroundColor>Silver</BackgroundColor>
           </Style>
         </Rectangle>
@@ -1471,7 +1497,7 @@
               <rd:DefaultName>Textbox8</rd:DefaultName>
               <Top>2.27542cm</Top>
               <Left>0.07056cm</Left>
-              <Height>1.12333cm</Height>
+              <Height>1.22916cm</Height>
               <Width>7.48707cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
@@ -1495,6 +1521,9 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <BottomBorder>
+              <Style>None</Style>
+            </BottomBorder>
           </Style>
         </Rectangle>
         <Rectangle Name="Rectangle4">
@@ -1684,7 +1713,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Facturation System</Value>
+                  <Value>Payment type: Crash</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value />
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1695,7 +1733,7 @@
           <Top>0.17639cm</Top>
           <Left>0.26141cm</Left>
           <Height>0.6cm</Height>
-          <Width>3.29375cm</Width>
+          <Width>3.84938cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>

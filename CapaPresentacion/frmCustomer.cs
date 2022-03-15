@@ -15,35 +15,35 @@
         /// <summary>
         /// Defines the IdUsuario.
         /// </summary>
-        internal int IdUsuario = 0;
+        internal int _idUser = 0;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="frmCustomer"/> class.
         /// </summary>
-        /// <param name="Id_Usuario">The Id_Usuario<see cref="int?"/>.</param>
-        public frmCustomer(int? Id_Usuario)
+        /// <param name="Id_User">The Id_Usuario<see cref="int?"/>.</param>
+        public frmCustomer(int? Id_User)
         {
             InitializeComponent();
-            this.IdUsuario = (int)Id_Usuario;
+            this._idUser = (int)Id_User;
         }
 
         /// <summary>
         /// The controlb.
         /// </summary>
-        /// <param name="nuevo">The nuevo<see cref="Boolean"/>.</param>
-        /// <param name="editar">The editar<see cref="Boolean"/>.</param>
-        /// <param name="eliminar">The eliminar<see cref="Boolean"/>.</param>
-        /// <param name="salir">The salir<see cref="Boolean"/>.</param>
-        /// <param name="vender">The vender<see cref="Boolean"/>.</param>
-        private void controlb(Boolean nuevo, Boolean editar, Boolean eliminar, Boolean salir, Boolean vender)
+        /// <param name="new">The nuevo<see cref="Boolean"/>.</param>
+        /// <param name="edit">The editar<see cref="Boolean"/>.</param>
+        /// <param name="delete">The eliminar<see cref="Boolean"/>.</param>
+        /// <param name="exit">The salir<see cref="Boolean"/>.</param>
+        /// <param name="sell">The vender<see cref="Boolean"/>.</param>
+        private void statusControllers(Boolean @new, Boolean edit, Boolean delete, Boolean exit, Boolean sell)
         {
             try
             {
-                BTNnuevo.Enabled = nuevo;
-                BTNeditar.Enabled = editar;
-                BTneliminar.Enabled = eliminar;
-                BTNsalir.Enabled = salir;
-                btnSell.Enabled = vender;
+                BTNNew.Enabled = @new;
+                BTNEdit.Enabled = edit;
+                BTNDelete.Enabled = delete;
+                BTnExit.Enabled = exit;
+                BTNSell.Enabled = sell;
             }
             catch (Exception)
             { throw; }
@@ -52,7 +52,7 @@
         /// <summary>
         /// The creargrid.
         /// </summary>
-        private void creargrid()
+        private void BuildDataGridViewCustomers()
         {
             try
             {
@@ -60,7 +60,7 @@
                 dgvcustomer.Columns.Add("ColumnNro", "#");
                 dgvcustomer.Columns.Add("ColumnNombre", "Name");
                 dgvcustomer.Columns.Add("ColumnTipoDoc", "Type Doc.");
-                dgvcustomer.Columns.Add("ColumnNroDoc", "Identif. Card");
+                dgvcustomer.Columns.Add("ColumnNroDoc", "DNI");
                 dgvcustomer.Columns.Add("ColumnTelefono", "Phone");
                 dgvcustomer.Columns.Add("ColumnCelular", "Cell phone");
                 dgvcustomer.Columns.Add("ColumnCorreo", "Email");
@@ -94,7 +94,7 @@
         /// <summary>
         /// The llenargrid.
         /// </summary>
-        private void llenargrid()
+        private void FillDataGridViewCustomers()
         {
             try
             {
@@ -111,7 +111,7 @@
                     dgvcustomer.Rows.Add(fila);
                 }
             }
-            catch (ApplicationException ae) { MessageBox.Show(ae.Message, "Algo ocurre", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            catch (ApplicationException ae) { MessageBox.Show(ae.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             catch (Exception) { throw; }
         }
 
@@ -124,8 +124,8 @@
         {
             try
             {
-                creargrid();
-                controlb(true, false, false, true, false);
+                BuildDataGridViewCustomers();
+                statusControllers(true, false, false, true, false);
                 txtNameSearch.Enabled = false;
             }
             catch (Exception ex)
@@ -141,7 +141,7 @@
         {
             try
             {
-                frmCustomer_update frmx = new frmCustomer_update(IdUsuario, 0);
+                frmCustomer_update frmx = new frmCustomer_update(_idUser, 0);
                 frmx.ShowDialog();
             }
             catch (Exception ex)
@@ -159,7 +159,7 @@
         {
             try
             {
-                controlb(true, true, true, true, true);
+                statusControllers(true, true, true, true, true);
             }
             catch (Exception ex)
             {
@@ -183,7 +183,7 @@
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                frmCustomer_update frm = new frmCustomer_update(IdUsuario, id_cliente);
+                frmCustomer_update frm = new frmCustomer_update(_idUser, id_cliente);
                 frm.ShowDialog();
             }
             catch (Exception ex)
@@ -205,12 +205,12 @@
                 entTipoDocumento td = new entTipoDocumento();
                 cliente.Customer_Id = Convert.ToInt32(dgvcustomer.CurrentRow.Cells[0].Value);
                 cliente.tipodocumento = td;
-                DialogResult i = MessageBox.Show("¿Desea elimnar el registro seleccionado?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult i = MessageBox.Show("Do you want to delete the selected record?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (i == DialogResult.Yes)
                 {
                     int resultado = IBusinessCustomer.Instance.CustomersManagement(cliente, 3);
-                    MessageBox.Show("El registro fue elimnado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    llenargrid();
+                    MessageBox.Show("The record was deleted", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FillDataGridViewCustomers();
                 }
 
             }
@@ -242,8 +242,8 @@
             }
             catch (ApplicationException ea)
             {
-                MessageBox.Show(ea.Message, "Informacion", MessageBoxButtons.OK,
-                MessageBoxIcon.Information); dgvcustomer.Rows.Clear(); controlb(true, false, false, true, false);
+                MessageBox.Show(ea.Message, "Information", MessageBoxButtons.OK,
+                MessageBoxIcon.Information); dgvcustomer.Rows.Clear(); statusControllers(true, false, false, true, false);
             }
 
             catch (Exception ex)
@@ -274,7 +274,7 @@
                     Lista[i].Customer_Email, Lista[i].Customer_Address};
                     dgvcustomer.Rows.Add(row);
                 }
-                controlb(true, false, false, true, false);
+                statusControllers(true, false, false, true, false);
             }
             catch (ApplicationException ea)
             {
@@ -347,7 +347,7 @@
                 if (dgvcustomer.Rows.Count > 0)
                 {
                     int idcli = Convert.ToInt32(dgvcustomer.CurrentRow.Cells[0].Value);
-                    llenargrid();
+                    FillDataGridViewCustomers();
                     foreach (DataGridViewRow fila in dgvcustomer.Rows)
                     {
                         if (Convert.ToInt32(fila.Cells[0].Value) == idcli)
@@ -357,7 +357,7 @@
                         }
                     }
                 }
-                else llenargrid();
+                else FillDataGridViewCustomers();
             }
             catch (Exception ex)
             {
@@ -372,7 +372,7 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void cBoxocultar_CheckedChanged(object sender, EventArgs e)
         {
-            controlb(true, false, false, true, false);
+            statusControllers(true, false, false, true, false);
             if (cBoxocultar.CheckState == CheckState.Checked)
             {
                 txtindetifCard.Enabled = false; btnSearch.Enabled = false;

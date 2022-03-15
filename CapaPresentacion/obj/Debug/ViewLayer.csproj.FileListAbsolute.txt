@@ -286,4 +286,3 @@ C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaPresentacion\obj\Debu
 C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaPresentacion\obj\Debug\ViewLayer.csproj.CoreCompileInputs.cache
 C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
-C:\Users\rogge\Desktop\Facturation System\sistemaROLEY\CapaPresentacion\obj\Debug\ViewLayer.csproj.CopyComplete

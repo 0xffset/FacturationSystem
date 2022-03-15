@@ -164,7 +164,7 @@
     <Compile Include="frmSalesByCustomers.Designer.cs">
       <DependentUpon>frmSalesByCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="localdatabase.cs" />
+    <Compile Include="localDataBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmSalesReportByCustomers.cs">

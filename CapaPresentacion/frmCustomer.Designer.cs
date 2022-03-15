@@ -40,11 +40,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvcustomer = new System.Windows.Forms.DataGridView();
-            this.btnSell = new System.Windows.Forms.Button();
-            this.BTneliminar = new System.Windows.Forms.Button();
-            this.BTNnuevo = new System.Windows.Forms.Button();
-            this.BTNsalir = new System.Windows.Forms.Button();
-            this.BTNeditar = new System.Windows.Forms.Button();
+            this.BTNSell = new System.Windows.Forms.Button();
+            this.BTNDelete = new System.Windows.Forms.Button();
+            this.BTNNew = new System.Windows.Forms.Button();
+            this.BTnExit = new System.Windows.Forms.Button();
+            this.BTNEdit = new System.Windows.Forms.Button();
             this.btnUpdateCostumers = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcustomer)).BeginInit();
@@ -167,58 +167,58 @@
             // 
             // btnSell
             // 
-            this.btnSell.Font = new System.Drawing.Font("Consolas", 14F);
-            this.btnSell.Image = global::CapaPresentacion.Properties.Resources.Buying_24px1;
-            this.btnSell.Location = new System.Drawing.Point(683, 120);
-            this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(135, 48);
-            this.btnSell.TabIndex = 6;
-            this.btnSell.UseVisualStyleBackColor = true;
-            this.btnSell.Click += new System.EventHandler(this.BTNvender_Click);
+            this.BTNSell.Font = new System.Drawing.Font("Consolas", 14F);
+            this.BTNSell.Image = global::CapaPresentacion.Properties.Resources.Buying_24px1;
+            this.BTNSell.Location = new System.Drawing.Point(683, 120);
+            this.BTNSell.Name = "btnSell";
+            this.BTNSell.Size = new System.Drawing.Size(135, 48);
+            this.BTNSell.TabIndex = 6;
+            this.BTNSell.UseVisualStyleBackColor = true;
+            this.BTNSell.Click += new System.EventHandler(this.BTNvender_Click);
             // 
             // BTneliminar
             // 
-            this.BTneliminar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTneliminar.Location = new System.Drawing.Point(1149, 327);
-            this.BTneliminar.Name = "BTneliminar";
-            this.BTneliminar.Size = new System.Drawing.Size(124, 64);
-            this.BTneliminar.TabIndex = 16;
-            this.BTneliminar.Text = "Remove";
-            this.BTneliminar.UseVisualStyleBackColor = true;
-            this.BTneliminar.Click += new System.EventHandler(this.BTneliminar_Click);
+            this.BTNDelete.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNDelete.Location = new System.Drawing.Point(1149, 327);
+            this.BTNDelete.Name = "BTneliminar";
+            this.BTNDelete.Size = new System.Drawing.Size(124, 64);
+            this.BTNDelete.TabIndex = 16;
+            this.BTNDelete.Text = "Remove";
+            this.BTNDelete.UseVisualStyleBackColor = true;
+            this.BTNDelete.Click += new System.EventHandler(this.BTneliminar_Click);
             // 
             // BTNnuevo
             // 
-            this.BTNnuevo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNnuevo.Location = new System.Drawing.Point(1149, 187);
-            this.BTNnuevo.Name = "BTNnuevo";
-            this.BTNnuevo.Size = new System.Drawing.Size(124, 64);
-            this.BTNnuevo.TabIndex = 15;
-            this.BTNnuevo.Text = "New";
-            this.BTNnuevo.UseVisualStyleBackColor = true;
-            this.BTNnuevo.Click += new System.EventHandler(this.BTNnuevo_Click);
+            this.BTNNew.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNNew.Location = new System.Drawing.Point(1149, 187);
+            this.BTNNew.Name = "BTNnuevo";
+            this.BTNNew.Size = new System.Drawing.Size(124, 64);
+            this.BTNNew.TabIndex = 15;
+            this.BTNNew.Text = "New";
+            this.BTNNew.UseVisualStyleBackColor = true;
+            this.BTNNew.Click += new System.EventHandler(this.BTNnuevo_Click);
             // 
             // BTNsalir
             // 
-            this.BTNsalir.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNsalir.Location = new System.Drawing.Point(1149, 397);
-            this.BTNsalir.Name = "BTNsalir";
-            this.BTNsalir.Size = new System.Drawing.Size(124, 64);
-            this.BTNsalir.TabIndex = 14;
-            this.BTNsalir.Text = "Exit";
-            this.BTNsalir.UseVisualStyleBackColor = true;
-            this.BTNsalir.Click += new System.EventHandler(this.BTNsalir_Click);
+            this.BTnExit.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTnExit.Location = new System.Drawing.Point(1149, 397);
+            this.BTnExit.Name = "BTNsalir";
+            this.BTnExit.Size = new System.Drawing.Size(124, 64);
+            this.BTnExit.TabIndex = 14;
+            this.BTnExit.Text = "Exit";
+            this.BTnExit.UseVisualStyleBackColor = true;
+            this.BTnExit.Click += new System.EventHandler(this.BTNsalir_Click);
             // 
             // BTNeditar
             // 
-            this.BTNeditar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNeditar.Location = new System.Drawing.Point(1149, 257);
-            this.BTNeditar.Name = "BTNeditar";
-            this.BTNeditar.Size = new System.Drawing.Size(124, 64);
-            this.BTNeditar.TabIndex = 12;
-            this.BTNeditar.Text = "Edit";
-            this.BTNeditar.UseVisualStyleBackColor = true;
-            this.BTNeditar.Click += new System.EventHandler(this.BTNeditar_Click);
+            this.BTNEdit.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNEdit.Location = new System.Drawing.Point(1149, 257);
+            this.BTNEdit.Name = "BTNeditar";
+            this.BTNEdit.Size = new System.Drawing.Size(124, 64);
+            this.BTNEdit.TabIndex = 12;
+            this.BTNEdit.Text = "Edit";
+            this.BTNEdit.UseVisualStyleBackColor = true;
+            this.BTNEdit.Click += new System.EventHandler(this.BTNeditar_Click);
             // 
             // btnUpdateCostumers
             // 
@@ -238,11 +238,11 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1285, 516);
             this.Controls.Add(this.btnUpdateCostumers);
-            this.Controls.Add(this.btnSell);
-            this.Controls.Add(this.BTneliminar);
-            this.Controls.Add(this.BTNnuevo);
-            this.Controls.Add(this.BTNsalir);
-            this.Controls.Add(this.BTNeditar);
+            this.Controls.Add(this.BTNSell);
+            this.Controls.Add(this.BTNDelete);
+            this.Controls.Add(this.BTNNew);
+            this.Controls.Add(this.BTnExit);
+            this.Controls.Add(this.BTNEdit);
             this.Controls.Add(this.dgvcustomer);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -273,11 +273,11 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.CheckBox cBoxocultar;
         private System.Windows.Forms.DataGridView dgvcustomer;
-        private System.Windows.Forms.Button BTNnuevo;
-        private System.Windows.Forms.Button BTNsalir;
-        private System.Windows.Forms.Button BTNeditar;
-        private System.Windows.Forms.Button BTneliminar;
-        private System.Windows.Forms.Button btnSell;
+        private System.Windows.Forms.Button BTNNew;
+        private System.Windows.Forms.Button BTnExit;
+        private System.Windows.Forms.Button BTNEdit;
+        private System.Windows.Forms.Button BTNDelete;
+        private System.Windows.Forms.Button BTNSell;
         private System.Windows.Forms.Button btnUpdateCostumers;
     }
 }
