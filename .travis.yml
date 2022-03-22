@@ -1,0 +1,10 @@
+language: csharp
+solution: ./sistemaROLEY.sln
+mono: none
+dotnet: 3.1
+
+install:
+- dotnet restore ./sistemaROLEY.sln
+
+script:
+- dotnet build ./sistemaROLEY.sln
