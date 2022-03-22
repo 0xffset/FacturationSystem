@@ -82,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-  <a href="@">
+  <a href="images/screenshot.png">
     <img src="images/screenshot.png" alt="Products Preview">
   </a>
 
