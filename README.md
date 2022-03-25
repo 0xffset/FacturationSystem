@@ -31,7 +31,7 @@
   <h3 align="center">Facturation System</h3>
 
   <p align="center">
-  A highly customizable Facturation System written in C#
+  A Highly Customizable Invoicing System Written in C#
     <br />
     <a href="https://github.com/RolEYder/FacturationSystem"><strong>Explore the docs »</strong></a>
     <br />
