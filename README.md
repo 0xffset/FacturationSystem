@@ -82,7 +82,7 @@
     <img src="images/screenshot.png" alt="Products Preview">
   </a>
 
-Invoicing system in the cloud that allows you to manage your warehouses and manage different types of invoices for the sale of your products quickly and safely. This invoicing system offers high scalability due was built using a layered architecture. 
+Invoicing system allows you to manage your warehouses and manage different types of invoices for the sale of your products quickly and safely. This invoicing system offers high scalability due was built using a layered architecture. 
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
