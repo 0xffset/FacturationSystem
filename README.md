@@ -51,14 +51,14 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project"> About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
-         <li><a href="#folder-structure">Folder Structure</a></li>
+        <li><a href="#built-with"> 🔧 Built With</a></li>
+         <li><a href="#folder-structure"> 📂 Folder Structure</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started"> 🏃‍♂️ Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -82,22 +82,20 @@
     <img src="images/screenshot.png" alt="Products Preview">
   </a>
 
-Invoicing system in the cloud that allows you to manage your warehouses and manage different types of invoices for the sale of your products quickly and safely. This invoicing system offers high scalability due was built using a layered architecture. 1
+Invoicing system in the cloud that allows you to manage your warehouses and manage different types of invoices for the sale of your products quickly and safely. This invoicing system offers high scalability due was built using a layered architecture. 
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should implement DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-### Built With
+### 🔧 Built With 
 
 This section should list the tools used to build project: 
 
@@ -109,7 +107,7 @@ This section should list the tools used to build project:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Folder Structure
+### 📂 Folder Structure
 ```
   ├── CapaAccesoDatos                  # Helps the Business Layer to connect to the data
   ├── CapaNegocio                      # Validations or calculations to the data.
@@ -121,7 +119,7 @@ This section should list the tools used to build project:
 ```
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 🏃‍♂️ Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
