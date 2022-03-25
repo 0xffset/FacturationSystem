@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/RolEYder/FacturationSystem">
-    <img src="images/logo.jpeg" alt="Logo" width="80" height="80">
+    <img src="images/logo.jpeg" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Facturation System</h3>
