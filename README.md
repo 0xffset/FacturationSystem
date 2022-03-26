@@ -64,10 +64,10 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">✍️ Usage</a></li>
-    <li><a href="#contributing"> ➕ Contributing</a></li>
-    <li><a href="#license"> 📃 License</a></li>
-    <li><a href="#contact">📝Contact</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -157,8 +157,7 @@ Below is an example of how to install and set up the project successfully.
 
 
 <!--   EXAMPLES -->
-## ✍️ Usage
-
+## Usage
 This section shows useful examples of how the project can be used. You can see additional screenshots, code examples, and demos. 
 
 _For more examples, please refer to the [Wiki](https://github.com/RolEYder/FacturationSystem/wiki) to see the usage functionalities_.
@@ -168,7 +167,7 @@ _For more examples, please refer to the [Wiki](https://github.com/RolEYder/Factu
 
 
 <!-- CONTRIBUTING -->
-## ➕ Contributing
+## Contributing
 
 
 This is a project that does not permit folks, it’s just for personal use. But you should run it and report any issue that you should find at the [issues](https://github.com/RolEYder/FacturationSystem/issues) section. 
@@ -179,7 +178,7 @@ If you have a suggestion that would make this better, you can also simply open a
 
 
 <!-- LICENSE -->
-## 📃 License
+## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -188,7 +187,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## 📝 Contact
+## Contact
 
 rolEYder
 ```sh
