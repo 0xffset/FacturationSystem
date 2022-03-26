@@ -130,12 +130,12 @@ Below is an example of how to install and set up the project successfully.
 
 1. Make sure that you have installed all the tools mentioned above. 
 2. Clone the repo
-   ```sh
+   ```bash
     git clone https://github.com/RolEYder/FacturationSystem.git
    ```
 3. Set the database
 4. Set your connection string. Open `Conexion.cs` at CapaAccesoDatos folder and replace it with your own connection string.
-  ```c-sharp
+  ```csharp 
         public SqlConnection sqlConnectionCursor()
         {
             try
