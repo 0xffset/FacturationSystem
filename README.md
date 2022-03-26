@@ -64,11 +64,10 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#usage">✍️ Usage</a></li>
+    <li><a href="#contributing"> ➕ Contributing</a></li>
+    <li><a href="#license"> 📃 License</a></li>
+    <li><a href="#contact">📝Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -84,11 +83,6 @@
 
 Invoicing system allows you to manage your warehouses and manage different types of invoices for the sale of your products quickly and safely. This invoicing system offers high scalability due was built using a layered architecture. 
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -97,7 +91,7 @@ Here's why:
 
 ### 🔧 Built With 
 
-This section should list the tools used to build project: 
+This project was build with: 
 
 * [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
 * [SQL Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
@@ -126,82 +120,66 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+To run the project successfully, you must have already installed the mentioned tools at <a href="#built-with"> Built With</a>.
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Below is an example of how to install and set up the project successfully. 
 
-1. Get a free API Key at [https://example.com](https://example.com)
+
+1. Make sure that you have installed all the tools mentioned above. 
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+    git clone https://github.com/RolEYder/FacturationSystem.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. Set the database
+4. Set your connection string. Open `Conexion.cs` at CapaAccesoDatos folder and replace it with your own connection string.
+  ```c-sharp
+        public SqlConnection sqlConnectionCursor()
+        {
+            try
+            {
+                SqlConnection cn = new SqlConnection();
+                cn.ConnectionString = "YOU-CONNECTION-STRING";
+                return cn;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+  ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!--   EXAMPLES -->
+## ✍️ Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This section shows useful examples of how the project can be used. You can see additional screenshots, code examples, and demos. 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/RolEYder/FacturationSystem/issues) for a full list of proposed features (and known issues).
+_For more examples, please refer to the [Wiki](https://github.com/RolEYder/FacturationSystem/wiki) to see the usage functionalities_.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## ➕ Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+This is a project that does not permit folks, it’s just for personal use. But you should run it and report any issue that you should find at the [issues](https://github.com/RolEYder/FacturationSystem/issues) section. 
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+If you have a suggestion that would make this better, you can also simply open an issue with the tag “enhancement”. Don’t forget to give the project a start 🌟 ! Thank you 🙏!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 <!-- LICENSE -->
-## License
+## 📃 License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -210,11 +188,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## 📝 Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+rolEYder
+```sh
+    echo moc.liamg@zaidaicragreggor | sed -r 'G;:a;s/^(.)(.*\n)/\2\1/;ta;s/\n//' 
+```
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/RolEYder/FacturationSystem](https://github.com/RolEYder/FacturationSystem)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -223,16 +204,12 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+List of resources used in this project and would like to give credit to. 
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Report Viewer Documentation](https://docs.microsoft.com/en-us/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started?view=sql-server-ver15)
+* [XML For SQL](https://docs.microsoft.com/en-us/sql/relational-databases/xml/for-xml-sql-server?view=sql-server-ver15)
+* [Travis CI](https://www.travis-ci.com/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
