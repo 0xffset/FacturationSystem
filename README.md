@@ -28,15 +28,15 @@
     <img src="images/logo.jpeg" alt="Logo">
   </a>
 
-  <h3 align="center">Facturation System</h3>
+  <h3 align="center">FacturationSystem</h3>
 
   <p align="center">
   A Highly Customizable Invoicing System Written in C#
     <br />
-    <a href="https://github.com/RolEYder/FacturationSystem"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/RolEYder/FacturationSystem/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/RolEYder/FacturationSystem">View Demo</a>
+    <a href="https://github.com/RolEYder/FacturationSystem/wiki">View Demo</a>
     ·
     <a href="https://github.com/RolEYder/FacturationSystem/issues">Report Bug</a>
     ·
