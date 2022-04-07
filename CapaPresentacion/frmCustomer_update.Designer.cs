@@ -67,7 +67,7 @@
             this.Cédula.Size = new System.Drawing.Size(50, 22);
             this.Cédula.TabIndex = 3;
             this.Cédula.Text = "DNI:";
-            this.Cédula.Click += new System.EventHandler(this.Cédula_Click);
+          
             // 
             // label2
             // 
@@ -78,7 +78,6 @@
             this.label2.Size = new System.Drawing.Size(60, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Name:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -89,7 +88,6 @@
             this.label3.Size = new System.Drawing.Size(70, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Phone:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -100,7 +98,6 @@
             this.label4.Size = new System.Drawing.Size(110, 22);
             this.label4.TabIndex = 6;
             this.label4.Text = "Cellphone:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label6
             // 
@@ -111,7 +108,6 @@
             this.label6.Size = new System.Drawing.Size(70, 22);
             this.label6.TabIndex = 8;
             this.label6.Text = "Email:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 

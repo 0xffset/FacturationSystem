@@ -11,7 +11,7 @@
     public partial class frmCustomer_update : Form
     {
         /// <summary>
-        /// Defines the IdUsuario, IdCliente.
+        /// Defines the IdUsuario, IdCliente..
         /// </summary>
         internal int IdUsuario = 0, IdCliente = 0;
 
@@ -49,7 +49,7 @@
                     txtCellphone.Text = cliente.Customer_Cellphone;
                     txtEmail.Text = cliente.Customer_Email;
                     txtAddress.Text = cliente.Customer_Address;
-                    
+
                 }
             }
             catch (ApplicationException) { throw; }
@@ -61,54 +61,42 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void Cédula_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label6_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label6_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label5_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label5_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label4_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label4_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label3_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label2_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The frmCliente_modificar_Load.
@@ -177,45 +165,16 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void cBoxM_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The txtNombre_KeyPress.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="KeyPressEventArgs"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = Char.ToUpper(e.KeyChar);
-        }
-
-        /// <summary>
-        /// The label8_Click.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label8_Click(object sender, EventArgs e)
-        {
-        }
-
-        /// <summary>
-        /// The dateTimePicker1_ValueChanged.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        /// <summary>
-        /// The cBoxF_CheckedChanged.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void cBoxF_CheckedChanged(object sender, EventArgs e)
-        {
         }
     }
 }

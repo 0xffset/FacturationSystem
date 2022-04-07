@@ -81,7 +81,7 @@
             this.label1.Size = new System.Drawing.Size(339, 95);
             this.label1.TabIndex = 0;
             this.label1.Text = "Billing System";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+        
             // 
             // groupBox1
             // 
@@ -110,7 +110,7 @@
             this.lblcorre.Name = "lblcorre";
             this.lblcorre.Size = new System.Drawing.Size(135, 24);
             this.lblcorre.TabIndex = 5;
-            this.lblcorre.Click += new System.EventHandler(this.label8_Click_1);
+    
             // 
             // gbCliente
             // 
@@ -175,7 +175,7 @@
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(166, 22);
             this.txtDNI.TabIndex = 5;
-            this.txtDNI.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCedula_KeyUp);
+ 
             // 
             // label6
             // 
@@ -192,7 +192,7 @@
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(241, 22);
             this.txtCustomerName.TabIndex = 3;
-            this.txtCustomerName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // label5
             // 
@@ -202,7 +202,7 @@
             this.label5.Size = new System.Drawing.Size(112, 14);
             this.label5.TabIndex = 2;
             this.label5.Text = "Customer Name: ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+
             // 
             // txtCodoU
             // 
@@ -327,7 +327,7 @@
             this.txtTotal.Size = new System.Drawing.Size(97, 21);
             this.txtTotal.TabIndex = 12;
             this.txtTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtTotal.Click += new System.EventHandler(this.label11_Click);
+ 
             // 
             // label10
             // 
@@ -346,7 +346,6 @@
             this.lblItems.Size = new System.Drawing.Size(101, 21);
             this.lblItems.TabIndex = 10;
             this.lblItems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblItems.Click += new System.EventHandler(this.label8_Click);
             // 
             // dgvInvoice
             // 

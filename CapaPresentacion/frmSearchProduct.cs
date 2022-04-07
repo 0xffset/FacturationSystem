@@ -267,14 +267,5 @@
                 }
             }
         }
-
-        /// <summary>
-        /// The txtBuscarProd_TextChanged.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void txtBuscarProd_TextChanged(object sender, EventArgs e)
-        {
-        }
     }
 }

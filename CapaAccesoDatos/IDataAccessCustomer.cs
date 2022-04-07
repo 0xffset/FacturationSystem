@@ -7,7 +7,7 @@
     using System.Data.SqlClient;
 
     /// <summary>
-    /// Defines the <see cref="IDataAccessCustomer" />.
+    /// Defines the IDataAccessCustomer class <see cref="IDataAccessCustomer" />.
     /// </summary>
     public class IDataAccessCustomer
     {
@@ -25,7 +25,7 @@
         }
 
         /// <summary>
-        /// The IAdvancedSearchCustomer.
+        /// Yield the customer data by name.
         /// </summary>
         /// <param name="nom_cli">The nom_cli<see cref="String"/>.</param>
         /// <returns>The <see cref="List{entCustomer}"/>.</returns>
@@ -69,7 +69,7 @@
         }
 
         /// <summary>
-        /// The ISearchCustomer.
+        ///  Seach a customer by id and DNI.
         /// </summary>
         /// <param name="id_cli">The id_cli<see cref="int"/>.</param>
         /// <param name="nro_Doc">The nro_Doc<see cref="String"/>.</param>
@@ -115,7 +115,7 @@
         }
 
         /// <summary>
-        /// The IListCustomer.
+        /// List all Customers.
         /// </summary>
         /// <returns>The <see cref="List{entCustomer}"/>.</returns>
         public List<entCustomer> IListCustomer()
@@ -155,7 +155,7 @@
         }
 
         /// <summary>
-        /// The IShowNumCustomers.
+        /// Get the number of all customers store.
         /// </summary>
         /// <returns>The <see cref="int"/>.</returns>
         public int IShowNumCustomers()
@@ -179,7 +179,7 @@
         }
 
         /// <summary>
-        /// The ICustomerMagament.
+        /// Method witch handle the customer such insert, update, or disable a customer.
         /// </summary>
         /// <param name="cadXml">The cadXml<see cref="String"/>.</param>
         /// <returns>The <see cref="int"/>.</returns>
@@ -203,7 +203,7 @@
         }
 
         /// <summary>
-        /// The IListTipDocument.
+        /// List document Type.
         /// </summary>
         /// <returns>The <see cref="List{entTipoDocumento}"/>.</returns>
         public List<entTipoDocumento> IListTipDocument()

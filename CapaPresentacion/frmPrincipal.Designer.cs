@@ -109,7 +109,7 @@
             this.incicioToolStripMenuItem.Name = "incicioToolStripMenuItem";
             this.incicioToolStripMenuItem.Size = new System.Drawing.Size(62, 40);
             this.incicioToolStripMenuItem.Text = "&Home";
-            this.incicioToolStripMenuItem.Click += new System.EventHandler(this.incicioToolStripMenuItem_Click);
+       
             // 
             // MSIseguridad
             // 
@@ -204,7 +204,6 @@
             this.MSIreportes.Name = "MSIreportes";
             this.MSIreportes.Size = new System.Drawing.Size(92, 40);
             this.MSIreportes.Text = "&Reports";
-            this.MSIreportes.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // reporteDeVentasPorClienteToolStripMenuItem
             // 
@@ -236,14 +235,14 @@
             this.machineLearningToolStripMenuItem.Name = "machineLearningToolStripMenuItem";
             this.machineLearningToolStripMenuItem.Size = new System.Drawing.Size(32, 40);
             this.machineLearningToolStripMenuItem.Text = " ";
-            this.machineLearningToolStripMenuItem.Click += new System.EventHandler(this.MachineLearningToolStripMenuItem_Click);
+
             // 
             // regresionLinearToolStripMenuItem
             // 
             this.regresionLinearToolStripMenuItem.Name = "regresionLinearToolStripMenuItem";
             this.regresionLinearToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.regresionLinearToolStripMenuItem.Text = "Regresion Linear";
-            this.regresionLinearToolStripMenuItem.Click += new System.EventHandler(this.RegresionLinearToolStripMenuItem_Click);
+          
             // 
             // LBLusuario
             // 

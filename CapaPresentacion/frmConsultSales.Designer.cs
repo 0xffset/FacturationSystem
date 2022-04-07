@@ -56,7 +56,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = ".: SALES HISTORY :.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
@@ -173,7 +172,6 @@
             this.dgvSaleHistory.Size = new System.Drawing.Size(749, 345);
             this.dgvSaleHistory.TabIndex = 6;
             this.dgvSaleHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHisVentas_CellClick);
-            this.dgvSaleHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHisVentas_CellContentClick);
             // 
             // frmConsultSales
             // 

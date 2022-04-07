@@ -78,7 +78,6 @@
             this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Status";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblState
             // 
@@ -107,7 +106,6 @@
             this.lblCodeSale.Size = new System.Drawing.Size(189, 21);
             this.lblCodeSale.TabIndex = 5;
             this.lblCodeSale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblCodeSale.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblDNI
             // 

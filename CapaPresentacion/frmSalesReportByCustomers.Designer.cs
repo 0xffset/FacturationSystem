@@ -50,7 +50,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+          
             // 
             // btnSearch
             // 
@@ -87,7 +87,7 @@
             this.dgvLayout.Size = new System.Drawing.Size(1383, 347);
             this.dgvLayout.TabIndex = 1;
             this.dgvLayout.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLayout_CellClick);
-            this.dgvLayout.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLayout_CellContentClick);
+       
             // 
             // label2
             // 

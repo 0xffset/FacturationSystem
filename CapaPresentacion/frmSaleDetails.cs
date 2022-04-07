@@ -109,9 +109,8 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
+
+
 
         /// <summary>
         /// The frmDetalleV_Load.
@@ -129,15 +128,6 @@
             }
             catch (ApplicationException ex) { MessageBox.Show(ex.Message, "Warning"); }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error"); }
-        }
-
-        /// <summary>
-        /// The label4_Click.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label4_Click(object sender, EventArgs e)
-        {
         }
     }
 }

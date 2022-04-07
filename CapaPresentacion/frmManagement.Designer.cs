@@ -126,6 +126,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.panelCode = new System.Windows.Forms.Panel();
+            this.btmSaveCode = new System.Windows.Forms.Button();
             this.tbcPrincipal.SuspendLayout();
             this.tcpProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproduct)).BeginInit();
@@ -153,6 +155,8 @@
             // tcpProducts
             // 
             this.tcpProducts.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tcpProducts.Controls.Add(this.btmSaveCode);
+            this.tcpProducts.Controls.Add(this.panelCode);
             this.tcpProducts.Controls.Add(this.rb0);
             this.tcpProducts.Controls.Add(this.rb116ITBIS);
             this.tcpProducts.Controls.Add(this.rb18ITBIS);
@@ -199,12 +203,12 @@
             this.tcpProducts.Size = new System.Drawing.Size(1077, 463);
             this.tcpProducts.TabIndex = 0;
             this.tcpProducts.Text = "PRODUCTS";
-            this.tcpProducts.Click += new System.EventHandler(this.tcpProducto_Click);
+  
             // 
             // rb0
             // 
             this.rb0.AutoSize = true;
-            this.rb0.Location = new System.Drawing.Point(316, 170);
+            this.rb0.Location = new System.Drawing.Point(217, 167);
             this.rb0.Name = "rb0";
             this.rb0.Size = new System.Drawing.Size(32, 18);
             this.rb0.TabIndex = 82;
@@ -215,7 +219,7 @@
             // rb116ITBIS
             // 
             this.rb116ITBIS.AutoSize = true;
-            this.rb116ITBIS.Location = new System.Drawing.Point(316, 150);
+            this.rb116ITBIS.Location = new System.Drawing.Point(217, 147);
             this.rb116ITBIS.Name = "rb116ITBIS";
             this.rb116ITBIS.Size = new System.Drawing.Size(95, 18);
             this.rb116ITBIS.TabIndex = 81;
@@ -226,7 +230,7 @@
             // rb18ITBIS
             // 
             this.rb18ITBIS.AutoSize = true;
-            this.rb18ITBIS.Location = new System.Drawing.Point(316, 131);
+            this.rb18ITBIS.Location = new System.Drawing.Point(217, 128);
             this.rb18ITBIS.Name = "rb18ITBIS";
             this.rb18ITBIS.Size = new System.Drawing.Size(88, 18);
             this.rb18ITBIS.TabIndex = 80;
@@ -236,7 +240,7 @@
             // 
             // txtDescuento
             // 
-            this.txtDescuento.Location = new System.Drawing.Point(377, 101);
+            this.txtDescuento.Location = new System.Drawing.Point(278, 98);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(55, 22);
             this.txtDescuento.TabIndex = 79;
@@ -245,7 +249,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(297, 107);
+            this.label26.Location = new System.Drawing.Point(198, 104);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(84, 14);
             this.label26.TabIndex = 78;
@@ -255,7 +259,7 @@
             // 
             this.lblvenprod.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvenprod.ForeColor = System.Drawing.Color.Red;
-            this.lblvenprod.Location = new System.Drawing.Point(502, 70);
+            this.lblvenprod.Location = new System.Drawing.Point(403, 67);
             this.lblvenprod.Name = "lblvenprod";
             this.lblvenprod.Size = new System.Drawing.Size(364, 25);
             this.lblvenprod.TabIndex = 77;
@@ -265,19 +269,19 @@
             // 
             this.lbldisplayven.AutoSize = true;
             this.lbldisplayven.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbldisplayven.Location = new System.Drawing.Point(120, 432);
+            this.lbldisplayven.Location = new System.Drawing.Point(21, 429);
             this.lbldisplayven.Name = "lbldisplayven";
             this.lbldisplayven.Size = new System.Drawing.Size(70, 14);
             this.lbldisplayven.TabIndex = 76;
             this.lbldisplayven.Text = "Due data:";
-            this.lbldisplayven.Click += new System.EventHandler(this.label26_Click);
+          
             // 
             // dtpduedate
             // 
             this.dtpduedate.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dtpduedate.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpduedate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpduedate.Location = new System.Drawing.Point(196, 430);
+            this.dtpduedate.Location = new System.Drawing.Point(97, 427);
             this.dtpduedate.Name = "dtpduedate";
             this.dtpduedate.Size = new System.Drawing.Size(104, 27);
             this.dtpduedate.TabIndex = 75;
@@ -285,7 +289,7 @@
             // button1
             // 
             this.button1.Image = global::CapaPresentacion.Properties.Resources.Search_24px;
-            this.button1.Location = new System.Drawing.Point(786, 219);
+            this.button1.Location = new System.Drawing.Point(687, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(52, 35);
             this.button1.TabIndex = 74;
@@ -296,7 +300,7 @@
             // 
             this.BTNnewp.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNnewp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNnewp.Location = new System.Drawing.Point(880, 123);
+            this.BTNnewp.Location = new System.Drawing.Point(910, 152);
             this.BTNnewp.Name = "BTNnewp";
             this.BTNnewp.Size = new System.Drawing.Size(90, 45);
             this.BTNnewp.TabIndex = 73;
@@ -308,7 +312,7 @@
             // 
             this.BTNexitp.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNexitp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNexitp.Location = new System.Drawing.Point(880, 378);
+            this.BTNexitp.Location = new System.Drawing.Point(910, 407);
             this.BTNexitp.Name = "BTNexitp";
             this.BTNexitp.Size = new System.Drawing.Size(90, 45);
             this.BTNexitp.TabIndex = 72;
@@ -320,7 +324,7 @@
             // 
             this.BTNcancelp.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNcancelp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNcancelp.Location = new System.Drawing.Point(880, 327);
+            this.BTNcancelp.Location = new System.Drawing.Point(910, 356);
             this.BTNcancelp.Name = "BTNcancelp";
             this.BTNcancelp.Size = new System.Drawing.Size(90, 45);
             this.BTNcancelp.TabIndex = 71;
@@ -332,7 +336,7 @@
             // 
             this.BTNdeletep.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNdeletep.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNdeletep.Location = new System.Drawing.Point(880, 276);
+            this.BTNdeletep.Location = new System.Drawing.Point(910, 305);
             this.BTNdeletep.Name = "BTNdeletep";
             this.BTNdeletep.Size = new System.Drawing.Size(90, 45);
             this.BTNdeletep.TabIndex = 70;
@@ -344,7 +348,7 @@
             // 
             this.BTNsavep.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNsavep.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNsavep.Location = new System.Drawing.Point(880, 225);
+            this.BTNsavep.Location = new System.Drawing.Point(910, 254);
             this.BTNsavep.Name = "BTNsavep";
             this.BTNsavep.Size = new System.Drawing.Size(90, 45);
             this.BTNsavep.TabIndex = 69;
@@ -356,7 +360,7 @@
             // 
             this.BTNeditp.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNeditp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNeditp.Location = new System.Drawing.Point(880, 174);
+            this.BTNeditp.Location = new System.Drawing.Point(910, 203);
             this.BTNeditp.Name = "BTNeditp";
             this.BTNeditp.Size = new System.Drawing.Size(90, 45);
             this.BTNeditp.TabIndex = 68;
@@ -368,7 +372,7 @@
             // 
             this.cbosupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbosupplier.FormattingEnabled = true;
-            this.cbosupplier.Location = new System.Drawing.Point(608, 193);
+            this.cbosupplier.Location = new System.Drawing.Point(509, 190);
             this.cbosupplier.Name = "cbosupplier";
             this.cbosupplier.Size = new System.Drawing.Size(172, 22);
             this.cbosupplier.TabIndex = 67;
@@ -377,7 +381,7 @@
             // 
             this.cboprodpresent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboprodpresent.FormattingEnabled = true;
-            this.cboprodpresent.Location = new System.Drawing.Point(608, 162);
+            this.cboprodpresent.Location = new System.Drawing.Point(509, 159);
             this.cboprodpresent.Name = "cboprodpresent";
             this.cboprodpresent.Size = new System.Drawing.Size(172, 22);
             this.cboprodpresent.TabIndex = 66;
@@ -386,14 +390,14 @@
             // 
             this.cbocategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbocategories.FormattingEnabled = true;
-            this.cbocategories.Location = new System.Drawing.Point(608, 131);
+            this.cbocategories.Location = new System.Drawing.Point(509, 128);
             this.cbocategories.Name = "cbocategories";
             this.cbocategories.Size = new System.Drawing.Size(172, 22);
             this.cbocategories.TabIndex = 65;
             // 
             // txtsaleprocip
             // 
-            this.txtsaleprocip.Location = new System.Drawing.Point(608, 104);
+            this.txtsaleprocip.Location = new System.Drawing.Point(509, 101);
             this.txtsaleprocip.Name = "txtsaleprocip";
             this.txtsaleprocip.Size = new System.Drawing.Size(55, 22);
             this.txtsaleprocip.TabIndex = 64;
@@ -402,7 +406,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(499, 198);
+            this.label8.Location = new System.Drawing.Point(400, 195);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 14);
             this.label8.TabIndex = 63;
@@ -411,7 +415,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(499, 172);
+            this.label9.Location = new System.Drawing.Point(400, 169);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 14);
             this.label9.TabIndex = 62;
@@ -420,7 +424,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(499, 141);
+            this.label10.Location = new System.Drawing.Point(400, 138);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(70, 14);
             this.label10.TabIndex = 61;
@@ -429,17 +433,17 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(499, 110);
+            this.label11.Location = new System.Drawing.Point(400, 107);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(98, 14);
             this.label11.TabIndex = 60;
             this.label11.Text = "Sale price $:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            
             // 
             // dgvproduct
             // 
             this.dgvproduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvproduct.Location = new System.Drawing.Point(123, 219);
+            this.dgvproduct.Location = new System.Drawing.Point(24, 216);
             this.dgvproduct.Name = "dgvproduct";
             this.dgvproduct.Size = new System.Drawing.Size(657, 207);
             this.dgvproduct.TabIndex = 59;
@@ -447,7 +451,7 @@
             // 
             // txtminstockp
             // 
-            this.txtminstockp.Location = new System.Drawing.Point(236, 194);
+            this.txtminstockp.Location = new System.Drawing.Point(137, 191);
             this.txtminstockp.Name = "txtminstockp";
             this.txtminstockp.Size = new System.Drawing.Size(55, 22);
             this.txtminstockp.TabIndex = 58;
@@ -455,16 +459,16 @@
             // 
             // txtavaragep
             // 
-            this.txtavaragep.Location = new System.Drawing.Point(236, 163);
+            this.txtavaragep.Location = new System.Drawing.Point(137, 160);
             this.txtavaragep.Name = "txtavaragep";
             this.txtavaragep.Size = new System.Drawing.Size(55, 22);
             this.txtavaragep.TabIndex = 57;
             this.txtavaragep.Text = "0";
-            this.txtavaragep.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+           
             // 
             // txtstockp
             // 
-            this.txtstockp.Location = new System.Drawing.Point(236, 132);
+            this.txtstockp.Location = new System.Drawing.Point(137, 129);
             this.txtstockp.Name = "txtstockp";
             this.txtstockp.Size = new System.Drawing.Size(55, 22);
             this.txtstockp.TabIndex = 56;
@@ -472,7 +476,7 @@
             // 
             // txtpurchasep
             // 
-            this.txtpurchasep.Location = new System.Drawing.Point(236, 104);
+            this.txtpurchasep.Location = new System.Drawing.Point(137, 101);
             this.txtpurchasep.Name = "txtpurchasep";
             this.txtpurchasep.Size = new System.Drawing.Size(55, 22);
             this.txtpurchasep.TabIndex = 55;
@@ -480,7 +484,7 @@
             // 
             // txtbrandp
             // 
-            this.txtbrandp.Location = new System.Drawing.Point(236, 70);
+            this.txtbrandp.Location = new System.Drawing.Point(137, 67);
             this.txtbrandp.Name = "txtbrandp";
             this.txtbrandp.Size = new System.Drawing.Size(260, 22);
             this.txtbrandp.TabIndex = 54;
@@ -488,7 +492,7 @@
             // 
             // txtnamep
             // 
-            this.txtnamep.Location = new System.Drawing.Point(236, 39);
+            this.txtnamep.Location = new System.Drawing.Point(137, 36);
             this.txtnamep.Name = "txtnamep";
             this.txtnamep.Size = new System.Drawing.Size(564, 22);
             this.txtnamep.TabIndex = 53;
@@ -496,14 +500,14 @@
             // 
             // txtidp
             // 
-            this.txtidp.Location = new System.Drawing.Point(502, 9);
+            this.txtidp.Location = new System.Drawing.Point(403, 6);
             this.txtidp.Name = "txtidp";
             this.txtidp.Size = new System.Drawing.Size(48, 22);
             this.txtidp.TabIndex = 52;
             // 
             // TXTcodep
             // 
-            this.TXTcodep.Location = new System.Drawing.Point(236, 8);
+            this.TXTcodep.Location = new System.Drawing.Point(137, 5);
             this.TXTcodep.Name = "TXTcodep";
             this.TXTcodep.ReadOnly = true;
             this.TXTcodep.Size = new System.Drawing.Size(260, 22);
@@ -512,7 +516,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(118, 200);
+            this.label7.Location = new System.Drawing.Point(19, 197);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 14);
             this.label7.TabIndex = 50;
@@ -521,7 +525,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(118, 169);
+            this.label5.Location = new System.Drawing.Point(19, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 14);
             this.label5.TabIndex = 49;
@@ -530,7 +534,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(118, 138);
+            this.label4.Location = new System.Drawing.Point(19, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 14);
             this.label4.TabIndex = 48;
@@ -539,7 +543,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(118, 107);
+            this.label1.Location = new System.Drawing.Point(19, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 14);
             this.label1.TabIndex = 47;
@@ -548,17 +552,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(118, 76);
+            this.label6.Location = new System.Drawing.Point(19, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 14);
             this.label6.TabIndex = 46;
             this.label6.Text = "Brand:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 45);
+            this.label2.Location = new System.Drawing.Point(19, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 14);
             this.label2.TabIndex = 44;
@@ -567,7 +571,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(118, 14);
+            this.label3.Location = new System.Drawing.Point(19, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 14);
             this.label3.TabIndex = 43;
@@ -697,7 +701,7 @@
             this.dgvsupplier.Size = new System.Drawing.Size(657, 177);
             this.dgvsupplier.TabIndex = 90;
             this.dgvsupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproveedor_CellClick);
-            this.dgvsupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproveedor_CellContentClick);
+          
             // 
             // txtemails
             // 
@@ -936,7 +940,7 @@
             this.dgvpresent.Size = new System.Drawing.Size(504, 263);
             this.dgvpresent.TabIndex = 93;
             this.dgvpresent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpresentacionprod_CellClick);
-            this.dgvpresent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+     
             // 
             // txtabbrepresent
             // 
@@ -944,7 +948,7 @@
             this.txtabbrepresent.Name = "txtabbrepresent";
             this.txtabbrepresent.Size = new System.Drawing.Size(260, 22);
             this.txtabbrepresent.TabIndex = 92;
-            this.txtabbrepresent.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+       
             this.txtabbrepresent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtabbrepresent_KeyPress);
             // 
             // txtdescriptionpresent
@@ -953,7 +957,7 @@
             this.txtdescriptionpresent.Name = "txtdescriptionpresent";
             this.txtdescriptionpresent.Size = new System.Drawing.Size(319, 22);
             this.txtdescriptionpresent.TabIndex = 91;
-            this.txtdescriptionpresent.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+          
             this.txtdescriptionpresent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdescriptionpresent_KeyPress);
             // 
             // txtidpresent
@@ -962,7 +966,7 @@
             this.txtidpresent.Name = "txtidpresent";
             this.txtidpresent.Size = new System.Drawing.Size(48, 22);
             this.txtidpresent.TabIndex = 90;
-            this.txtidpresent.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+
             // 
             // txtcodepresent
             // 
@@ -971,7 +975,7 @@
             this.txtcodepresent.ReadOnly = true;
             this.txtcodepresent.Size = new System.Drawing.Size(100, 22);
             this.txtcodepresent.TabIndex = 89;
-            this.txtcodepresent.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+
             // 
             // label13
             // 
@@ -981,7 +985,7 @@
             this.label13.Size = new System.Drawing.Size(98, 14);
             this.label13.TabIndex = 88;
             this.label13.Text = "Abbreviation:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+        
             // 
             // label14
             // 
@@ -991,7 +995,7 @@
             this.label14.Size = new System.Drawing.Size(98, 14);
             this.label14.TabIndex = 87;
             this.label14.Text = "Description: ";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+
             // 
             // label15
             // 
@@ -1001,7 +1005,7 @@
             this.label15.Size = new System.Drawing.Size(42, 14);
             this.label15.TabIndex = 86;
             this.label15.Text = "Code:";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+     
             // 
             // tbcCategories
             // 
@@ -1188,7 +1192,25 @@
             this.label12.TabIndex = 2;
             this.label12.Text = ".: PRODUCTS | SUPPLIERS | PROD. PRESENTATION | CATEGORIES :.";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+           
+            // 
+            // panelCode
+            // 
+            this.panelCode.Location = new System.Drawing.Point(707, 6);
+            this.panelCode.Name = "panelCode";
+            this.panelCode.Size = new System.Drawing.Size(351, 100);
+            this.panelCode.TabIndex = 83;
+            // 
+            // btmSaveCode
+            // 
+            this.btmSaveCode.Enabled = false;
+            this.btmSaveCode.Location = new System.Drawing.Point(818, 112);
+            this.btmSaveCode.Name = "btmSaveCode";
+            this.btmSaveCode.Size = new System.Drawing.Size(131, 23);
+            this.btmSaveCode.TabIndex = 85;
+            this.btmSaveCode.Text = "Save Code";
+            this.btmSaveCode.UseVisualStyleBackColor = true;
+            this.btmSaveCode.Click += new System.EventHandler(this.btmSaveCode_Click);
             // 
             // frmManagement
             // 
@@ -1323,5 +1345,7 @@
         private System.Windows.Forms.RadioButton rb116ITBIS;
         private System.Windows.Forms.RadioButton rb18ITBIS;
         private System.Windows.Forms.RadioButton rb0;
+        private System.Windows.Forms.Button btmSaveCode;
+        private System.Windows.Forms.Panel panelCode;
     }
 }

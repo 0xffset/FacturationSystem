@@ -138,7 +138,7 @@
             this.rbStock.TabStop = true;
             this.rbStock.Text = "All";
             this.rbStock.UseVisualStyleBackColor = true;
-            this.rbStock.CheckedChanged += new System.EventHandler(this.rbStock_CheckedChanged);
+  
             // 
             // label2
             // 

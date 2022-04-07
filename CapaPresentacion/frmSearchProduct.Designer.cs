@@ -108,7 +108,6 @@
             this.txtSearchProduct.Name = "txtSearchProduct";
             this.txtSearchProduct.Size = new System.Drawing.Size(283, 22);
             this.txtSearchProduct.TabIndex = 0;
-            this.txtSearchProduct.TextChanged += new System.EventHandler(this.txtBuscarProd_TextChanged);
             this.txtSearchProduct.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscarProd_KeyUp);
             // 
             // dgvproduct

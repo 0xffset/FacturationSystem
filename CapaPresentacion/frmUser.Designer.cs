@@ -275,7 +275,6 @@
             this.DTPexpiracion.Name = "DTPexpiracion";
             this.DTPexpiracion.Size = new System.Drawing.Size(146, 29);
             this.DTPexpiracion.TabIndex = 19;
-            this.DTPexpiracion.ValueChanged += new System.EventHandler(this.DTPexpiracion_ValueChanged);
             // 
             // label11
             // 
@@ -286,7 +285,6 @@
             this.label11.Size = new System.Drawing.Size(170, 22);
             this.label11.TabIndex = 18;
             this.label11.Text = "Expiration Data:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // RBInactivo
             // 
@@ -300,7 +298,6 @@
             this.RBInactivo.TabIndex = 17;
             this.RBInactivo.Text = "Inactive";
             this.RBInactivo.UseVisualStyleBackColor = true;
-            this.RBInactivo.CheckedChanged += new System.EventHandler(this.RBInactivo_CheckedChanged);
             // 
             // RBactivo
             // 
@@ -314,7 +311,6 @@
             this.RBactivo.TabIndex = 16;
             this.RBactivo.Text = "Active";
             this.RBactivo.UseVisualStyleBackColor = true;
-            this.RBactivo.CheckedChanged += new System.EventHandler(this.RBactivo_CheckedChanged);
             // 
             // label10
             // 
@@ -325,7 +321,7 @@
             this.label10.Size = new System.Drawing.Size(80, 22);
             this.label10.TabIndex = 15;
             this.label10.Text = "Status:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            
             // 
             // TXTcorreo
             // 
@@ -408,7 +404,7 @@
             this.TXTnombre.Name = "TXTnombre";
             this.TXTnombre.Size = new System.Drawing.Size(527, 29);
             this.TXTnombre.TabIndex = 4;
-            this.TXTnombre.TextChanged += new System.EventHandler(this.TXTnombre_TextChanged);
+     
             this.TXTnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTnombre_KeyPress);
             // 
             // label4
@@ -486,7 +482,6 @@
             this.TXTSearch.Name = "TXTSearch";
             this.TXTSearch.Size = new System.Drawing.Size(226, 31);
             this.TXTSearch.TabIndex = 1;
-            this.TXTSearch.TextChanged += new System.EventHandler(this.TXTbuscar_TextChanged);
             // 
             // label2
             // 

@@ -1,10 +1,12 @@
-﻿namespace CapaAccesoDatos
+﻿
+
+namespace CapaAccesoDatos
 {
     using System;
     using System.Data.SqlClient;
 
     /// <summary>
-    /// Defines the <see cref="Conexion" />.
+    /// Defines the SQL Conexion class <see cref="Conexion" />. 
     /// </summary>
     public class Conexion
     {
@@ -25,7 +27,7 @@
         }
 
         /// <summary>
-        /// The sqlConnectionCursor.
+        /// Yield a SqlConnection with the proper connection established.
         /// </summary>
         /// <returns>The <see cref="SqlConnection"/>.</returns>
         public SqlConnection sqlConnectionCursor()

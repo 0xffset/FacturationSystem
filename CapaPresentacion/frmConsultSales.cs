@@ -207,24 +207,20 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
-        private void dgvHisVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label1_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The btnSalesReports_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
+        /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
         private void btnSalesReports_Click(object sender, EventArgs e)
         {
             frmAdvancedSalesReport frmAdvancedSalesReport = new frmAdvancedSalesReport();

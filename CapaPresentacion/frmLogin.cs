@@ -64,9 +64,8 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
+
+
 
         /// <summary>
         /// The btnSalir_Click.
@@ -83,9 +82,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label4_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The frmLogin_Load.

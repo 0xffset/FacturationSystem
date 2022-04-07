@@ -137,9 +137,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void rbStock_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The frmIndicaProducto_Load.

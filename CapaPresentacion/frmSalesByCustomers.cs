@@ -101,14 +101,5 @@
             LoadSaleCustomer();
             BuildGridSalesCustomers();
         }
-
-        /// <summary>
-        /// The listView1_SelectedIndexChanged.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
     }
 }

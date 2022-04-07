@@ -5,7 +5,6 @@
     using System;
     using System.ComponentModel;
     using System.Data;
-    using System.Data.SqlClient;
     using System.Linq;
     using System.Threading.Tasks;
     using System.Windows.Forms;
@@ -19,11 +18,6 @@
         /// Defines the u.
         /// </summary>
         internal entUser u = new entUser();
-
-        /// <summary>
-        /// Defines the SendReports.
-        /// </summary>
-        internal SendReports SendReports = new SendReports();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="frmPrincipal"/> class.
@@ -85,9 +79,8 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void MSILogIn_Click(object sender, EventArgs e)
-        {
-        }
+
+
 
         /// <summary>
         /// The set.
@@ -143,15 +136,13 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="CancelEventArgs"/>.</param>
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The clientesToolStripMenuItem_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
+        /// <param name="e">The e<see cref="CancelEventArgs"/>.</param>
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -246,18 +237,14 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The incicioToolStripMenuItem_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void incicioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The MSIsalir_Click.
@@ -310,9 +297,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void reporteGenerarDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The MSIventa_Click.
@@ -369,18 +354,14 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void MachineLearningToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The RegresionLinearToolStripMenuItem_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void RegresionLinearToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The timer1_Tick.
@@ -405,19 +386,14 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void reporteGenerarDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         /// <summary>
         /// The webBrowser1_DocumentCompleted.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="WebBrowserDocumentCompletedEventArgs"/>.</param>
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The reporteDeVentasPorClienteToolStripMenuItem_Click.
@@ -541,6 +517,11 @@
             }
         }
 
+        /// <summary>
+        /// The acercaDeToolStripMenuItem_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAbout frmAbout = new frmAbout();

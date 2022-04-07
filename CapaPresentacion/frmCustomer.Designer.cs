@@ -104,7 +104,6 @@
             this.txtNameSearch.Name = "txtNameSearch";
             this.txtNameSearch.Size = new System.Drawing.Size(292, 26);
             this.txtNameSearch.TabIndex = 3;
-            this.txtNameSearch.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
             this.txtNameSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtnombre_KeyUp);
             // 
             // txtindetifCard

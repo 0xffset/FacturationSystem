@@ -1,5 +1,6 @@
 ﻿namespace CapaPresentacion
 {
+    using BarcodeLib;
     using CapaNegocio;
     using Entidades;
     using System;
@@ -268,27 +269,23 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void tcpProducto_Click(object sender, EventArgs e)
-        {
-        }
+
+
+
 
         /// <summary>
         /// The textBox1_TextChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label11_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label11_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The BTNnuevo_Click.
@@ -488,81 +485,63 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label12_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label15_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label15_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The textBox2_TextChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The textBox3_TextChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The textBox4_TextChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label13_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label13_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label14_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label14_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The textBox1_TextChanged_1.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The dataGridView1_CellContentClick.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The BTNcargarcategoria_Click.
@@ -751,9 +730,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void BTNguardarprove_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The BTNgrabarprove_Click.
@@ -857,9 +834,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="DataGridViewCellEventArgs"/>.</param>
-        private void dgvproveedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The dgvproveedor_CellClick.
@@ -1317,6 +1292,7 @@
             {
                 int idprod = Convert.ToInt32(dgvproduct.CurrentRow.Cells[0].Value);
                 ShowRowSelected(idprod);
+                GenerateBarCode();
 
                 if (dtpduedate.Value < DateTime.Today)
                 {
@@ -1373,24 +1349,20 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label26_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label6_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label6_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The txtnamep_KeyPress.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="KeyPressEventArgs"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void txtnamep_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = Char.ToUpper(e.KeyChar);
@@ -1454,6 +1426,38 @@
         private void txtdescriptioncategories_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = Char.ToUpper(e.KeyChar);
+        }
+
+        /// <summary>
+        /// The GenerateBarCode.
+        /// </summary>
+        private void GenerateBarCode()
+        {
+            Barcode Code = new Barcode();
+            Code.IncludeLabel = true;
+            panelCode.BackgroundImage = Code.Encode(BarcodeLib.TYPE.CODE128, TXTcodep.Text, Color.Black, Color.White, 351, 100);
+            btmSaveCode.Enabled = true;
+        }
+
+        /// <summary>
+        /// The btmSaveCode_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
+        private void btmSaveCode_Click(object sender, EventArgs e)
+        {
+            Image imageCode = (Image)panelCode.BackgroundImage.Clone();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.AddExtension = true;
+            saveFileDialog.Filter = "Image PNG (*.png|*.png";
+            saveFileDialog.ShowDialog();
+
+            if (!string.IsNullOrEmpty(saveFileDialog.FileName))
+            {
+                imageCode.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
+
+            }
+            imageCode.Dispose();
         }
     }
 }

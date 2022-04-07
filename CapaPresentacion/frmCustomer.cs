@@ -13,7 +13,7 @@
     public partial class frmCustomer : Form
     {
         /// <summary>
-        /// Defines the IdUsuario.
+        /// Defines the _idUser.
         /// </summary>
         internal int _idUser = 0;
 
@@ -30,7 +30,7 @@
         /// <summary>
         /// The controlb.
         /// </summary>
-        /// <param name="new">The nuevo<see cref="Boolean"/>.</param>
+        /// <param name="@new">The nuevo<see cref="Boolean"/>.</param>
         /// <param name="edit">The editar<see cref="Boolean"/>.</param>
         /// <param name="delete">The eliminar<see cref="Boolean"/>.</param>
         /// <param name="exit">The salir<see cref="Boolean"/>.</param>
@@ -379,15 +379,6 @@
                 txtNameSearch.Enabled = true;
             }
             else { txtNameSearch.Enabled = true; btnSearch.Enabled = true; txtNameSearch.Enabled = false; }
-        }
-
-        /// <summary>
-        /// The txtnombre_TextChanged.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void txtnombre_TextChanged(object sender, EventArgs e)
-        {
         }
     }
 }

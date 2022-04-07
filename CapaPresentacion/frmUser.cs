@@ -10,7 +10,6 @@
     /// </summary>
     public partial class frmUser : Form
     {
-        //Accinones que controlaran todos acciones en algunos controles
         /// <summary>
         /// Defines the acc.
         /// </summary>
@@ -270,9 +269,9 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void TXTbuscar_TextChanged(object sender, EventArgs e)
-        {
-        }
+
+
+
 
         /// <summary>
         /// The BTNsalir_Click.
@@ -299,60 +298,48 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label11_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label10_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label10_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The RBactivo_CheckedChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void RBactivo_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The RBInactivo_CheckedChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void RBInactivo_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The DTPexpiracion_ValueChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void DTPexpiracion_ValueChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The TXTnombre_TextChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void TXTnombre_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The TXTnombre_KeyPress.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="KeyPressEventArgs"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void TXTnombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = Char.ToUpper(e.KeyChar);

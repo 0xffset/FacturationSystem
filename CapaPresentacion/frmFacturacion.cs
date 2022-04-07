@@ -23,7 +23,7 @@
         internal int iduser = 0;
 
         /// <summary>
-        /// Defines the ser, corr..
+        /// Defines the ser, corr...
         /// </summary>
         internal String ser, corr;
 
@@ -294,54 +294,42 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The textBox1_TextChanged.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label5_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label5_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The button2_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label8_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label8_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The label11_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label11_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The frmFacturacion_Load.
@@ -377,9 +365,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label9_Click(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The button4_Click.
@@ -444,9 +430,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void label8_Click_1(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The btnBuscarCe_Click.
@@ -625,9 +609,7 @@
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
-        private void txtCedula_KeyUp(object sender, KeyEventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// The ProductReduction.
